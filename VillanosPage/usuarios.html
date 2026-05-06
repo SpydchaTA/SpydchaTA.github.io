@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+    <head>
+        <title>Ver - Usuarios</title>
+        <link rel="icon" href="imagenes/logovillanospage.png">
+    </head>
+    <body>
+        <div class="tituloprinsipal">
+            <h1 id="titulo">Usuarios</h1>
+            <h2 id="subti">Estos usuarios estan en la faction</h2>
+        </div>
+        <div class="explicacion">
+            <h1 id="cuatro">Rango 4</h1> <h1 id="tres">Rango 3</h1> <h1 id="dos">Rango 2</h1> <h1 id="uno">Rango 1</h1>
+        </div>
+        <div class="contenedor">
+            <div class="usuario1" id="boton1" onclick="window.location.href='archstats.html'">
+                <img id="archaleximagen" src="imagenes/archalex.png" title="hola">
+                <p id="textoarch">Archalex_TA<p>
+            </div>
+            <div class="usuario2" id="boton1" onclick="window.location.href='spydchastats.html'">
+                <img id="spydchaimagen" src="imagenes/spydcha.png" title="hola">
+                <p id="textospyd">Spydcha_TA</p>
+            </div>
+            <div class="usuario3" id="boton1" onclick="window.location.href='sebasstats.html'">
+                <img id="sebasimagen" src="imagenes/sebas.png" title="hola">
+                <p id="textosebas">archalex</p>
+            </div>
+            <div class="usuario4" id="boton1" onclick="window.location.href='carluchistats.html'">
+                <img id="carluchiimagen" src="imagenes/carluchi.png" title="hola">
+                <p id="textocarluchi">CARLUCHI15009</p>
+            </div>
+            <div class="usuario5" id="boton1" onclick="window.location.href='darkstats.html'">
+                <img id="darkimagen" src="imagenes/dark.png" title="hola">
+                <p id="textodark">D4rk_TA</p>
+            </div>
+            <div class="usuario6" id="boton1" onclick="window.location.href='prexionstats.html'">
+                <img id="prexionimagen" src="imagenes/prexion.png" title="hola">
+                <p id="textoprexion">PREXI0N_TA</p>
+            </div>
+            <div class="usuario7" id="boton1" onclick="window.location.href='santistats.html'">
+                <img id="santiimagen" src="imagenes/santi.png" title="hola">
+                <p id="textosanti">iSpxypk</p>
+            </div>
+            <div class="usuario8" id="boton1" onclick="window.location.href='stevenstats.html'">
+                <img id="stevenimagen" src="imagenes/steven.png" title="hola">
+                <p id="textosteven">lStven</p>
+            </div>
+            <div class="usuario9" id="boton1" onclick="window.location.href='adrestats.html'">
+                <img id="adreimagen" src="imagenes/adre.png" title="hola">
+                <p id="textoadre">Andreeh_TA</p>
+            </div>
+            <div class="usuario10" id="boton1" onclick="window.location.href='javenstats.html'">
+                <img id="javenimagen" src="imagenes/javen.png" title="hola">
+                <p id="textojaven">Americano4k</p>
+            </div>
+            <div class="usuario11" id="boton1" onclick="window.location.href='gutistats.html'">
+                <img id="gutimagen" src="imagenes/guti.png" title="hola">
+                <p id="textoguti">iTzSebas</p>
+            </div>
+            <div class="usuario12" id="boton1" onclick="window.location.href='benjastats.html'">
+                <img id="benjaimagen" src="imagenes/benja.png" title="hola">
+                <p id="textobenja">Qxiett</p>
+            </div>
+        </div>
+    </body>
+    <style>
+        body {
+            background-image: url("imagenes/fondoblur.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            min-height: 150vh;
+        }
+        #uno {
+            background-color: rgb(72, 255, 0);
+            padding: 10px;
+            border-radius: 10%;
+            box-shadow: 0 0 40px rgb(39, 136, 0);
+        }
+        #dos {
+            background-color: rgb(0, 17, 252);
+            padding: 10px;
+            border-radius: 10%;
+            box-shadow: 0 0 40px rgb(0, 9, 136);
+        }
+        #tres {
+            background-color: rgb(216, 0, 0);
+            padding: 10px;
+            border-radius: 10%;
+            box-shadow: 0 0 40px rgb(136, 0, 0);
+        }
+        #cuatro {
+            background-color: rgb(150, 0, 163);
+            padding: 10px;
+            border-radius: 10%;
+            box-shadow: 0 0 40px rgb(136, 0, 136);
+        }
+        .explicacion {
+            margin: 40px;
+            display: flex;
+            gap: 23%;
+            color: white
+        }
+        .tituloprinsipal {
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            text-shadow: 0 0 10px black;
+        }
+        .usuario1:hover {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            color: white;
+            max-width: 400px;
+            box-shadow: 0 0 50px rgb(162, 0, 255);
+            transform: scale(1.05)
+        }
+        .usuario1 {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+            color: white;
+            max-width: 400px;
+            transition: all 0.5s ease;
+        }
+        .usuario2:hover {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            color: white;
+            max-width: 400px;
+            box-shadow: 0 0 50px rgb(195, 0, 255);
+            transform: scale(1.05)
+        }
+        .usuario2 {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+            color: white;
+            max-width: 400px;
+            transition: all 0.5s ease;
+        }
+        .usuario3:hover {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            color: white;
+            max-width: 400px;
+            box-shadow: 0 0 50px rgb(225, 0, 255);
+            transform: scale(1.05)
+        }
+        .usuario3 {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+            color: white;
+            max-width: 400px;
+            transition: all 0.5s ease;
+        }
+        .usuario4:hover {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            color: white;
+            max-width: 400px;
+            box-shadow: 0 0 50px rgb(170, 0, 170);
+            transform: scale(1.05)
+        }
+        .usuario4 {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+            color: white;
+            max-width: 400px;
+            transition: all 0.5s ease;
+        }
+        .usuario5:hover {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            color: white;
+            max-width: 400px;
+            box-shadow: 0 0 50px rgb(195, 0, 255);
+            transform: scale(1.05)
+        }
+        .usuario5 {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+            color: white;
+            max-width: 400px;
+            transition: all 0.5s ease;
+        }
+        .usuario6:hover {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            color: white;
+            max-width: 400px;
+            box-shadow: 0 0 50px rgb(0, 4, 255);
+            transform: scale(1.05)
+        }
+        .usuario6 {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+            color: white;
+            max-width: 400px;
+            transition: all 0.5s ease;
+        }
+        .usuario7:hover {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            color: white;
+            max-width: 400px;
+            box-shadow: 0 0 50px rgb(0, 4, 255);
+            transform: scale(1.05)
+        }
+        .usuario7 {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+            color: white;
+            max-width: 400px;
+            transition: all 0.5s ease;
+        }
+        .usuario8:hover {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            color: white;
+            max-width: 400px;
+            box-shadow: 0 0 50px rgb(212, 0, 0);
+            transform: scale(1.05)
+        }
+        .usuario8 {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+            color: white;
+            max-width: 400px;
+            transition: all 0.5s ease;
+        }
+        .usuario9:hover {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            color: white;
+            max-width: 400px;
+            box-shadow: 0 0 50px rgb(228, 0, 0);
+            transform: scale(1.05)
+        }
+        .usuario9 {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+            color: white;
+            max-width: 400px;
+            transition: all 0.5s ease;
+        }
+        .usuario10:hover {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            color: white;
+            max-width: 400px;
+            box-shadow: 0 0 50px rgb(0, 60, 255);
+            transform: scale(1.05)
+        }
+        .usuario10 {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+            color: white;
+            max-width: 400px;
+            transition: all 0.5s ease;
+        }
+        .usuario11:hover {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            color: white;
+            max-width: 400px;
+            box-shadow: 0 0 50px rgb(168, 0, 190);
+            transform: scale(1.05)
+        }
+        .usuario11 {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+            color: white;
+            max-width: 400px;
+            transition: all 0.5s ease;
+        }
+        .usuario12:hover {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            color: white;
+            max-width: 400px;
+            box-shadow: 0 0 50px rgb(250, 0, 0);
+            transform: scale(1.05)
+        }
+        .usuario12 {
+            background: linear-gradient(green, black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+            color: white;
+            max-width: 400px;
+            transition: all 0.5s ease;
+        }
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 11%;
+        }
+        #textosebas {
+            font: arial;
+            font-size: 30px;
+            text-align: center;
+        }
+        #sebasimagen {
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        #textospyd {
+            font: arial;
+            font-size: 30px;
+            text-align: center;
+        }
+        #spydchaimagen {
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        #textocarluchi {
+            font: arial;
+            font-size: 30px;
+            text-align: center;
+        }
+        #carluchiimagen {
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        #textoarch {
+            font: arial;
+            font-size: 30px;
+            text-align: center;
+        }
+        #archaleximagen {
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        #textodark {
+            font: arial;
+            font-size: 30px;
+            text-align: center;
+        }
+        #darkimagen {
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        #textoprexion {
+            font: arial;
+            font-size: 30px;
+            text-align: center;
+        }
+        #prexionimagen {
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        #textosanti {
+            font: arial;
+            font-size: 30px;
+            text-align: center;
+        }
+        #santiimagen {
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        #textosteven {
+            font: arial;
+            font-size: 30px;
+            text-align: center;
+        }
+        #stevenimagen {
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        #textoadre {
+            font: arial;
+            font-size: 30px;
+            text-align: center;
+        }
+        #adreimagen {
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        #textojaven {
+            font: arial;
+            font-size: 30px;
+            text-align: center;
+        }
+        #javenimagen {
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        #textoguti {
+            font: arial;
+            font-size: 30px;
+            text-align: center;
+        }
+        #gutimagen {
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        #textobenja {
+            font: arial;
+            font-size: 30px;
+            text-align: center;
+        }
+        #benjaimagen {
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+    </style>
