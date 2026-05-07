@@ -4,6 +4,9 @@
         <link rel="icon" href="imagenes/logovillanospage.png">
     </head>
     <body>
+        <video autoplay muted loop id="myVideo">
+            <source src="imagenes/archfondovideo.mp4" type="video/mp4">
+        </video>
         <div class="titulos">
             <h1>Archalex_TA Stats</h1>
         </div>
@@ -33,8 +36,17 @@
             align-items: center;
             gap: 40px;
         }
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
         body {
-            background-image: url("imagenes/archalex.png");
+            background: black;
             background-repeat: no-repeat;
             background-size: cover;
             background-size: 140%;
