@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Datos del survival</title>
+        <link rel="icon" href="imagenes/logovillanospage.png">
+    </head>
+    <body>
+    <div class="Textos">
+        <div class="titulos">
+            <h1>Datos del survival</h1>
+        </div>
+        <div class="Ip">
+            <h2>Ip: VillanosSMP.aternos.me:56959</h2>
+        </div>
+        <div class="anotaciones">
+            <h2>El survival contiene voicechat y es para la 1.21.1</h2>
+        </div>
+        <div class="anotaciones">
+            <h2>(puede jugarse en otras versiones pero sin voicechat)</h2>
+        </div>
+        <div>
+            <a href="index.html" id="boton">Volver</a>
+        </div>
+    </div>
+    </body>
+    <style>
+        body {
+            background-image: url("imagenes/fondosurvival.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 100%;
+            background-position: left top;
+            color: white;
+            text-align: left;
+            font-size: 25px;
+            margin: 50px;
+        }
+         .Textos {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            gap: 40px;
+            text-shadow: 0 0 40px black;
+        }
+        #boton {
+            background: linear-gradient(rgb(112, 0, 112), rgb(46, 0, 0));
+            color: white;
+            height: 50px;
+            width: 160px;
+            border: 0px;
+            border-radius: 10%;
+            text-decoration: none;
+            position: absolute;
+            text-align: center;
+            left: 5%;
+            top: 90%;
+            font-size: 40px;
+            transform: scale(1.05);
+        }
+    @media (max-width: 760px) {
+        #myVideo {
+            position: fixed;
+            right: -90%;
+            bottom: -10%;
+            min-width: 100%;
+            scale: 0.8;
+            min-height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+         .Textos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0px;
+            text-shadow: 10px 10px 20px black;
+        }
+        body {
+            font-size: 18px;
+            text-shadow: 0 0 40px black;
+            background-image: url("imagenes/fondosurvival.png");
+            background-repeat: no-repeat;
+            background-position-x: 14%;
+            background-size: 360%;
+            color: white;
+            text-align: center;
+            margin: 30px;
+            min-height: 88vh;
+            overflow: hidden;
+        }
+        progress {
+            width: 200px;
+            height: 20px;
+        }
+        #boton {
+            width: 120px;
+            height: 40px;
+            font-size: 30px;
+        }
+ }
+    </style>
