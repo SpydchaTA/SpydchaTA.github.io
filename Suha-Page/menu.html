@@ -34,10 +34,15 @@
                 <a id="descarga" href="https://github.com/Eliseo04L/Su-Ha-Launcher/releases/download/v0.10.0/Su-Ha-Launcher-Setup-0.10.0.exe">Instalar ultima versión para windows</a>
             </div> 
             <a id="noticias" href="noticias.html">Notas de version</a>
+            <a id="credits" href="credits.html">Creditos</a>
         </div>  
     <div id="imagen2">
             <p>Seccion para agregar usuarios</p>
             <img src="imagenes/users.png" alt="Imagen de SuHa-Launcher">
+    </div>
+    <div id="imagen3">
+            <p>Seccion para cambiar Skin (solo cuentas offline)</p>
+            <img src="imagenes/skins.png" alt="Imagen de SuHa-Launcher">
     </div>
     <a href="menu.html" id="volvermenu">Su-Ha Launcher</a>
     <img id="logopanalla" src="imagenes/hola.png" title="hola">
@@ -170,12 +175,35 @@
     #imagen2 p {
         margin-top: 180px;
         margin-bottom: 70px;
+        left: -450px;
+        font-size: 40px;
         position: relative;
         border-radius: 40px;
     }
     #imagen2 img {
-        width: 1000px;
+        width: 700px;
         height: auto;
+        left: -450px;
+        position: relative;
+        margin-bottom: 100px;
+        box-shadow: 0 0 10px rgb(77, 77, 77);
+        border-radius: 40px;
+    }
+    #imagen3 p {
+        margin-top: 180px;
+        margin-bottom: 70px;
+        right: -450px;
+        top: -600px;
+        font-size: 30px;
+        position: relative;
+        border-radius: 40px;
+    }
+    #imagen3 img {
+        width: 700px;
+        height: auto;
+        right: -450px;
+        top: -600px;
+        position: relative;
         margin-bottom: 100px;
         box-shadow: 0 0 10px rgb(77, 77, 77);
         border-radius: 40px;
@@ -201,6 +229,29 @@
         position: absolute;
         top: 30px;
         left: 11%;
+        transform: translateX(-50%);
+    }
+    #credits {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        background-color: rgba(77, 77, 77, 0);
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 31%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
+    #credits:hover {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(87, 83, 83);
+        position: absolute;
+        top: 30px;
+        left: 31%;
         transform: translateX(-50%);
     }
         @media (max-width: 768px) {
@@ -311,6 +362,29 @@
         transition: all 0.3s ease;
     }
     #volvermenu:hover {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(122, 149, 150);
+        position: absolute;
+        top: 30px;
+        left: 37%;
+        transform: translateX(-50%);
+    }
+    #credits {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        background-color: rgba(77, 77, 77, 0.555);
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 37%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
+    #credits:hover {
         color: white;
         padding: 10px;
         text-decoration: none;
