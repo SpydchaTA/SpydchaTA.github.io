@@ -9,7 +9,7 @@
     <p id="descripcion">aqui podras encontrar las notas de version de la aplicacion y lo que traen sus actualizaciones</p>
     <div id="contenedor">
         <div class="v0-9-99" id="version0999">
-                <img id="vi0999" src="imagenes/launcherimagen.png" title="hola" onclick="window.location.href='menu.html'">
+                <img id="vi0999" src="imagenes/launcherimagen.png" title="hola" onclick="window.location.href='v0-9-99.html'">
                 <p id="textov0999">Version 0.9.99</p>
         </div>
     </div>
@@ -41,18 +41,6 @@
         top: 20px;
         left: 30px;
     }
-     .v0-9-99 {
-            background: linear-gradient(rgba(102, 145, 146, 0.11), black);
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 5px rgb(255, 255, 255);
-            color: white;
-            max-width: 400px;
-            position: relative;
-            top: 200px;
-            transition: all 0.5s ease;
-        }
     #titulo {
         font-size: 50px;
         position: relative;
@@ -68,51 +56,6 @@
         top: 50px;
         text-shadow: 0 0 30px rgb(7, 56, 48);
         text-align: left;
-    }
-    #v0-9-99 {
-        background-color: rgba(135, 241, 255, 0.068);
-        border-radius: 20px;
-        text-align: left;
-        padding: 40px;
-        box-shadow: 0 0 20px rgb(255, 255, 255);
-        width: 400px;
-        height: 300px;
-        margin-top: 100px;
-        margin-left: 10px;
-    }
-    .v0-9-99 {
-            background: linear-gradient(rgba(102, 145, 146, 0.11), black);
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 5px rgb(255, 255, 255);
-            color: white;
-            max-width: 400px;
-            position: relative;
-            top: 200px;
-            transition: all 0.5s ease;
-        }
-    .v0-9-99:hover {
-            background: linear-gradient(rgba(102, 145, 146, 0.11), black);
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
-            transform: scale(1.05);
-            box-shadow: 0px 0px 10px rgb(0, 247, 255);
-            color: white;
-            max-width: 400px;
-            transition: all 0.5s ease;
-        }
-    #textov0999 {
-            font: arial;
-            font-size: 30px;
-            text-align: center;
-    }
-    #vi0999 {
-            width: 400px;
-            height: 190px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px black;
     }
     #noticias {
         color: white;
@@ -158,6 +101,48 @@
         top: 30px;
         left: 11%;
         transform: translateX(-50%);
+    }
+    #contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3%;
+    }
+/* clases versiones */
+    .v0-9-99 {
+            background: linear-gradient(rgba(102, 145, 146, 0.11), black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgb(255, 255, 255);
+            color: white;
+            max-width: 400px;
+            position: relative;
+            top: 200px;
+            transition: all 0.5s ease;
+        }
+    .v0-9-99:hover {
+            background: linear-gradient(rgba(102, 145, 146, 0.11), black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            transform: scale(1.05);
+            box-shadow: 0px 0px 10px rgb(0, 247, 255);
+            color: white;
+            max-width: 400px;
+            transition: all 0.5s ease;
+        }
+
+/* versiones */
+     #textov0999 {
+            font: arial;
+            font-size: 30px;
+            text-align: center;
+    }
+    #vi0999 {
+            width: 400px;
+            height: 190px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
     }
 
 </style>
