@@ -31,7 +31,7 @@
         <div id="botones">
             <div class="descargar">
                 <img src="imagenes/windowslogo.png" alt="Imagen de descarga" id="windowslogo">
-                <a id="descarga" href="https://github.com/Eliseo04L/Su-Ha-Launcher/releases/download/v0.9.99/Su-Ha-Launcher-Setup-0.9.99.exe">Instalar ultima versión para windows</a>
+                <a id="descarga" href="https://github.com/Eliseo04L/Su-Ha-Launcher/releases/download/v0.10.0/Su-Ha-Launcher-Setup-0.10.0.exe">Instalar ultima versión para windows</a>
             </div> 
             <a id="noticias" href="noticias.html">Notas de version</a>
         </div>  
@@ -195,6 +195,125 @@
         top: 30px;
         left: 11%;
         transform: translateX(-50%);
+    }
+        @media (max-width: 768px) {
+        
+        body {
+            background: linear-gradient(to bottom left, rgb(0, 0, 0) 55%, rgb(59, 62, 63));
+            color: rgb(255, 255, 255);
+            text-align: left;
+            font-family: Arial, sans-serif;
+            margin-top: 80px;
+            margin-right: 90px;
+            margin-left: 90px;
+            font-size: 14px;
+            font-style: italic;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            overflow-x: hidden;
+        }
+        .descargar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 900px;
+            left: 1000%;
+            top: -80px;
+            position: relative;
+            background: linear-gradient(to left, rgb(255, 0, 0), rgb(112, 21, 21));
+            border-radius: 10px;
+            padding-right: 100px;
+            transition: all 0.3s ease;
+        }
+        .descargar:hover {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            background: linear-gradient(to left, rgb(255, 0, 0), rgb(112, 21, 21));
+            border-radius: 10px;
+            padding-right: 100px;
+            transform: scale(1.05);
+        }
+        
+        #layout {
+            flex-direction: column;
+            align-items: center;
+        }
+        #contenido {
+            width: 100%;
+            margin-top: 40px;
+        }
+        #imagen img {
+            height: auto;
+            margin-top: 100px;
+            position: relative;
+            left: 0;
+            width: 140%;
+            height: auto;
+            align-items: center;
+            left: -20%;
+            border-radius: 2px;
+
+        }
+    #imagen2 img {
+        width: 1000px;
+        height: auto;
+        margin-bottom: 100px;
+        box-shadow: 0 0 10px rgb(77, 77, 77);
+        border-radius: 40px;
+        width: 140%;
+        height: auto;
+        align-items: center;
+        position: relative;
+        left: -20%;
+        border-radius: 2px;
+    }
+    #noticias {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 200%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
+    #noticias:hover {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(122, 149, 150);
+        position: absolute;
+        top: 30px;
+        left: 200%;
+        transform: translateX(-50%);
+    }
+        #volvermenu {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        background-color: rgba(77, 77, 77, 0.555);
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 37%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
+    #volvermenu:hover {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(122, 149, 150);
+        position: absolute;
+        top: 30px;
+        left: 37%;
+        transform: translateX(-50%);
+    }
     }
 
 </style>
