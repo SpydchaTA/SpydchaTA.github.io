@@ -29,13 +29,18 @@
         </div>
     </div>
         <div id="botones">
-            <a id="descarga" href="https://github.com/Eliseo04L/Su-Ha-Launcher/releases/download/v0.9.99/Su-Ha-Launcher-Setup-0.9.99.exe">Instalar</a>
+            <div class="descargar">
+                <img src="imagenes/windowslogo.png" alt="Imagen de descarga" id="windowslogo">
+                <a id="descarga" href="https://github.com/Eliseo04L/Su-Ha-Launcher/releases/download/v0.9.99/Su-Ha-Launcher-Setup-0.9.99.exe">Instalar ultima versión para windows</a>
+            </div> 
             <a id="noticias" href="noticias.html">Notas de version</a>
         </div>  
     <div id="imagen2">
             <p>Seccion para agregar usuarios</p>
             <img src="imagenes/usuarios.png" alt="Imagen de SuHa-Launcher">
     </div>
+    <a href="menu.html" id="volvermenu">Su-Ha Launcher</a>
+    <img id="logopanalla" src="imagenes/hola.png" title="hola">
 </body>
 <style>
     body {
@@ -51,6 +56,36 @@
         background-repeat: no-repeat;
         background-size: 100%;
         overflow-x: hidden;
+    }
+    .descargar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: linear-gradient(to left, rgb(11, 184, 207), rgb(32, 46, 48));
+        border-radius: 10px;
+        padding-right: 30px;
+        transition: all 0.3s ease;
+    }
+    .descargar:hover {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: linear-gradient(to left, rgb(11, 184, 207), rgb(32, 46, 48));
+        border-radius: 10px;
+        padding-right: 30px;
+        transform: scale(1.05);
+    }
+    #windowslogo {
+        width: 50px;
+        height: 50px;
+        margin-left: 20px;
+    }
+    #logopanalla {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 20px;
+        left: 30px;
     }
     #layout {
         display: flex;
@@ -75,20 +110,46 @@
         margin-left: 70px;
     }
     #noticias {
-        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
         color: white;
-        padding: 20px;
+        padding: 10px;
         text-decoration: none;
         border-radius: 10px;
-        box-shadow: 0 0 2px rgb(255, 255, 255);
+        position: absolute;
+        top: 30px;
+        left: 23%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
+    body::-webkit-scrollbar {
+    width: 1px;
+    }
+    body::-webkit-scrollbar-track {
+    background: black;
+    }
+    body::-webkit-scrollbar-thumb {
+    background-color: cyan;
+    border-radius: 10px;
+    border: 2px solid black;
+    }
+    body::-webkit-scrollbar-thumb:hover {
+    background-color: white;
+    }
+
+    #noticias:hover {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(122, 149, 150);
+        position: absolute;
+        top: 30px;
+        left: 23%;
+        transform: translateX(-50%);
     }
     #descarga {
-        background: linear-gradient(to left,rgb(98, 175, 175), rgba(1, 90, 83, 0.459));
         color: white;
-        padding: 20px;
+        padding: 0px;
         text-decoration: none;
-        border-radius: 10px;
-        box-shadow: 0 0 2px rgb(255, 255, 255);
     }
     #imagen img{
         width: 850px;
@@ -112,6 +173,28 @@
         box-shadow: 0 0 10px rgb(77, 77, 77);
         border-radius: 40px;
     }
-
+    #volvermenu {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        background-color: rgba(77, 77, 77, 0.555);
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 11%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
+    #volvermenu:hover {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(122, 149, 150);
+        position: absolute;
+        top: 30px;
+        left: 11%;
+        transform: translateX(-50%);
+    }
 
 </style>

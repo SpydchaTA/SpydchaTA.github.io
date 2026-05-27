@@ -5,14 +5,19 @@
         <link rel="icon" href="imagenes/hola.png">
     </head>
 <body>
-    <h1 id="titulo">Actualizaciones</h1>
+    <h1 id="titulo">Notas de version</h1>
+    <p id="descripcion">aqui podras encontrar las notas de version de la aplicacion y lo que traen sus actualizaciones</p>
     <div id="contenedor">
         <div class="v0-9-99" id="version0999">
                 <img id="vi0999" src="imagenes/launcherimagen.png" title="hola" onclick="window.location.href='menu.html'">
                 <p id="textov0999">Version 0.9.99</p>
         </div>
     </div>
-    <a href="menu.html" id="volvermenu">volver Su-Ha Launcher</a>
+    <div id="selecciones">
+        <a href="menu.html" id="volvermenu">Su-Ha Launcher</a>
+        <a href="noticias.html" id="noticias">Notas de version</a>
+        <img id="logopanalla" src="imagenes/hola.png" title="hola">
+    </div>
 </body>
 <style>
     body {
@@ -28,6 +33,41 @@
         background-repeat: no-repeat;
         background-size: 100%;
         overflow-x: hidden;
+    }
+    #logopanalla {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+     .v0-9-99 {
+            background: linear-gradient(rgba(102, 145, 146, 0.11), black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgb(255, 255, 255);
+            color: white;
+            max-width: 400px;
+            position: relative;
+            top: 200px;
+            transition: all 0.5s ease;
+        }
+    #titulo {
+        font-size: 50px;
+        position: relative;
+        top: 50px;
+        margin-bottom: 20px;
+        text-shadow: 0 0 30px rgb(7, 56, 48);
+        text-align: left;
+    }
+    #descripcion {
+        font-size: 20px;
+        margin-bottom: 10px;
+        position: relative;
+        top: 50px;
+        text-shadow: 0 0 30px rgb(7, 56, 48);
+        text-align: left;
     }
     #v0-9-99 {
         background-color: rgba(135, 241, 255, 0.068);
@@ -48,6 +88,8 @@
             box-shadow: 0px 0px 5px rgb(255, 255, 255);
             color: white;
             max-width: 400px;
+            position: relative;
+            top: 200px;
             transition: all 0.5s ease;
         }
     .v0-9-99:hover {
@@ -72,14 +114,37 @@
             border-radius: 10px;
             box-shadow: 0 0 10px black;
     }
+    #noticias {
+        color: white;
+        background-color: rgba(77, 77, 77, 0.555);
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 23%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
+    #noticias:hover {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(122, 149, 150);
+        position: absolute;
+        top: 27px;
+        left: 23%;
+        transform: translateX(-50%);
+    }
     #volvermenu {
         color: white;
         padding: 10px;
         text-decoration: none;
         border-radius: 10px;
         position: absolute;
-        top: 80px;
-        left: 10%;
+        top: 30px;
+        left: 11%;
         transform: translateX(-50%);
         transition: all 0.3s ease;
     }
@@ -90,8 +155,8 @@
         border-radius: 10px;
         box-shadow: 0 0 4px rgb(122, 149, 150);
         position: absolute;
-        top: 80px;
-        left: 10%;
+        top: 30px;
+        left: 11%;
         transform: translateX(-50%);
     }
 
