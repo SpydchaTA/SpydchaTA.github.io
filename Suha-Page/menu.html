@@ -44,6 +44,11 @@
             <p>Seccion para cambiar Skin (solo cuentas offline)</p>
             <img src="imagenes/skins.png" alt="Imagen de SuHa-Launcher">
     </div>
+    <div id="caracteristicas">
+        <h1 id="facil">Facil</h1>
+        <h1 id="gratis">Gratis</h1>
+        <h1 id="seguro">Seguro</h1>
+    </div>
     <a href="menu.html" id="volvermenu">Su-Ha Launcher</a>
     <img id="logopanalla" src="imagenes/hola.png" title="hola">
 </body>
@@ -68,6 +73,59 @@
         background-repeat: no-repeat;
         background-size: 100%;
         overflow-x: hidden;
+    }
+    #caracteristicas{
+        position: relative;
+        top: -300px;
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+        margin-top: 10px;
+    }
+    #facil {
+        color: rgb(255, 255, 255);
+        background-image: url('imagenes/facil.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 138px 138px;
+        text-shadow: 0 0 4px rgb(0, 0, 0);
+        border-radius: 50px;
+        box-shadow: 0 0 4px rgb(255, 255, 255);
+        transition: all 0.3s ease;
+    }
+    #facil:hover {
+        transform: scale(1.05);
+    }
+    #gratis {
+        color: rgb(255, 255, 255);
+        background-image: url('imagenes/gratis.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 138px 138px;
+        border-radius: 50px;
+        box-shadow: 0 0 4px rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(0, 0, 0);
+        transition: all 0.3s ease;
+    }
+    #gratis:hover {
+        transform: scale(1.05);
+    }
+    #seguro {
+        color: rgb(255, 255, 255);
+        background-image: url('imagenes/seguro.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 138px 138px;
+        border-radius: 50px;
+        text-shadow: 0 0 4px rgb(0, 0, 0);
+        box-shadow: 0 0 4px rgb(255, 255, 255);
+        transition: all 0.3s ease;
+    }
+    #seguro:hover {
+        transform: scale(1.05);
     }
     .descargar {
         display: flex;
@@ -185,7 +243,7 @@
         height: auto;
         left: -450px;
         position: relative;
-        margin-bottom: 100px;
+        margin-bottom: 20px;
         box-shadow: 0 0 10px rgb(77, 77, 77);
         border-radius: 40px;
     }
@@ -204,7 +262,7 @@
         right: -450px;
         top: -600px;
         position: relative;
-        margin-bottom: 100px;
+        margin-bottom: 10px;
         box-shadow: 0 0 10px rgb(77, 77, 77);
         border-radius: 40px;
     }
