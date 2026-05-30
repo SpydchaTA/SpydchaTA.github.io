@@ -6,6 +6,18 @@
         <link rel="icon" href="imagenes/hola.png">
     </head>
 <body>
+    <input type="checkbox" id="btn-modal" title="Soporte">
+    <label for="btn-modal">Soporte</label>
+    <div class="modal">
+        <div class="contenido-modal">
+            <header>¿Ayuda o sugerencia?</header>
+            <label for="btn-modal">X</label>
+            <div class="contenido-modal2">
+                <p>Entra a nuestro discord para pedir ayuda o enviar una sugerencia</p>
+                <a href="https://discord.gg/3Bvrer5R3n">Discord</a>
+            </div>
+        </div>
+    </div>
     <h1 id="titulo">SuHa Launcher</h1>
     <div id="layout">
 
@@ -60,6 +72,87 @@
     ::view-transition-new(root) { 
     background: transparent; 
     }
+    .contenido-modal2 a {
+        background: linear-gradient(rgb(132, 0, 255), rgb(0, 0, 65));
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 40px;
+        top: 100px;
+        transition: all 2s ease;
+    }
+    .contenido-modal2 a:hover {
+        background: linear-gradient(rgb(132, 0, 255), rgb(0, 0, 65));
+        margin: 10px;
+        box-shadow: 0 0 400px rgb(0, 0, 255);
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+    .modal {
+            position: fixed;
+            justify-content: center;
+            align-items: center;
+            inset: 0;
+            background: rgba(63, 63, 63, 0.301);
+            transition: all 0.5s ease;
+            opacity: 0;
+            visibility: hidden;
+            padding-top: 100px;
+            z-index: 9999;
+            border-radius: 10px;
+        }
+    .contenido-modal {
+            width: 1000px;
+            height: 600px;
+            margin: 0 auto;
+            background: radial-gradient(circle, rgb(12, 12, 12) , rgb(0, 0, 0));
+            color: #fff;
+            box-shadow: 10px 10px 30px rgb(0, 0, 0);
+            border-radius: 50px;
+            transition: all 0.5s ease;
+            position: relative;
+            border-radius: 50px;
+            transform: translateY(-50px);
+            font-size: 40px;
+        }
+    .contenido-modal header {
+            width: 100%;
+            height: 70px;
+            background: #00000000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+        }
+    .contenido-modal label {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    .contenido-modal .contenido-modal2 {
+            padding: 20px;
+            text-align: center;
+            border-radius: 20px;
+        }
+    #btn-modal {
+            display: none;
+        }
+        #btn-modal:checked ~ .modal {
+            visibility: visible;
+            opacity: 1;
+        }
+        #btn-modal:checked ~ .modal .contenido-modal {
+            transform: translateY(0);
+        }
     body {
         background: linear-gradient(to bottom left, rgb(0, 0, 0) 55%, rgb(59, 62, 63));
         color: rgb(255, 255, 255);
