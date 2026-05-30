@@ -9,6 +9,10 @@
     <h1 id="titulo">Notas de version</h1>
     <p id="descripcion">aqui podras encontrar las notas de version de la aplicacion y lo que traen sus actualizaciones</p>
     <div id="contenedor">
+        <div class="v1-0-0" id="version100">
+                <img id="vi100" src="imagenes/launcherimagen.png" title="version 1.0.0" onclick="window.location.href='v1-0-0.html'">
+                <p id="textov100">Version 1.0.0</p>
+        </div>
         <div class="v0-10-0" id="version0100">
                 <img id="vi0100" src="imagenes/users.png" title="version 0.10.0" onclick="window.location.href='v0-10-0.html'">
                 <p id="textov0100">Version 0.10.0</p>
@@ -190,6 +194,29 @@
             max-width: 400px;
             transition: all 0.5s ease;
         }
+    .v1-0-0 {
+            background: linear-gradient(rgba(102, 145, 146, 0.11), black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgb(255, 255, 255);
+            color: white;
+            max-width: 400px;
+            position: relative;
+            top: 200px;
+            transition: all 0.5s ease;
+        }
+    .v1-0-0:hover {
+            background: linear-gradient(rgba(102, 145, 146, 0.11), black);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            transform: scale(1.05);
+            box-shadow: 0px 0px 10px rgb(0, 247, 255);
+            color: white;
+            max-width: 400px;
+            transition: all 0.5s ease;
+        }
 
 /* versiones */
      #textov0999 {
@@ -209,6 +236,17 @@
             text-align: center;
     }
     #vi0100 {
+            width: 400px;
+            height: 190px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+    }
+     #textov100 {
+            font: arial;
+            font-size: 30px;
+            text-align: center;
+    }
+    #vi100 {
             width: 400px;
             height: 190px;
             border-radius: 10px;
