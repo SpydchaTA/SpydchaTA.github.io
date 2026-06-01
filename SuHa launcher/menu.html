@@ -7,7 +7,7 @@
     </head>
 <body>
     <input type="checkbox" id="btn-modal" title="Soporte">
-    <label for="btn-modal">Soporte</label>
+    <label for="btn-modal" class="lbl-modal">Soporte</label>
     <div class="modal">
         <div class="contenido-modal">
             <header>¿Ayuda o sugerencia?</header>
@@ -418,7 +418,7 @@
             margin-top: 80px;
             margin-right: 90px;
             margin-left: 90px;
-            font-size: 14px;
+            font-size: 13px;
             font-style: italic;
             background-repeat: no-repeat;
             background-size: 100%;
@@ -447,6 +447,10 @@
             padding-right: 100px;
             transform: scale(1.05);
         }
+        .lbl-modal {
+            cursor: pointer;
+            visibility: hidden;
+        }
         
         #layout {
             flex-direction: column;
@@ -454,11 +458,11 @@
         }
         #contenido {
             width: 100%;
-            margin-top: 40px;
+            margin-top: 20px;
         }
         #imagen img {
             height: auto;
-            margin-top: 100px;
+            margin-top: 40px;
             position: relative;
             left: 0;
             width: 140%;
@@ -468,6 +472,102 @@
             border-radius: 2px;
 
         }
+        #imagen2 p {
+        margin-top: 300px;
+        margin-bottom: 70px;
+        left: 0px;
+        top: 200px;
+        font-size: 20px;
+        position: relative;
+        border-radius: 40px;
+    }
+    #imagen2 img {
+        width: 300px;
+        height: auto;
+        left: 0;
+        top: 200px;
+        position: relative;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgb(77, 77, 77);
+        border-radius: 40px;
+    }
+    #imagen3 p {
+        margin-top: 180px;
+        margin-bottom: 70px;
+        left: 0;
+        top: -700px;
+        font-size: 20px;
+        position: relative;
+        border-radius: 40px;
+    }
+    #imagen3 img {
+        width: 300px;
+        height: auto;
+        right: 0;
+        top: -740px;
+        left: -20%;
+        position: relative;
+        margin-bottom: 10px;
+        box-shadow: 0 0 10px rgb(77, 77, 77);
+        border-radius: 40px;
+    }
+    #caracteristicas{
+        position: relative;
+        top: -400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 10px;
+    }
+    #facil {
+        color: rgb(255, 255, 255);
+        background-image: url('imagenes/facil.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 38px 38px;
+        text-shadow: 0 0 4px rgb(0, 0, 0);
+        border-radius: 20px;
+        box-shadow: 0 0 200px rgba(190, 219, 233, 0.582);
+        transition: all 0.3s ease;
+    }
+    #facil:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 200px rgba(133, 235, 172, 0.582);
+    }
+    #gratis {
+        color: rgb(255, 255, 255);
+        background-image: url('imagenes/gratis.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 38px 38px;
+        border-radius: 20px;
+        box-shadow: 0 0 200px rgba(190, 219, 233, 0.582);
+        text-shadow: 0 0 4px rgb(0, 0, 0);
+        transition: all 0.3s ease;
+    }
+    #gratis:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 200px rgba(155, 192, 211, 0.582);
+    }
+    #seguro {
+        color: rgb(255, 255, 255);
+        background-image: url('imagenes/seguro.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 38px 38px;
+        border-radius: 20px;
+        text-shadow: 0 0 4px rgb(0, 0, 0);
+        box-shadow: 0 0 200px rgba(190, 219, 233, 0.582);
+        transition: all 0.3s ease;
+    }
+    #seguro:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 200px rgba(231, 186, 231, 0.582);
+    }
     #imagen2 img {
         width: 1000px;
         height: auto;
@@ -500,7 +600,7 @@
         box-shadow: 0 0 4px rgb(122, 149, 150);
         position: absolute;
         top: 30px;
-        left: 200%;
+        left: 70%;
         transform: translateX(-50%);
     }
         #volvermenu {
@@ -534,7 +634,7 @@
         border-radius: 10px;
         position: absolute;
         top: 30px;
-        left: 37%;
+        left: 300%;
         transform: translateX(-50%);
         transition: all 0.3s ease;
     }
@@ -546,7 +646,7 @@
         box-shadow: 0 0 4px rgb(122, 149, 150);
         position: absolute;
         top: 30px;
-        left: 37%;
+        left: 300%;
         transform: translateX(-50%);
     }
     }

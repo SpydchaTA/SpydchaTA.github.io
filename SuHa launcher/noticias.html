@@ -254,5 +254,58 @@
             border-radius: 10px;
             box-shadow: 0 0 10px black;
     }
+    @media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    #titulo {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #descripcion {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #contenedor {
+        grid-template-columns: 1fr; /* una sola columna en móvil */
+        gap: 20px;
+    }
+
+    .v0-9-99, .v0-10-0, .v1-0-0 {
+        top: 0;
+        max-width: 100%;
+    }
+
+    #vi0999, #vi0100, #vi100 {
+        width: 100%;
+        height: auto;
+    }
+
+    #noticias, #volvermenu, #credits {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        display: inline-block;
+        margin: 10px;
+    }
+
+    /* 🔹 Desactivar hover en móvil */
+    .v0-9-99:hover,
+    .v0-10-0:hover,
+    .v1-0-0:hover,
+    #noticias:hover,
+    #volvermenu:hover,
+    #credits:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
 
 </style>
