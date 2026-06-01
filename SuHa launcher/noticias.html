@@ -267,7 +267,7 @@
     }
 
     #descripcion {
-        font-size: 16px;
+        font-size: 20px;
         text-align: center;
     }
 
@@ -277,22 +277,39 @@
     }
 
     .v0-9-99, .v0-10-0, .v1-0-0 {
-        top: 0;
+        top: 50;
         max-width: 100%;
     }
 
     #vi0999, #vi0100, #vi100 {
         width: 100%;
-        height: auto;
+        height: 170px;
     }
-
-    #noticias, #volvermenu, #credits {
-        position: relative;
-        top: 0;
-        left: 0;
+    #volvermenu {
+        position: absolute;
+        top: 20px;
+        left: 80px;
         transform: none;
         display: inline-block;
         margin: 10px;
+    }
+
+    #noticias {
+        position: absolute;
+        top: 20px;
+        left: 220px;
+        transform: none;
+        display: inline-block;
+        margin: 10px;
+    }
+    #credits {
+        position: absolute;
+        top: -1220px;
+        left: 20;
+        transform: none;
+        display: inline-block;
+        margin: 10px;
+        visibility: hidden;
     }
 
     /* 🔹 Desactivar hover en móvil */
