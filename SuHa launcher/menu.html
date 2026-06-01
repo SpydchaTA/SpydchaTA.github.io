@@ -43,7 +43,7 @@
         <div id="botones">
             <div class="descargar">
                 <img src="imagenes/windowslogo.png" alt="Imagen de descarga" id="windowslogo">
-                <a id="descarga" href="https://github.com/Eliseo04L/Su-Ha-Launcher/releases/download/v1.0.1/Su-Ha-Launcher-Setup-1.0.1.exe">Instalar ultima versión para windows 64bits</a>
+                <a id="descarga" href="https://github.com/Eliseo04L/Su-Ha-Launcher/releases/download/v1.0.1/Su-Ha-Launcher-Setup-1.0.0.exe">Instalar ultima versión para windows 64bits</a>
             </div> 
             <a id="noticias" href="noticias.html">Notas de version</a>
             <a id="credits" href="credits.html">Creditos</a>
@@ -63,6 +63,34 @@
     </div>
     <a href="menu.html" id="volvermenu">Su-Ha Launcher</a>
     <img id="logopanalla" src="imagenes/hola.png" title="hola">
+    <script>
+async function obtenerUltimaVersion() {
+    try {
+        const response = await fetch(
+            "https://api.github.com/repos/Eliseo04L/Su-Ha-Launcher/releases/latest"
+        );
+
+        const data = await response.json();
+
+        const exe = data.assets.find(asset =>
+            asset.name.endsWith(".exe") &&
+            !asset.name.endsWith(".exe.blockmap")
+        );
+
+        if (exe) {
+            const boton = document.getElementById("descarga");
+
+            boton.href = exe.browser_download_url;
+            boton.textContent =
+                `Instalar ${data.tag_name} para Windows 64 bits`;
+        }
+    } catch (error) {
+        console.error("Error obteniendo la release:", error);
+    }
+}
+
+obtenerUltimaVersion();
+</script>
 </body>
 <style>
     @view-transition {
