@@ -14,7 +14,7 @@
             <label for="btn-modal">X</label>
             <div class="contenido-modal2">
                 <p>Entra a nuestro discord para pedir ayuda o enviar una sugerencia</p>
-                <a href="https://discord.gg/3Bvrer5R3n">Discord</a>
+                <img src="imagenes/discordicon.svg" alt="Discord Icon" onclick="window.open('https://discord.gg/ncDEkqC3Sh', '_blank')">
             </div>
         </div>
     </div>
@@ -101,7 +101,7 @@ obtenerUltimaVersion();
     background: transparent; 
     }
     .contenido-modal2 a {
-        background: linear-gradient(rgb(132, 0, 255), rgb(0, 0, 65));
+        background-image: url('imagenes/discordicon.svg');
         margin: 10px;
         padding: 10px;
         position: relative;
@@ -113,7 +113,7 @@ obtenerUltimaVersion();
         transition: all 2s ease;
     }
     .contenido-modal2 a:hover {
-        background: linear-gradient(rgb(132, 0, 255), rgb(0, 0, 65));
+        background-image: url('imagenes/discordicon.svg');
         margin: 10px;
         box-shadow: 0 0 400px rgb(0, 0, 255);
         padding: 10px;
@@ -126,7 +126,7 @@ obtenerUltimaVersion();
             justify-content: center;
             align-items: center;
             inset: 0;
-            background: rgba(63, 63, 63, 0.301);
+            background: rgba(0, 0, 0, 0.692);
             transition: all 0.5s ease;
             opacity: 0;
             visibility: hidden;
@@ -134,17 +134,35 @@ obtenerUltimaVersion();
             z-index: 9999;
             border-radius: 10px;
         }
+    .contenido-modal2 img {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        top: 100px;
+        transition: all 0.3s ease;
+    }
+    .contenido-modal2 img:hover {
+        position: relative;
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        top: 100px;
+        transform: scale(1.2);
+        transition: all 0.3s ease;
+    }
     .contenido-modal {
             width: 1000px;
             height: 600px;
             margin: 0 auto;
-            background: radial-gradient(circle, rgb(12, 12, 12) , rgb(0, 0, 0));
+            background-image: url('imagenes/backparamodal.png');
+            background-size: cover;
             color: #fff;
             box-shadow: 10px 10px 30px rgb(0, 0, 0);
             border-radius: 50px;
             transition: all 0.5s ease;
             position: relative;
             border-radius: 50px;
+            text-shadow: 0 0 10px rgb(197, 197, 197);
             transform: translateY(-50px);
             font-size: 40px;
         }
@@ -155,6 +173,7 @@ obtenerUltimaVersion();
             color: #fff;
             display: flex;
             justify-content: center;
+            text-shadow: 0 0 10px rgb(197, 197, 197);
             align-items: center;
             font-size: 50px;
         }
