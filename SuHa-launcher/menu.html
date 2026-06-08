@@ -39,27 +39,25 @@
         <div class="textos" style="display: block;">
            <div class="textomarquee">
                 <div class="rastrotexto">
-                    <span>SUHALAUNCHER</span>
-                    <span>SUHALAUNCHER</span>
-                    <span>SUHALAUNCHER</span>
-                    <span>SUHALAUNCHER</span>
-                    <span>SUHALAUNCHER</span>
-                    <span>SUHALAUNCHER</span> 
+                    <span>SUHA-LAUNCHER</span>
+                    <span>SUHA-LAUNCHER</span>
+                    <span>SUHA-LAUNCHER</span>
+                    <span>SUHA-LAUNCHER</span>
+                    <span>SUHA-LAUNCHER</span>
+                    <span>SUHA-LAUNCHER</span> 
                 </div>
            </div> 
         </div>
 
-
-        
         <div class="textos" style="display: block;">
             <div class="textomarquee">
                 <div class="rastrotexto">
-                    <span>SUHALAUNCHER</span>
-                    <span>SUHALAUNCHER</span>
-                    <span>SUHALAUNCHER</span>
-                    <span>SUHALAUNCHER</span>
-                    <span>SUHALAUNCHER</span>
-                    <span>SUHALAUNCHER</span>                    
+                    <span>SUHA-LAUNCHER</span>
+                    <span>SUHA-LAUNCHER</span>
+                    <span>SUHA-LAUNCHER</span>
+                    <span>SUHA-LAUNCHER</span>
+                    <span>SUHA-LAUNCHER</span>
+                    <span>SUHA-LAUNCHER</span>                    
                 </div>
             </div>
         </div>
@@ -528,6 +526,34 @@ obtenerUltimaVersion();
     }
         @media (max-width: 768px) {
         
+        
+        .rastrotexto {
+        animation: marquee 80s linear infinite;
+        color: rgb(0, 0, 0);
+        display: flex;
+        font-family: var(--gx-font-family-header);
+        font-size: 128px;
+        font-style: normal;
+        font-weight: 700;
+        gap: 0;
+        line-height: normal;
+        -webkit-text-stroke-color: env(-gx-color-secondary-12-92);
+        -webkit-text-stroke-width: 3px;
+        text-transform: uppercase;
+        width: max-content;
+    }
+        .textos:nth-child(odd) {
+        left: -0%;
+        top: 0%;
+        right: initial;
+        transform: rotate(0deg);
+        z-index: -1;
+    }
+        .textos:nth-child(even) {
+        right: -20%;
+        transform: rotate(45deg);
+        visibility: hidden;
+    }
         body {
             background: linear-gradient(to bottom left, rgb(0, 0, 0) 55%, rgb(59, 62, 63));
             color: rgb(255, 255, 255);
@@ -769,6 +795,5 @@ obtenerUltimaVersion();
         left: 70%;
         transform: translateX(-50%);
     }
-    }
-
+}
 </style>
