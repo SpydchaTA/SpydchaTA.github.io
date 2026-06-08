@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Suha Launcher</title>
+        <link rel="icon" href="imagenes/hola.png">
+    </head>
+<body>
+    <input type="checkbox" id="btn-modal" title="Soporte">
+    <label for="btn-modal" class="lbl-modal">Soporte</label>
+    <div class="modal">
+        <div class="contenido-modal">
+            <header>¿Ayuda o sugerencia?</header>
+            <label for="btn-modal">X</label>
+            <div class="contenido-modal2">
+                <p>Entra a nuestro discord para pedir ayuda o enviar una sugerencia</p>
+                <img src="imagenes/discordicon.svg" alt="Discord Icon" onclick="window.open('https://discord.gg/ncDEkqC3Sh', '_blank')">
+            </div>
+        </div>
+    </div>
+    <h1 id="titulo">SuHa Launcher</h1>
+    <div id="layout">
+
+        <div id="contenido">
+            <h2>Bienvenido a la pagina oficial de SuHa-Launcher</h2>
+            <div id="descripcion">
+                <p>
+                    ¿Quienes somos? SuHa-Launcher es un launcher 
+                    de Minecraft que se enfoca en la personalización 
+                    y la facilidad de uso. Con SuHa-Launcher, puedes instalar y jugar Minecraft. Además, SuHa-Launcher 
+                    tiene una interfaz intuitiva y fácil de usar, lo que lo hace
+                    ideal para jugadores de todos los niveles de experiencias.
+                </p>
+                <p>
+                    Incluye compatibilidad con cuentas Online y Offline.
+                </p>
+            </div>
+        </div>
+        <div id="imagen">
+            <img src="imagenes/launcherimagen.png" alt="Imagen de SuHa-Launcher">
+        </div>
+    </div>
+        <div id="botones">
+            <div class="descargar">
+                <img src="imagenes/windowslogo.png" alt="Imagen de descarga" id="windowslogo">
+                <a id="descarga" href="https://github.com/Eliseo04L/Su-Ha-Launcher/releases/download/v1.0.1/Su-Ha-Launcher-Setup-1.0.0.exe">Instalar ultima versión para windows 64bits</a>
+            </div> 
+            <a id="noticias" href="noticias.html">Notas de version</a>
+            <a id="credits" href="credits.html">Creditos</a>
+        </div>  
+    <div id="imagen2">
+            <p>Seccion para agregar usuarios</p>
+            <img src="imagenes/users.png" alt="Imagen de SuHa-Launcher">
+    </div>
+    <div id="imagen3">
+            <p>Seccion para cambiar Skin (solo cuentas offline)</p>
+            <img src="imagenes/skins.png" alt="Imagen de SuHa-Launcher">
+    </div>
+    <div id="caracteristicas">
+        <h1 id="facil">Facil</h1>
+        <h1 id="gratis">Gratis</h1>
+        <h1 id="seguro">Seguro</h1>
+    </div>
+    <a href="menu.html" id="volvermenu">Su-Ha Launcher</a>
+    <img id="logopanalla" src="imagenes/hola.png" title="hola">
+    <script>
+async function obtenerUltimaVersion() {
+    try {
+        const response = await fetch(
+            "https://api.github.com/repos/Eliseo04L/Su-Ha-Launcher/releases/latest"
+        );
+
+        const data = await response.json();
+
+        const exe = data.assets.find(asset =>
+            asset.name.endsWith(".exe") &&
+            !asset.name.endsWith(".exe.blockmap")
+        );
+
+        if (exe) {
+            const boton = document.getElementById("descarga");
+
+            boton.href = exe.browser_download_url;
+            boton.textContent =
+                `Instalar ${data.tag_name} para Windows 64 bits`;
+        }
+    } catch (error) {
+        console.error("Error obteniendo la release:", error);
+    }
+}
+
+obtenerUltimaVersion();
+</script>
+</body>
+<style>
+    @view-transition {
+        navigation: auto;
+    }
+    ::view-transition-old(root),
+    ::view-transition-new(root) { 
+    background: transparent; 
+    }
+    .contenido-modal2 a {
+        background-image: url('imagenes/discordicon.svg');
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 40px;
+        top: 100px;
+        transition: all 2s ease;
+    }
+    .contenido-modal2 a:hover {
+        background-image: url('imagenes/discordicon.svg');
+        margin: 10px;
+        box-shadow: 0 0 400px rgb(0, 0, 255);
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+    .modal {
+            position: fixed;
+            justify-content: center;
+            align-items: center;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.692);
+            transition: all 0.5s ease;
+            opacity: 0;
+            visibility: hidden;
+            padding-top: 100px;
+            z-index: 9999;
+            border-radius: 10px;
+        }
+    .contenido-modal2 img {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        top: 100px;
+        transition: all 0.3s ease;
+    }
+    .contenido-modal2 img:hover {
+        position: relative;
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        top: 100px;
+        transform: scale(1.2);
+        transition: all 0.3s ease;
+    }
+    .contenido-modal {
+            width: 1000px;
+            height: 600px;
+            margin: 0 auto;
+            background-image: url('imagenes/backparamodal.png');
+            background-size: cover;
+            color: #fff;
+            box-shadow: 10px 10px 30px rgb(0, 0, 0);
+            border-radius: 50px;
+            transition: all 0.5s ease;
+            position: relative;
+            border-radius: 50px;
+            text-shadow: 0 0 10px rgb(197, 197, 197);
+            transform: translateY(-50px);
+            font-size: 40px;
+        }
+    .contenido-modal header {
+            width: 100%;
+            height: 70px;
+            background: #00000000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            text-shadow: 0 0 10px rgb(197, 197, 197);
+            align-items: center;
+            font-size: 50px;
+        }
+    .contenido-modal label {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    .contenido-modal .contenido-modal2 {
+            padding: 20px;
+            text-align: center;
+            border-radius: 20px;
+        }
+    #btn-modal {
+            display: none;
+        }
+        #btn-modal:checked ~ .modal {
+            visibility: visible;
+            opacity: 1;
+        }
+        #btn-modal:checked ~ .modal .contenido-modal {
+            transform: translateY(0);
+        }
+    body {
+        background: linear-gradient(to bottom left, rgb(0, 0, 0) 55%, rgb(59, 62, 63));
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin-top: 80px;
+        margin-right: 90px;
+        margin-left: 90px;
+        font-size: 20px;
+        font-style: italic;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        overflow-x: hidden;
+    }
+    #caracteristicas{
+        position: relative;
+        top: -300px;
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+        margin-top: 10px;
+    }
+    #facil {
+        color: rgb(255, 255, 255);
+        background-image: url('imagenes/facil.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 138px 138px;
+        text-shadow: 0 0 4px rgb(0, 0, 0);
+        border-radius: 50px;
+        box-shadow: 0 0 200px rgba(190, 219, 233, 0.582);
+        transition: all 0.3s ease;
+    }
+    #facil:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 200px rgba(133, 235, 172, 0.582);
+    }
+    #gratis {
+        color: rgb(255, 255, 255);
+        background-image: url('imagenes/gratis.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 138px 138px;
+        border-radius: 50px;
+        box-shadow: 0 0 200px rgba(190, 219, 233, 0.582);
+        text-shadow: 0 0 4px rgb(0, 0, 0);
+        transition: all 0.3s ease;
+    }
+    #gratis:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 200px rgba(155, 192, 211, 0.582);
+    }
+    #seguro {
+        color: rgb(255, 255, 255);
+        background-image: url('imagenes/seguro.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 138px 138px;
+        border-radius: 50px;
+        text-shadow: 0 0 4px rgb(0, 0, 0);
+        box-shadow: 0 0 200px rgba(190, 219, 233, 0.582);
+        transition: all 0.3s ease;
+    }
+    #seguro:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 200px rgba(231, 186, 231, 0.582);
+    }
+    .descargar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: linear-gradient(to left, rgb(11, 184, 207), rgb(32, 46, 48));
+        border-radius: 10px;
+        padding-right: 30px;
+        transition: all 0.3s ease;
+    }
+    .descargar:hover {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: linear-gradient(to left, rgb(11, 184, 207), rgb(32, 46, 48));
+        border-radius: 10px;
+        padding-right: 30px;
+        transform: scale(1.05);
+    }
+    #windowslogo {
+        width: 50px;
+        height: 50px;
+        margin-left: 20px;
+    }
+    #logopanalla {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+    #layout {
+        display: flex;
+        justify-content: space-between;
+    }
+    #contenido {
+        background-color: rgba(135, 241, 255, 0.068);
+        border-radius: 20px;
+        text-align: left;
+        padding: 40px;
+        box-shadow: 0 0 20px rgb(255, 255, 255);
+        width: 40%;
+        height: 300px;
+        margin-top: 100px;
+        margin-left: 10px;
+    }
+    #botones {
+        display: flex;
+        justify-content: left;
+        gap: 250px;
+        margin-top: -190px;
+        margin-left: 70px;
+    }
+    #noticias {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 23%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
+    body::-webkit-scrollbar {
+    width: 1px;
+    }
+    body::-webkit-scrollbar-track {
+    background: black;
+    }
+    body::-webkit-scrollbar-thumb {
+    background-color: cyan;
+    border-radius: 10px;
+    border: 2px solid black;
+    }
+    body::-webkit-scrollbar-thumb:hover {
+    background-color: white;
+    }
+
+    #noticias:hover {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(122, 149, 150);
+        position: absolute;
+        top: 30px;
+        left: 23%;
+        transform: translateX(-50%);
+    }
+    #descarga {
+        color: white;
+        padding: 0px;
+        text-decoration: none;
+    }
+    #imagen img{
+        width: 850px;
+        height: auto;
+        margin-top: 200px;
+        left: 70px;
+        position: relative;
+        box-shadow: 0 0 10px rgb(77, 77, 77);
+        border-radius: 40px;
+    }
+    #imagen2 p {
+        margin-top: 180px;
+        margin-bottom: 70px;
+        left: -450px;
+        font-size: 40px;
+        position: relative;
+        border-radius: 40px;
+    }
+    #imagen2 img {
+        width: 700px;
+        height: auto;
+        left: -450px;
+        position: relative;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgb(77, 77, 77);
+        border-radius: 40px;
+    }
+    #imagen3 p {
+        margin-top: 180px;
+        margin-bottom: 70px;
+        right: -450px;
+        top: -600px;
+        font-size: 30px;
+        position: relative;
+        border-radius: 40px;
+    }
+    #imagen3 img {
+        width: 700px;
+        height: auto;
+        right: -450px;
+        top: -600px;
+        position: relative;
+        margin-bottom: 10px;
+        box-shadow: 0 0 10px rgb(77, 77, 77);
+        border-radius: 40px;
+    }
+    #volvermenu {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        background-color: rgba(77, 77, 77, 0.555);
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 11%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
+    #volvermenu:hover {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(122, 149, 150);
+        position: absolute;
+        top: 30px;
+        left: 11%;
+        transform: translateX(-50%);
+    }
+    #credits {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        background-color: rgba(77, 77, 77, 0);
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 31%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
+    #credits:hover {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(87, 83, 83);
+        position: absolute;
+        top: 30px;
+        left: 31%;
+        transform: translateX(-50%);
+    }
+        @media (max-width: 768px) {
+        
+        body {
+            background: linear-gradient(to bottom left, rgb(0, 0, 0) 55%, rgb(59, 62, 63));
+            color: rgb(255, 255, 255);
+            text-align: left;
+            font-family: Arial, sans-serif;
+            margin-top: 80px;
+            margin-right: 90px;
+            margin-left: 90px;
+            font-size: 13px;
+            font-style: italic;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            overflow-x: hidden;
+        }
+        .descargar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 200px;
+            left: -10%;
+            top: -80px;
+            position: relative;
+            background: linear-gradient(to left, rgb(255, 0, 0), rgb(112, 21, 21));
+            border-radius: 10px;
+            padding-right: 100px;
+            transition: all 0.3s ease;
+            visibility: hidden;
+        }
+        .descargar:hover {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            background: linear-gradient(to left, rgb(255, 0, 0), rgb(112, 21, 21));
+            border-radius: 10px;
+            padding-right: 100px;
+            transform: scale(1.05);
+        }
+        .lbl-modal {
+            cursor: pointer;
+            visibility: hidden;
+        }
+        
+        #layout {
+            flex-direction: column;
+            align-items: center;
+        }
+        #contenido {
+            width: 100%;
+            margin-top: 20px;
+        }
+        #imagen img {
+            height: auto;
+            margin-top: 40px;
+            position: relative;
+            left: 0;
+            width: 140%;
+            height: auto;
+            align-items: center;
+            left: -20%;
+            border-radius: 2px;
+
+        }
+        #imagen2 p {
+        margin-top: 300px;
+        margin-bottom: 70px;
+        left: 0px;
+        top: 200px;
+        font-size: 20px;
+        position: relative;
+        border-radius: 40px;
+    }
+    #imagen2 img {
+        width: 300px;
+        height: auto;
+        left: 0;
+        top: 200px;
+        position: relative;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgb(77, 77, 77);
+        border-radius: 40px;
+    }
+    #imagen3 p {
+        margin-top: 180px;
+        margin-bottom: 70px;
+        left: 0;
+        top: -700px;
+        font-size: 20px;
+        position: relative;
+        border-radius: 40px;
+    }
+    #imagen3 img {
+        width: 300px;
+        height: auto;
+        right: 0;
+        top: -740px;
+        left: -20%;
+        position: relative;
+        margin-bottom: 10px;
+        box-shadow: 0 0 10px rgb(77, 77, 77);
+        border-radius: 40px;
+    }
+    #caracteristicas{
+        position: relative;
+        top: -400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 10px;
+    }
+    #facil {
+        color: rgb(255, 255, 255);
+        background-image: url('imagenes/facil.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 38px 38px;
+        text-shadow: 0 0 4px rgb(0, 0, 0);
+        border-radius: 20px;
+        box-shadow: 0 0 200px rgba(190, 219, 233, 0.582);
+        transition: all 0.3s ease;
+    }
+    #facil:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 200px rgba(133, 235, 172, 0.582);
+    }
+    #gratis {
+        color: rgb(255, 255, 255);
+        background-image: url('imagenes/gratis.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 38px 38px;
+        border-radius: 20px;
+        box-shadow: 0 0 200px rgba(190, 219, 233, 0.582);
+        text-shadow: 0 0 4px rgb(0, 0, 0);
+        transition: all 0.3s ease;
+    }
+    #gratis:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 200px rgba(155, 192, 211, 0.582);
+    }
+    #seguro {
+        color: rgb(255, 255, 255);
+        background-image: url('imagenes/seguro.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 38px 38px;
+        border-radius: 20px;
+        text-shadow: 0 0 4px rgb(0, 0, 0);
+        box-shadow: 0 0 200px rgba(190, 219, 233, 0.582);
+        transition: all 0.3s ease;
+    }
+    #seguro:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 200px rgba(231, 186, 231, 0.582);
+    }
+    #imagen2 img {
+        width: 1000px;
+        height: auto;
+        margin-bottom: 100px;
+        box-shadow: 0 0 10px rgb(77, 77, 77);
+        border-radius: 40px;
+        width: 140%;
+        height: auto;
+        align-items: center;
+        position: relative;
+        left: -20%;
+        border-radius: 2px;
+    }
+    #noticias {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 70%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
+    #noticias:hover {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(122, 149, 150);
+        position: absolute;
+        top: 30px;
+        left: 70%;
+        transform: translateX(-50%);
+    }
+        #volvermenu {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        background-color: rgba(77, 77, 77, 0.555);
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 37%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
+    #volvermenu:hover {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(122, 149, 150);
+        position: absolute;
+        top: 30px;
+        left: 37%;
+        transform: translateX(-50%);
+    }
+    #credits {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        background-color: rgba(77, 77, 77, 0.555);
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 70%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+        visibility: hidden;
+    }
+    #credits:hover {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(122, 149, 150);
+        position: absolute;
+        top: 30px;
+        left: 70%;
+        transform: translateX(-50%);
+    }
+    }
+
+</style>
