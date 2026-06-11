@@ -2,6 +2,7 @@
  <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
         <title>Creditos</title>
         <link rel="icon" href="imagenes/hola.png">
 </head>
@@ -16,9 +17,10 @@
     </div>
 </div>
 <div id="selecciones">
-        <a href="menu.html" id="volvermenu">Su-Ha Launcher</a>
-        <a href="noticias.html" id="noticias">Notas de version</a>
-        <a href="credits.html" id="credits">Creditos</a>
+        <a href="menu.html" id="volvermenu"><i class="bi bi-house-door"> </i>Su-Ha Launcher</a>
+        <a href="noticias.html" id="noticias"><i class="bi bi-newspaper"> </i>Notas de version</a>
+        <a href="credits.html" id="credits"><i class="bi bi-people"> </i>Creditos</a>
+        <a href="arte.html" id="arte"><i class="bi bi-brush"> </i>Arte</a>
         <img id="logopanalla" src="imagenes/hola.png" title="hola">
     </div>
 </body>
@@ -96,6 +98,27 @@
         left: 23%;
         transform: translateX(-50%);
     }
+    #arte:hover {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(122, 149, 150);
+        position: absolute;
+        top: 30px;
+        transform: translateX(-50%);
+    }
+    #arte {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 38%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
     #volvermenu {
         color: white;
         padding: 10px;
@@ -126,7 +149,7 @@
         border-radius: 10px;
         position: absolute;
         top: 30px;
-        left: 31%;
+        left: 32%;
         transform: translateX(-50%);
         transition: all 0.3s ease;
     }
@@ -138,7 +161,7 @@
         box-shadow: 0 0 4px rgb(87, 83, 83);
         position: absolute;
         top: 30px;
-        left: 31%;
+        left: 32%;
         transform: translateX(-50%);
     }
     #logopanalla {
