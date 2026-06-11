@@ -2,6 +2,7 @@
  <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
         <title>Notas de version v0.10.0</title>
         <link rel="icon" href="imagenes/hola.png">
 </head>
@@ -20,7 +21,7 @@
 </div>
 <div id="selecciones">
         <a href="menu.html" id="volvermenu">Su-Ha Launcher</a>
-        <a href="noticias.html" id="noticias">Notas de version</a>
+        <a href="noticias.html" id="noticias"><i class="bi bi-arrow-return-left"> </i>Volver</a>
         <img id="logopanalla" src="imagenes/hola.png" title="hola">
     </div>
 </body>
@@ -81,7 +82,7 @@
         margin-top: 60px;
     }
 /* Botones de navegación */
-    #noticias {
+        #noticias {
         color: white;
         background-color: rgba(77, 77, 77, 0.555);
         padding: 10px;
@@ -89,7 +90,7 @@
         border-radius: 10px;
         position: absolute;
         top: 30px;
-        left: 23%;
+        left: 10%;
         transform: translateX(-50%);
         transition: all 0.3s ease;
     }
@@ -101,7 +102,7 @@
         box-shadow: 0 0 4px rgb(122, 149, 150);
         position: absolute;
         top: 27px;
-        left: 23%;
+        left: 10%;
         transform: translateX(-50%);
     }
     #volvermenu {
@@ -114,6 +115,7 @@
         left: 11%;
         transform: translateX(-50%);
         transition: all 0.3s ease;
+        visibility: hidden;
     }
     #volvermenu:hover {
         color: white;
@@ -125,6 +127,7 @@
         top: 30px;
         left: 11%;
         transform: translateX(-50%);
+        visibility: hidden;
     }
     #logopanalla {
         width: 50px;
@@ -155,13 +158,37 @@
         #notas p {
             margin-top: 20px;
         }
-        #noticias {
-            top: 30px;
-            left: 270px;
-        }
-        #volvermenu {
-            top: 30px;
-            left: 140px;
-        }
+            #logopanalla {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        visibility: hidden;
+    }
+    #noticias {
+        color: white;
+        background-color: rgba(77, 77, 77, 0.555);
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        position: absolute;
+        font-size: 20px;
+        top: 30px;
+        left: 20%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
+    #noticias:hover {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(122, 149, 150);
+        position: absolute;
+        top: 27px;
+        left: 20%;
+        transform: translateX(-50%);
+    }
     }
 </style>
