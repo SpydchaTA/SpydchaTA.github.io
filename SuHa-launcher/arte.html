@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
         <title>SuHa Launcher</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="imagenes/hola.png">
@@ -34,6 +35,11 @@
         <a href="noticias.html" id="noticias">Notas de version</a>
         <a href="credits.html" id="credits">Creditos</a>
         <a href="arte.html" id="arte">Arte</a>
+        <div id="celular">
+                <a href="menu.html" id="volvermenuc"><i class="bi bi-house-door"></i></a>
+                <a id="noticiasc" href="noticias.html"><i class="bi bi-newspaper"></i></a>
+                <a id="artec" href="arte.html"><i class="bi bi-brush"></i></a>
+            </div>
         <img id="logopanalla" src="imagenes/hola.png" title="hola">
     </div>
 <style>
@@ -96,6 +102,9 @@
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         border-radius: 10px;
         transition: all 0.3s ease;
+    }
+    #celular {
+        visibility: collapse;
     }
     #noticias {
         color: white;
@@ -280,6 +289,7 @@
         left: 90%;
         transform: translateX(-50%);
         transition: all 0.3s ease;
+        visibility: hidden;
     }
     #logopanalla {
         width: 50px;
@@ -357,4 +367,86 @@
         left: 70%;
         transform: translateX(-50%);
     }
+    /* Nav para la versión móvil */
+    #celular {
+        position: absolute;
+        display: flex;
+        text-align: center;
+        padding-left: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-top: 20px;
+        font-size: 20px;
+        gap: 20px;
+        background-color: rgb(53, 53, 53);
+        top: 0;
+        left: 20px;
+        border-radius: 15px;
+        visibility: visible;
+}
+    #artec {
+        color: white;
+        padding: 10px;
+        background-color: rgba(77, 77, 77, 0.747);
+        text-decoration: none;
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 60%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+        visibility: visible;
+    }
+    #noticias {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 70%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+        visibility: hidden;
+    }
+    #noticiasc {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 40%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+        visibility: visible;
+    }
+    #volvermenuc {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        background-color: rgba(77, 77, 77, 0);
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left:17%;
+        transform: translateX(-50%);
+        visibility: visible;
+        transition: all 0.3s ease;
+    }
+    #volvermenu, #noticias, #credits #arte {
+        visibility: hidden;
+    }
+    #noticiasc, #artec, #volvermenuc {
+        position: static;
+    }
+    #logopanalla {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        visibility: hidden;
+    }
+}
 </style>
