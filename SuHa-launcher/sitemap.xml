@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://sitemaps.org">
+  
+  <!-- Enlace de inicio (Tu redirección) -->
+  <url>
+    <loc>https://github.io</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Menú Principal (Prioridad Máxima Real) -->
+  <url>
+    <loc>https://github.iomenu.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Pestaña de Notas de versión -->
+  <url>
+    <loc>https://github.ionotas.html</loc>
+    <priority>0.50</priority>
+  </url>
+
+  <!-- Pestaña de Arte de la comunidad -->
+  <url>
+    <loc>https://github.ioarte.html</loc>
+    <priority>0.50</priority>
+  </url>
+
+  <!-- Pestaña de Créditos -->
+  <url>
+    <loc>https://github.iocreditos.html</loc>
+    <priority>0.50</priority>
+  </url>
+
+</urlset>
