@@ -126,6 +126,24 @@ async function obtenerUltimaVersion() {
 obtenerUltimaVersion();
 </script>
 </body>
+<footer>
+        <div class="footer">
+            <p>Redes Sociales:</p>
+            <div class="insta">
+                <p><i class="bi bi-instagram"></i></p>
+                <a href="https://www.instagram.com/spydcha_ta/"><i class="bi bi-instagram"></i> Spydcha_TA</a>
+                <a href="https://www.instagram.com/eliseo_elraro/"><i class="bi bi-instagram"></i> LoganOkonner</a>
+            </div>
+            <div class="twitter">
+                <p><i class="bi bi-twitter-x"></i></p>
+                <a href="https://x.com/SuHaSporeStdos"><i class="bi bi-twitter-x"></i> Su-Ha Spore Studios</a>
+            </div>
+            <div class="tiktok">
+                <p><i class="bi bi-tiktok"></i></p>
+                <a href="https://x.com/SuHaSporeStdos"><i class="bi bi-tiktok"></i> Spydcha_TA</a>
+            </div>
+        </div>
+    </footer>
 <style>
     @view-transition {
         navigation: auto;
@@ -133,6 +151,71 @@ obtenerUltimaVersion();
     ::view-transition-old(root),
     ::view-transition-new(root) { 
     background: transparent; 
+    }
+    .footer a {
+        color: white;
+    }
+    .tiktok {
+        background-color: rgb(65, 65, 65);
+        box-shadow: 0 0 10px white;
+        color: white;
+        text-decoration: none;
+        border-radius: 40px;
+        margin-top: 20px;
+        margin: 20px;
+        padding: 10px;
+        width: 20%;
+        position: absolute;
+        align-items: left;
+        align-self: center;
+        left: 75%;
+        text-align: center;
+        display: grid;
+    }
+    .twitter {
+        background-color: rgb(65, 65, 65);
+        box-shadow: 0 0 10px white;
+        color: white;
+        text-decoration: none;
+        border-radius: 40px;
+        margin-top: 20px;
+        margin: 20px;
+        padding: 10px;
+        width: 20%;
+        position: absolute;
+        align-items: left;
+        align-self: center;
+        left: 37%;
+        text-align: center;
+        display: grid;
+    }
+    .insta {
+        background-color: rgb(65, 65, 65);
+        box-shadow: 0 0 10px white;
+        color: white;
+        text-decoration: none;
+        border-radius: 40px;
+        margin-top: 20px;
+        margin: 20px;
+        padding: 10px;
+        width: 20%;
+        position: absolute;
+        align-items: left;
+        align-self: center;
+        text-align: center;
+        display: grid;
+    }
+    .footer {
+        background-color: rgb(1, 17, 24);
+        width: 100%;
+        gap: 40px;
+        height: 25%;
+        left: 0px;
+        position: absolute;
+        align-items: left;
+        align-self: center;
+        text-align: left;
+        display: flex;
     }
         .textos:nth-child(odd) {
         left: -20%;
