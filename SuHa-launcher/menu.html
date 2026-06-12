@@ -594,6 +594,7 @@ obtenerUltimaVersion();
             font-family: Arial, sans-serif;
             margin-top: 80px;
             margin-right: 90px;
+            background-size: 100vh;
             margin-left: 90px;
             font-size: 14px;
             font-style: italic;
@@ -606,7 +607,7 @@ obtenerUltimaVersion();
             align-items: center;
             gap: 10px;
             width: 200px;
-            left: -10%;
+            left: -50%;
             top: -80px;
             position: relative;
             background: linear-gradient(to left, rgb(255, 0, 0), rgb(112, 21, 21));
@@ -914,5 +915,36 @@ obtenerUltimaVersion();
         left: 30px;
         visibility: hidden;
     }
+    .modal {
+            position: fixed;
+            justify-content: center;
+            align-items: center;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.692);
+            transition: all 0.5s ease;
+            opacity: 0;
+            visibility: hidden;
+            padding-top: 100px;
+            z-index: 9999;
+            border-radius: 10px;
+            visibility: hidden;
+        }
+    .contenido-modal {
+            width: 0px;
+            height: 600px;
+            margin: 0 auto;
+            background-image: url('imagenes/backparamodal.png');
+            background-size: cover;
+            color: #fff;
+            box-shadow: 10px 10px 30px rgb(0, 0, 0);
+            border-radius: 50px;
+            transition: all 0.5s ease;
+            position: relative;
+            border-radius: 50px;
+            text-shadow: 0 0 10px rgb(197, 197, 197);
+            transform: translateY(-50px);
+            font-size: 40px;
+            visibility: hidden;
+        }
 }
 </style>
