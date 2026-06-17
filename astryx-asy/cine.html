@@ -15,13 +15,25 @@
                 <a href="index.html" id="menu">Menu</a>
                 <a href="team.html" id="team">Team</a>
                 <a href="cine.html" id="cine" style="text-decoration: underline">Cine</a>
+                <a href="https://www.instagram.com/astryx_asy/" id="insta" target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
         </div>
     </header>
     <body>
         <div class="pantalla">
-            <iframe
+            <iframe title="a"
                 src="https://player.twitch.tv/?channel=astryxesports&parent=SpydchaTA.github.io"
+                frameborder="10"
+                allowfullscreen="true"
+                scrolling="no"
+                height="680"
+                width="1054">
+            </iframe>
+        </div>
+        <div class="clips">
+            <h1>clips</h1>
+            <iframe title="a"
+                src="https://clips.twitch.tv/embed?clip=DifficultInnocentLeopardFreakinStinkin-Udv-ghNzc6o9ww3o&parent=SpydchaTA.github.io"
                 frameborder="10"
                 allowfullscreen="true"
                 scrolling="no"
@@ -34,12 +46,25 @@
         body {
             background: black
         }
+        body::-webkit-scrollbar {
+            width: 0;
+        }
         .pantalla {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
             top: 20%;
             box-shadow: 0 0 300px rgb(177, 98, 201);
+            border-radius: 20px;
+        }
+        .clips {
+            position: absolute;
+            left: 50%;
+            text-align: center;
+            transform: translateX(-50%);
+            top: 100%;
+            padding: 20px;
+            box-shadow: 0 0 300px rgb(45, 66, 78);
             border-radius: 20px;
         }
     </style>
