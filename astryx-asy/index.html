@@ -15,7 +15,7 @@
                 <a href="index.html" id="menu" style="text-decoration: underline;">Menu</a>
                 <a href="team.html" id="team">Team</a>
                 <a href="cine.html" id="cine">Cine</a>
-                <a href="https://www.instagram.com/astryx_asy/" id="insta" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.instagram.com/astryx_asy/" id="insta" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram" title="instagram"></i></a>
             </div>
         </div>
     </header>
@@ -34,6 +34,13 @@
         </div>
     </body>
     <style>
+         @view-transition {
+        navigation: auto;
+    }
+    ::view-transition-old(root),
+    ::view-transition-new(root) { 
+    background: transparent; 
+    }
         body {
             background: black;
             font-size: 30px;
