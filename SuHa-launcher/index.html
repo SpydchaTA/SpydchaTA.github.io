@@ -33,7 +33,9 @@
             </p>
         </div>
         <img src="imagenes/launcherimagen.png" alt="Imagen de previsualizacion del launcher" id="imagen">
-        <i class="bi bi-windows" id="descarga"><a href="https://github.com/Eliseo04L/Su-Ha-Launcher/releases/download/v1.0.1/Su-Ha-Launcher-Setup-1.0.0.exe">ultima versión para windows 64bits</a> </i>
+        <div id="descarga">
+            <a id="a1-s" href="https://github.com/Eliseo04L/Su-Ha-Launcher/releases/download/v1.0.1/Su-Ha-Launcher-Setup-1.0.0.exe">ultima versión para windows 64bits</a>
+        </div>
         <script>
             async function obtenerUltimaVersion() {
     try {
@@ -49,7 +51,7 @@
         );
 
         if (exe) {
-            const boton = document.getElementById("descarga");
+            const boton = document.getElementById("a1-s");
 
             boton.href = exe.browser_download_url;
             boton.textContent =
@@ -83,7 +85,7 @@ obtenerUltimaVersion();
             max-width: 50%;
             margin-top: 20px;
             border: 3px solid white;
-            padding: 10px;
+            padding: 30px;
             border-radius: 30px;
             box-shadow: 0 0 30px white;
             margin-bottom: 90px;
@@ -100,7 +102,7 @@ obtenerUltimaVersion();
         }
         #imagen {
             height: auto;
-            width: 700px;
+            width: 38%;
             position: absolute;
             left: 60%;
             top: 60%;
@@ -110,8 +112,16 @@ obtenerUltimaVersion();
         #descarga {
             background-color: rgb(35, 207, 219);
             padding: 15px;
-            text-decoration: none;
-            color: rgb(0, 0, 0);
             border-radius: 20px;
+            position: absolute;
+            transition: all 0.3s ease;
+        }
+        #descarga:hover {
+            transform: scale(1.05);
+            background-color: white;
+        }
+        #a1-s {
+            text-decoration: none;
+            color: black;
         }
     </style>
