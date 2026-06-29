@@ -1,0 +1,25 @@
+.nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.nav {
+    background-color: rgba(0, 51, 59, 0.459);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    margin-top: 60px;
+    display: flex;
+    gap: 5%;
+    width: 50%;
+    border: 3px solid rgba(0, 167, 158, 0.397);
+}
+body {
+    background: rgb(0, 0, 0);
+    color: white;
+    margin: 60px;
+    font-size: 26px;
+}
