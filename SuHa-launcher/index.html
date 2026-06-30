@@ -70,7 +70,7 @@ obtenerUltimaVersion();
             width: 0;
         }
         body {
-            background: linear-gradient(to left bottom, rgb(0, 0, 0)70%, rgb(48, 48, 48));
+            background: linear-gradient(to left bottom, rgb(0, 0, 0)40%, rgb(19, 19, 19));
             background-size: 100%;
             background-repeat: no-repeat;
             min-height: 100vh;
@@ -123,5 +123,26 @@ obtenerUltimaVersion();
         #a1-s {
             text-decoration: none;
             color: black;
+        }
+        @media (max-width: 1000px) {
+            .desc {
+            background-color: rgba(12, 131, 131, 0.151);
+            max-width: 100%;
+            margin-top: 20px;
+            border: 3px solid white;
+            padding: 30px;
+            border-radius: 30px;
+            box-shadow: 0 0 30px white;
+            margin-bottom: 90px;
+        }
+        #descarga {
+            visibility: hidden;
+        }
+        #imagen {
+            left: 50%;
+            height: auto;
+            width: 800px;
+            transform: translateX(-50%);
+        }
         }
     </style>
