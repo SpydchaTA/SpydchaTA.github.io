@@ -9,14 +9,13 @@
         <div class="nav">
             <a href="index.html"><i class="bi bi-house-door"></i> Menu</a>
             <a href="noticias.html" style="background-color: rgb(0, 129, 101); border-radius: 10px;"><i class="bi bi-newspaper"></i> Noticias</a>
-            <a href="arte.html"><i class="bi bi-pencil"></i>Arte</a>
             <a href="https://discord.gg/CHQWkU4Z6N"><i class="bi bi-hammer"></i> Soporte</a>
         </div>
     </header>
     <body>
         <h1>Noticias y notas de versión</h1>
         <div class="versiones">
-            <div class="version-1-1-0">
+            <div class="version-1-1-0" id="version">
                 <a href="versiones/v1-1-0.html">Version 1.1.0, nuevas opciones, cambios graficos y funciones</a>
             </div>
         </div>
@@ -26,7 +25,7 @@
             width: 0;
         }
         body {
-            background: linear-gradient(to right bottom, rgb(0, 0, 0) 30%, rgb(29, 29, 29));
+            background: linear-gradient(to right bottom, rgb(0, 0, 0) 30%, rgb(0, 23, 24));
             background-repeat: no-repeat;
             min-height: 100vh;
         }
@@ -37,7 +36,7 @@
         }
         .version-1-1-0 {
             background-color: rgba(128, 128, 128, 0);
-            border: 2px solid rgb(57, 187, 204);
+            border: 2px solid rgb(0, 255, 221);
             border-radius: 50px;
             background-image: url(imagenes/launcherimagen.png);
             background-color: rgba(0, 0, 0, 0.801);
@@ -45,12 +44,15 @@
             background-position: center;
             text-align: center;
             padding: 15px;
-            transition: all ease 1s;
+            transition: all ease 2s;
         }
         .versiones div:hover {
             border: 2px solid rgb(255, 255, 255);
             transition: all ease 1s;
             transform: scale(1.05);
             box-shadow: 0 0 10px white;
+        }
+        #version {
+            margin-bottom: 20px;
         }
     </style>
