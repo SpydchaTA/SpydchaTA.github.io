@@ -31,6 +31,18 @@
                 ideal para jugadores de todos los niveles de experiencias.
             </p>
         </div>
+                <div class="textos" style="display: block;">
+           <div class="textomarquee">
+                <div class="rastrotexto">
+                    <span>SUHA-LAUNCHER_</span>
+                    <span>SUHA-LAUNCHER_</span>
+                    <span>SUHA-LAUNCHER_</span>
+                    <span>SUHA-LAUNCHER_</span>
+                    <span>SUHA-LAUNCHER_</span>
+                    <span>SUHA-LAUNCHER_</span> 
+                </div>
+           </div> 
+        </div>
         <img src="imagenes/launcherimagen.png" alt="Imagen de previsualizacion del launcher" id="imagen">
         <div id="descarga">
             <i class="bi bi-windows" style="color: black;"></i> <a id="a1-s" href="https://github.com/Eliseo04L/Su-Ha-Launcher/releases/download/v1.0.1/Su-Ha-Launcher-Setup-1.0.0.exe">ultima versión para windows 64bits</a>
@@ -80,17 +92,17 @@ obtenerUltimaVersion();
             margin-bottom: 100px;
         }
         .desc {
-            background-color: rgba(12, 131, 131, 0.151);
+            background-color: rgba(1, 108, 112, 0.158);
             max-width: 50%;
             margin-top: 20px;
-            border: 3px solid white;
+            border: 3px solid rgba(0, 107, 98, 0.39);
             padding: 30px;
             border-radius: 30px;
-            box-shadow: 0 0 30px white;
+            box-shadow: 0 0 30px rgba(0, 112, 88, 0.356);
             margin-bottom: 90px;
         }
         .ver {
-            background-color: rgb(0, 100, 100);
+            background-color: rgba(167, 167, 167, 0.616);
             color: rgb(255, 255, 255);
             padding: 5px;
             border-radius: 20px;
@@ -122,6 +134,41 @@ obtenerUltimaVersion();
         #a1-s {
             text-decoration: none;
             color: black;
+        }
+        .textos:nth-child(even) {
+            right: 0%;
+            transform: rotate(0deg);
+            z-index: -1;
+        }
+        .textos {
+            position: absolute;
+            top: 10%;
+            width: 100vw;
+        }
+        .textomarquee {
+            overflow: clip;
+        }
+        .rastrotexto {
+            animation: marquee 80s linear infinite;
+            color: rgba(71, 71, 71, 0);
+            text-shadow: 0 0 1px rgba(121, 121, 121, 0.226);
+            display: flex;
+            font-family: var(--gx-font-family-header);
+            font-size: 128px;
+            font-style: normal;
+            font-weight: 700;
+            gap: 0;
+            line-height: normal;
+            text-transform: uppercase;
+            width: max-content;
+        }
+        @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
         }
         @media (max-width: 1000px) {
         .desc {

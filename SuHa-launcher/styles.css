@@ -12,7 +12,7 @@
     border-radius: 10px;
 }
 .nav {
-    background-color: rgba(0, 51, 59, 0.459);
+    background-color: rgba(5, 53, 50, 0.459);
     border-radius: 20px;
     padding: 20px;
     font-size: 30px;
@@ -23,11 +23,10 @@
     display: flex;
     gap: 5%;
     width: 50%;
-    border: 3px solid rgba(0, 167, 158, 0.397);
+    border: 3px solid rgba(2, 94, 89, 0.397);
     transition: all ease 1s;
 }
 .nav:hover {
-    background-color: rgba(0, 51, 59, 0.459);
     border-radius: 20px;
     padding: 20px;
     font-size: 30px;
