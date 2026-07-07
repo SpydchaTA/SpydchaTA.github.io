@@ -15,6 +15,11 @@
     <body>
         <h1>Noticias y notas de versión</h1>
         <div class="versiones">
+            <div class="noticia" id="noticia">
+                <a href="versiones/noticia070726.html">Nuevo servidor en camino</a>
+            </div>
+        </div>
+        <div class="versiones">
             <div class="version-1-1-0" id="version">
                 <a href="versiones/v1-1-0.html">Version 1.1.0, nuevas opciones, cambios graficos y funciones</a>
             </div>
@@ -34,7 +39,19 @@
             text-decoration: none;
             font-size: 50px;
         }
-        .version-1-1-0 {
+        #noticia {
+            background-color: rgba(128, 128, 128, 0);
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 50px;
+            background-image: url(imagenes/launcherimagen.png);
+            background-color: rgba(0, 0, 0, 0.801);
+            background-blend-mode: darken;
+            background-position: center;
+            text-align: center;
+            padding: 15px;
+            transition: all ease 2s;
+        }
+        #version {
             background-color: rgba(128, 128, 128, 0);
             border: 2px solid rgb(0, 255, 221);
             border-radius: 50px;
@@ -52,7 +69,7 @@
             transform: scale(1.05);
             box-shadow: 0 0 10px white;
         }
-        #version {
+        #version,#noticia {
             margin-bottom: 20px;
         }
     </style>

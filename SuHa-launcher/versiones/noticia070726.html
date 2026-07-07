@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+ <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <title>Notas de version v1.1.0</title>
+        <link rel="icon" type="image/png" href="../imagenes/logo.png">
+</head>
+<body>
+<div id="contenido">
+    <h1 id="titulo">Noticias del 07/07/2026</h1>
+    <div id="notas">
+        <h1>Nuevo servidor en camino</h2>
+        <h1>-------------------------------------------------------</h1>
+        <p>Hola soy Spy y he notado que he estado inactivo en cuestion de servidores. A si que vengo a traerles un nuevo servidor. Pronto se dará a conocer más información sobre él. Pero aqui les dejo una pequeña pista.</p>
+        <img src="../imagenes/Z HARDCORE.png" alt="Imagen del servidor" id="imagen">
+    </div>
+</div>
+<div id="selecciones">
+        <a href="../noticias.html" id="noticias"><i class="bi bi-arrow-return-left"> </i>Volver</a>
+    </div>
+</body>
+<style>
+    @view-transition {
+        navigation: auto;
+    }
+    ::view-transition-old(root),
+    ::view-transition-new(root) { /* evita el fade blanco */
+    background: transparent; /* quita el fondo blanco */
+    }
+    body {
+        background: linear-gradient(to bottom right, #000000 30%, #1d1d1d);
+        background-attachment: fixed;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        font-style: italic;
+        font-size: 20px;
+        margin: 0;
+        padding: 20px;
+    }
+    body::-webkit-scrollbar {
+    width: 6px;
+    }
+    body::-webkit-scrollbar-track {
+    background: black;
+    }
+    body::-webkit-scrollbar-thumb {
+    background-color: cyan;
+    border-radius: 10px;
+    border: 2px solid black;
+    }
+    body::-webkit-scrollbar-thumb:hover {
+    background-color: white;
+    }
+    #imagen {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    #contenido {
+        max-width: 1000px;
+        max-height: auto;
+        margin-top: 100px;
+        margin-left: 80px;
+        background-color: #013b2d6b;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    #titulo {
+        text-align: left;
+        color: #f700ffbd;
+        margin-bottom: 80px;
+        font-size: 60px;
+    }
+    #notas p {
+        margin-top: 60px;
+    }
+/* Botones de navegación */
+    #noticias {
+        color: white;
+        background-color: rgba(77, 77, 77, 0.555);
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 10%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
+     @media (max-width: 600px) {
+        body {
+            padding: 10px;
+            font-size: 12px;
+        }
+        #contenido {
+            margin-top: 50px;
+            margin-left: 20px;
+            padding: 10px;
+        }
+        #titulo {
+            font-size: 30px;
+        }
+        #notas p {
+            margin-top: 30px;
+        }
+    #logopanalla {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        visibility: hidden;
+    }
+    #noticias {
+        color: white;
+        background-color: rgba(77, 77, 77, 0.555);
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        position: absolute;
+        font-size: 20px;
+        top: 30px;
+        left: 20%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
+    #noticias:hover {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(122, 149, 150);
+        position: absolute;
+        top: 27px;
+        left: 20%;
+        transform: translateX(-50%);
+    }
+    }
+</style>
