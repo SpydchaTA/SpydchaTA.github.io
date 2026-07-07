@@ -14,6 +14,11 @@
     </header>
     <body>
         <h1>Noticias y notas de versión</h1>
+        <i class="bi bi-funnel-fill"></i>
+        <input type="checkbox" id="ocultar-n">
+        <label for="ocultar-n" id="ocultar">Ocultar noticias</label>
+        <input type="checkbox" id="ocultar-v">
+        <label for="ocultar-v" id="ocultar">Ocultar versiones</label>
         <div class="versiones">
             <div class="noticia" id="noticia">
                 <a href="versiones/noticia070726.html">Nuevo servidor en camino</a>
@@ -71,5 +76,36 @@
         }
         #version,#noticia {
             margin-bottom: 20px;
+        }
+        #ocultar-n:checked ~ .versiones #noticia {
+            display: none;
+
+        }
+        #ocultar-v:checked ~ .versiones #version {
+            display: none;
+        }
+        label {
+            color: white;
+            position: relative;
+            top: -5px;
+            right: 10px;
+        }
+        input[type="checkbox"] {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            border: 2px solid white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        input[type="checkbox"]:checked {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid white;
+            cursor: pointer;
+            background-color: rgb(32, 190, 143);
+            box-shadow: 0 0 20px rgb(32, 190, 143);
         }
     </style>
