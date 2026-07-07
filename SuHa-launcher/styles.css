@@ -43,5 +43,6 @@ body {
     background: rgb(0, 0, 0);
     color: white;
     margin: 60px;
-    font-size: 26px;
+    font-size: 23px;
+    font-family: sans-serif;
 }
