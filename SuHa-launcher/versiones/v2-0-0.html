@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+ <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <title>Notas de version v1.1.0</title>
+        <link rel="icon" type="image/png" href="../imagenes/logo.png">
+</head>
+<body>
+<div id="contenido">
+    <h1 id="titulo">Notas de version v2.0.0</h1>
+    <div id="notas">
+        <h2>Hola soy Spy y les presento las nuevas notas de versión v2.0.0</h2>
+        <h1>-------------------------------------------------------</h1>
+        <h1>Mejora en la presencia de Discord</h1>
+        <h3>**Se ha agregado compatibilidad con nuestro Mod para la precensia de discord.**</h3>
+        <p> - Se agregaron nuevas mecánicas que permiten mostrar cuando un usuario está dentro de un mundo y en cuál dimensión, y muchas más características.</p>
+        <h1>-------------------------------------------------------</h1>
+        <h1>Mejora en la interfaz</h1>
+        <p>**Hemos notado que la interfaz se veía tosca y molesta. A si que se ha mejorado el diseño de manera que se vea mas amigable para el usuario**</p>
+        <p> - Se ha agregado un nuevo diseño para el launcher, con colores más agradables y un diseño más amigable para el usuario.</p>
+        <p> - Ahora en tus cuentas se ve una pre-visualización de tu skin.</p>
+        <h1>-------------------------------------------------------</h1>
+        <h1>Nueva forma para lanzar el juego</h1>
+        <h3>**Antes instalar e iniciar el juego podia ser algo tosco, pues la gente se confundia y usaba la sección de instalación en lugar de la de lanzamiento.**</p>
+        <p> - Ahora se ha agregado un nuevo sistema para instalar versiones mas apartado del lanzamiento, el cual es más facil de usar y no confunde al usuario.</p>
+        <p> - Por el momento solo se pueden instalar versiones vanilla. Proximamente se añadira la compatibilidad con forge, fabric y neoforge</p>
+        <h1>-------------------------------------------------------</h1>
+        <h2>Gracias por confiar en nosotros y esperamos que les guste este launcher.</h2>
+        <h3>Con cariño: Spy</h3>
+    </div>
+</div>
+<div id="selecciones">
+        <a href="menu.html" id="volvermenu">Su-Ha Launcher</a>
+        <a href="../noticias.html" id="noticias"><i class="bi bi-arrow-return-left"> </i>Volver</a>
+    </div>
+</body>
+<style>
+    @view-transition {
+        navigation: auto;
+    }
+    ::view-transition-old(root),
+    ::view-transition-new(root) { /* evita el fade blanco */
+    background: transparent; /* quita el fondo blanco */
+    }
+    body {
+        background: linear-gradient(to bottom right, #000000 30%, #1d1d1d);
+        background-attachment: fixed;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        font-style: italic;
+        font-size: 20px;
+        margin: 0;
+        padding: 20px;
+    }
+    body::-webkit-scrollbar {
+    width: 6px;
+    }
+    body::-webkit-scrollbar-track {
+    background: black;
+    }
+    body::-webkit-scrollbar-thumb {
+    background-color: cyan;
+    border-radius: 10px;
+    border: 2px solid black;
+    }
+    body::-webkit-scrollbar-thumb:hover {
+    background-color: white;
+    }
+    #contenido {
+        max-width: 1000px;
+        max-height: auto;
+        margin-top: 100px;
+        margin-left: 80px;
+        background-color: #013b2d6b;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    #titulo {
+        text-align: left;
+        color: #f700ffbd;
+        margin-bottom: 80px;
+        font-size: 60px;
+    }
+    #notas p {
+        margin-top: 60px;
+    }
+/* Botones de navegación */
+    #noticias {
+        color: white;
+        background-color: rgba(77, 77, 77, 0.555);
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 10%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
+    #noticias:hover {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(122, 149, 150);
+        position: absolute;
+        top: 27px;
+        left: 10%;
+        transform: translateX(-50%);
+    }
+    #volvermenu {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 11%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+        visibility: hidden;
+    }
+    #volvermenu:hover {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(122, 149, 150);
+        position: absolute;
+        top: 30px;
+        left: 11%;
+        transform: translateX(-50%);
+        visibility: hidden;
+    }
+    #logopanalla {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+     @media (max-width: 600px) {
+        body {
+            padding: 10px;
+            font-size: 12px;
+        }
+        #contenido {
+            margin-top: 50px;
+            margin-left: 20px;
+            padding: 10px;
+        }
+        #titulo {
+            font-size: 30px;
+        }
+        #notas p {
+            margin-top: 30px;
+        }
+    #logopanalla {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        visibility: hidden;
+    }
+    #noticias {
+        color: white;
+        background-color: rgba(77, 77, 77, 0.555);
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        position: absolute;
+        font-size: 20px;
+        top: 30px;
+        left: 20%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
+    #noticias:hover {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgb(122, 149, 150);
+        position: absolute;
+        top: 27px;
+        left: 20%;
+        transform: translateX(-50%);
+    }
+    }
+</style>
