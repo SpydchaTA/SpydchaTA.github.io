@@ -3,7 +3,7 @@
         <title>Suha Launcher - noticias</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-        <link rel="icon" type="image/png" href="imagenes/logo.png">
+        <link rel="icon" type="image/png" href="imagenes/nuevologo.png">
     </head>
     <header>
         <div class="nav">
@@ -19,6 +19,11 @@
         <label for="ocultar-n" id="ocultar">Ocultar noticias</label>
         <input type="checkbox" id="ocultar-v">
         <label for="ocultar-v" id="ocultar">Ocultar versiones</label>
+        <div class="versiones">
+            <div class="noticia" id="noticia">
+                <a href="versiones/noticia140726.html">Nuevo logo para el launcher</a>
+            </div>
+        </div>
         <div class="versiones">
             <div class="version-2-0-0" id="version">
                 <a href="versiones/v2-0-0.html">Version 2.0.0, nuevo diseño, clores y versiones</a>
@@ -51,7 +56,7 @@
         }
         #noticia {
             background-color: rgba(128, 128, 128, 0);
-            border: 2px solid rgb(255, 0, 0);
+            border: 2px solid rgb(16, 0, 243);
             border-radius: 50px;
             background-image: url(imagenes/launcherimagen.png);
             background-color: rgba(0, 0, 0, 0.801);
@@ -59,7 +64,7 @@
             background-position: center;
             text-align: center;
             padding: 15px;
-            transition: all ease 2s;
+            transition: all ease 0.5s;
         }
         #version {
             background-color: rgba(128, 128, 128, 0);
@@ -71,7 +76,7 @@
             background-position: center;
             text-align: center;
             padding: 15px;
-            transition: all ease 2s;
+            transition: all ease 0.5s;
         }
         .versiones div:hover {
             border: 2px solid rgb(255, 255, 255);
