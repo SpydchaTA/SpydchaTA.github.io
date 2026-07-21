@@ -19,29 +19,37 @@
         <label for="ocultar-n" id="ocultar">Ocultar noticias</label>
         <input type="checkbox" id="ocultar-v">
         <label for="ocultar-v" id="ocultar">Ocultar versiones</label>
-        <div class="versiones">
-            <div class="version-2-1-0" id="version">
-                <a href="../versiones/v2-1-0.html">Versión 2.1.0 - Más Modloaders para el servidor</a>
+        <div class="todo">
+            <div class="versiones">
+                <div class="version-2-1-0" id="version">
+                    <img src="../imagenes/modloaders.png" alt="">
+                    <a href="../versiones/v2-1-0.html">Versión 2.1.0 - Más Modloaders para el servidor</a>
+                    <span style="background-color: red; min-width: 30%; justify-self: right; border-radius: 5px; position: relative; top: 0px;">Novedad</span>
+                </div>
             </div>
-        </div>
-        <div class="versiones">
-            <div class="noticia" id="noticia">
-                <a href="../versiones/noticia140726.html">Nuevo logo para el launcher</a>
+            <div class="noticias">
+                <div class="noticia" id="noticia">
+                    <img src="../imagenes/nuevologosinfondo.png" alt="">
+                    <a href="../versiones/noticia140726.html">Nuevo logo para el launcher</a>
+                </div>
             </div>
-        </div>
-        <div class="versiones">
-            <div class="version-2-0-0" id="version">
-                <a href="../versiones/v2-0-0.html">Version 2.0.0, nuevo diseño, clores y versiones</a>
+            <div class="versiones">
+                <div class="version-2-0-0" id="version">
+                    <img src="../imagenes/launcher2.png" alt="">
+                    <a href="../versiones/v2-0-0.html">Version 2.0.0, nuevo diseño, clores y versiones</a>
+                </div>
             </div>
-        </div>
-        <div class="versiones">
-            <div class="noticia" id="noticia">
-                <a href="../versiones/noticia070726.html">Nuevo servidor en camino</a>
+            <div class="noticias">
+                <div class="noticia" id="noticia">
+                    <img src="../imagenes/Z HARDCORE.png" alt="">
+                    <a href="../versiones/noticia070726.html">Nuevo servidor en camino</a>
+                </div>
             </div>
-        </div>
-        <div class="versiones">
-            <div class="version-1-1-0" id="version">
-                <a href="../versiones/v1-1-0.html">Version 1.1.0, nuevas opciones, cambios graficos y funciones</a>
+            <div class="versiones">
+                <div class="version-1-1-0" id="version">
+                    <img src="../imagenes/launcherimagen.png" alt="">
+                    <a href="../versiones/v1-1-0.html">Version 1.1.0, nuevas opciones, cambios graficos y funciones</a>
+                </div>
             </div>
         </div>
     </body>
@@ -54,49 +62,84 @@
             background-repeat: no-repeat;
             min-height: 100vh;
         }
+        .todo {
+            display: grid;
+            gap: 60px;
+            grid-template-columns: repeat(3, 1fr);
+        }
         .versiones a {
             color: white;
             text-decoration: none;
-            font-size: 50px;
+            font-size: 30px;
+            display: block;
+            margin-top: 10px;
+        }
+        .noticias a {
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+            display: block;
+            margin-top: 30px;
+        }
+        .versiones img {
+            max-width: 100%;
+            min-width: 100%;
+            justify-self: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgb(54, 54, 54);
+        }
+        .noticias img {
+            max-width: 100%;
+            min-width: 100%;
+            justify-self: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgb(44, 44, 44);
         }
         #noticia {
             background-color: rgba(128, 128, 128, 0);
-            border: 2px solid rgb(16, 0, 243);
-            border-radius: 50px;
-            background-image: url(../imagenes/launcherimagen.png);
+            border: 4px solid rgb(77, 77, 77);
+            border-radius: 20px;
             background-color: rgba(0, 0, 0, 0.801);
             background-blend-mode: darken;
             background-position: center;
             text-align: center;
-            padding: 15px;
-            transition: all ease 0.5s;
+            justify-content: center;
+            padding: 4px;
+            min-height: 470px;
+            transition: all ease 0.2s;
         }
         #version {
             background-color: rgba(128, 128, 128, 0);
-            border: 2px solid rgb(0, 255, 221);
-            border-radius: 50px;
-            background-image: url(../imagenes/launcherimagen.png);
+            border: 4px solid rgb(63, 63, 63);
+            border-radius: 20px;
             background-color: rgba(0, 0, 0, 0.801);
             background-blend-mode: darken;
             background-position: center;
             text-align: center;
-            padding: 15px;
-            transition: all ease 0.5s;
+            justify-content: center;
+            padding: 2px;
+            padding-bottom: 30px;
+            min-height: 450px;
+            transition: all ease 0.2s;
         }
-        .versiones div:hover {
-            border: 2px solid rgb(255, 255, 255);
-            transition: all ease 1s;
-            transform: scale(1.05);
-            box-shadow: 0 0 10px white;
+        #version:hover {
+            border: 4px solid rgb(0, 125, 129);
+            transition: all ease 0.2s;
+        }
+        #noticia:hover {
+            border: 4px solid rgb(25, 0, 255);
+            transition: all ease 0.3s;
         }
         #version,#noticia {
             margin-bottom: 20px;
         }
-        #ocultar-n:checked ~ .versiones #noticia {
+        #ocultar-n:checked ~ .todo .noticias {
             display: none;
 
         }
-        #ocultar-v:checked ~ .versiones #version {
+        #ocultar-v:checked ~ .todo .versiones {
             display: none;
         }
         label {
@@ -123,5 +166,17 @@
             cursor: pointer;
             background-color: rgb(32, 190, 143);
             box-shadow: 0 0 20px rgb(32, 190, 143);
+        }
+        @media (max-width: 1000px) {
+            .todo {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .versiones {
+                max-width: 60%;
+            }
+            .noticias {
+                max-width: 60%;
+            }
         }
     </style>
