@@ -58,14 +58,19 @@
             width: 0;
         }
         body {
-            background: linear-gradient(to right bottom, rgb(0, 0, 0) 30%, rgb(0, 23, 24));
+            background: linear-gradient(to right bottom, rgb(18, 18, 27) 30%, rgb(0, 23, 24));
             background-repeat: no-repeat;
             min-height: 100vh;
+            margin: 20px;
+        }
+        h1 {
+            margin: 30px;
         }
         .todo {
             display: grid;
             gap: 60px;
             grid-template-columns: repeat(3, 1fr);
+            margin: 30px;
         }
         .versiones a {
             color: white;
@@ -99,23 +104,24 @@
         }
         #noticia {
             background-color: rgba(128, 128, 128, 0);
-            border: 4px solid rgb(77, 77, 77);
+            border: 2px solid rgb(77, 77, 77);
             border-radius: 20px;
-            background-color: rgba(0, 0, 0, 0.801);
+            background-color: rgba(39, 35, 54, 0.801);
             background-blend-mode: darken;
             background-position: center;
             text-align: center;
             justify-content: center;
             padding: 4px;
             min-height: 470px;
+            box-shadow: 0 0 20px black;
             max-height: 470px;
             transition: all ease 0.2s;
         }
         #version {
             background-color: rgba(128, 128, 128, 0);
-            border: 4px solid rgb(63, 63, 63);
+            border: 2px solid rgb(63, 63, 63);
             border-radius: 20px;
-            background-color: rgba(0, 0, 0, 0.801);
+            background-color: rgba(39, 35, 54, 0.801);
             background-blend-mode: darken;
             background-position: center;
             text-align: center;
@@ -123,15 +129,16 @@
             padding: 2px;
             padding-bottom: 30px;
             min-height: 450px;
+            box-shadow: 0 0 20px black;
             max-height: 450px;
             transition: all ease 0.2s;
         }
         #version:hover {
-            border: 4px solid rgb(0, 125, 129);
+            border: 2px solid rgb(0, 125, 129);
             transition: all ease 0.2s;
         }
         #noticia:hover {
-            border: 4px solid rgb(25, 0, 255);
+            border: 2px solid rgb(25, 0, 255);
             transition: all ease 0.3s;
         }
         #version,#noticia {
@@ -181,24 +188,24 @@
                 max-width: 100%;
             }
             #noticia {
-            background-color: rgba(128, 128, 128, 0);
-            border: 4px solid rgb(77, 77, 77);
-            border-radius: 20px;
-            background-color: rgba(0, 0, 0, 0.801);
-            background-blend-mode: darken;
-            background-position: center;
-            text-align: center;
-            justify-content: center;
-            padding: 4px;
-            min-height: 420px;
-            max-height: 420px;
-            transition: all ease 0.2s;
+                background-color: rgba(128, 128, 128, 0);
+                border: 4px solid rgb(77, 77, 77);
+                border-radius: 20px;
+                background-color: rgba(39, 35, 54, 0.801);
+                background-blend-mode: darken;
+                background-position: center;
+                text-align: center;
+                justify-content: center;
+                padding: 4px;
+                min-height: 420px;
+                max-height: 420px;
+                transition: all ease 0.2s;
             }
             #version {
                 background-color: rgba(128, 128, 128, 0);
                 border: 4px solid rgb(63, 63, 63);
                 border-radius: 20px;
-                background-color: rgba(0, 0, 0, 0.801);
+                background-color: rgba(39, 35, 54, 0.801);
                 background-blend-mode: darken;
                 background-position: center;
                 text-align: center;

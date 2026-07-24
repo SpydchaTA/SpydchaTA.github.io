@@ -30,8 +30,11 @@
                 tiene una interfaz intuitiva y fácil de usar, lo que lo hace
                 ideal para jugadores de todos los niveles de experiencias.
             </p>
+            <div id="descarga">
+            <i class="bi bi-windows" style="color: black;"></i> <a id="a1-s" href="https://github.com/Eliseo04L/Su-Ha-Launcher/releases/download/v1.0.1/Su-Ha-Launcher-Setup-1.0.0.exe">ultima versión para windows 64bits</a>
         </div>
-                <div class="textos" style="display: block;">
+        </div>
+        <div class="textos" style="display: block;">
            <div class="textomarquee">
                 <div class="rastrotexto">
                     <span>SUHA-LAUNCHER_</span>
@@ -43,10 +46,24 @@
                 </div>
            </div> 
         </div>
-        <img src="imagenes/launcher2.png" alt="Imagen de previsualizacion del launcher" id="imagen">
-        <div id="descarga">
-            <i class="bi bi-windows" style="color: black;"></i> <a id="a1-s" href="https://github.com/Eliseo04L/Su-Ha-Launcher/releases/download/v1.0.1/Su-Ha-Launcher-Setup-1.0.0.exe">ultima versión para windows 64bits</a>
+        <div class="carac">
+            <h1>TODO A UN CLICK</h1>
+            <div class="car">
+                <div id="modloaders">
+                    <h2><i class="bi bi-hdd-stack-fill"></i> Carga de Modloaders</h2>
+                    <p>Su-ha Launcher permite cargar modloaders de manera facil y rapida. <span style="color: rgb(0, 195, 255);">NO MÁS PAGINAS EXTERNAS</span>
+                </div>
+                <div id="cuentas">
+                    <h2><i class="bi bi-person"> </i>Soporte Offline</h2>
+                    <p>Su-Ha launcher ofrece soporte para cuentas online y offline <span style="color: rgb(0, 195, 255);">(premium y no premium)</span> para que cualquiera pueda jugar.</p>
+                </div>
+                <div id="versiones">
+                    <h2><i class="bi bi-upload"></i> Versiones recientes</h2>
+                    <p>Su-Ha launcher siempre tiene versiones nuevas cada vez. No creas que no podras jugar la versión más reciente del juego.</p>
+                </div>
+            </div>
         </div>
+        <img src="imagenes/launcher2.png" alt="Imagen de previsualizacion del launcher" id="imagen">
         <script>
             async function obtenerUltimaVersion() {
     try {
@@ -81,25 +98,26 @@ obtenerUltimaVersion();
             width: 0;
         }
         body {
-            background: linear-gradient(to left bottom, rgb(0, 0, 0)40%, rgb(19, 19, 19));
+            background: linear-gradient(to right bottom, rgb(26, 23, 37)40%, rgb(2, 20, 19));
             background-size: 100%;
             background-repeat: no-repeat;
             min-height: 120vh;
             overflow-x: hidden;
+            margin: 20px;
         }
         body > h1 {
             text-align: center;
             margin-bottom: 100px;
         }
         .desc {
-            background: linear-gradient(rgba(4, 4, 87, 0.459), rgba(8, 63, 63, 0.486));
+            background-color: rgba(37, 40, 80, 0);
+            box-shadow: 0 0 0px black;
             max-width: 50%;
             margin-top: 20px;
-            border: 3px solid rgba(1, 60, 187, 0.39);
             padding: 30px;
             border-radius: 30px;
-            box-shadow: 0 0 30px rgba(4, 100, 226, 0.356);
             margin-bottom: 90px;
+            padding-bottom: 190px;
         }
         .ver {
             background-color: rgba(167, 167, 167, 0.616);
@@ -113,12 +131,12 @@ obtenerUltimaVersion();
         }
         #imagen {
             height: auto;
-            width: 38%;
+            width: 40%;
             position: absolute;
             left: 60%;
-            top: 60%;
+            top: 35%;
             border-radius: 40px;
-            image-rendering: darken;
+            box-shadow: 0 0 40px black;
         }
         #descarga {
             background: linear-gradient(to right, rgb(0, 22, 216), rgb(2, 193, 226));
@@ -162,6 +180,28 @@ obtenerUltimaVersion();
             text-transform: uppercase;
             width: max-content;
         }
+        .car {
+            display: flex;
+            gap: 40px
+        }
+        .carac {
+            margin: 30px;
+        }
+        #versiones,#modloaders,#cuentas {
+            background-color: rgb(36, 36, 36);
+            max-width: 30%;
+            padding: 20px;
+            border-radius: 40px;
+            border: 3px solid rgba(9, 2, 49, 0);
+            transition: all ease 0.3s;
+        }
+        #versiones:hover,#modloaders:hover,#cuentas:hover {
+            background-color: rgb(48, 48, 48);
+            max-width: 30%;
+            padding: 20px;
+            border-radius: 40px;
+            border: 3px solid rgb(38, 0, 255)
+        }
         @keyframes marquee {
         0% {
             transform: translateX(0%);
@@ -172,14 +212,24 @@ obtenerUltimaVersion();
         }
         @media (max-width: 1000px) {
         .desc {
-            background-color: rgba(12, 131, 131, 0.151);
+            background-color: rgba(37, 40, 80, 0);
             max-width: 100%;
             margin-top: 20px;
-            border: 3px solid white;
             padding: 30px;
             border-radius: 30px;
-            box-shadow: 0 0 30px white;
-            font-size: 30px;
+            box-shadow: 0 0 0px rgb(0, 0, 0);
+            font-size: 45px;
+            text-align: center;
+        }
+        .ver {
+            background-color: rgba(167, 167, 167, 0.616);
+            color: rgb(255, 255, 255);
+            padding: 5px;
+            border-radius: 20px;
+            border: 1px solid rgb(66, 66, 66);
+            font-style: italic;
+            text-decoration: none;
+            font-size: 40px;
         }
         #descarga {
             visibility: hidden;
@@ -192,6 +242,28 @@ obtenerUltimaVersion();
             transform: translateX(-50%);
             position: absolute;
             top: 1000px;
+            display: none;
+        }
+        .car {
+            display: grid;
+            gap: 60px
+        }
+        .caract {
+            justify-content: center;
+        }
+        #versiones,#modloaders,#cuentas {
+            background-color: rgb(36, 36, 36);
+            max-width: 100%;
+            padding: 20px;
+            text-align: center;
+            border-radius: 40px;
+        }
+        #versiones:hover,#modloaders:hover,#cuentas:hover {
+            background-color: rgb(36, 36, 36);
+            max-width: 100%;
+            padding: 20px;
+            text-align: center;
+            border-radius: 40px;
         }
         }
     </style>

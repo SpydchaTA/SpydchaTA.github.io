@@ -12,8 +12,7 @@
     border-radius: 10px;
 }
 .nav {
-    background: linear-gradient(to right, rgba(3, 8, 48, 0.39), rgba(7, 39, 44, 0.267));
-    border-radius: 20px;
+    border-radius: 0px;
     padding: 20px;
     font-size: 30px;
     text-align: center;
@@ -22,8 +21,8 @@
     margin-top: 60px;
     display: flex;
     gap: 5%;
-    width: 50%;
-    border: 3px solid rgba(5, 60, 143, 0.959);
+    width: 100%;
+    border-bottom: 1px solid rgba(116, 130, 255, 0.959);
     transition: all ease 1s;
 }
 body {
@@ -32,4 +31,21 @@ body {
     margin: 60px;
     font-size: 23px;
     font-family: sans-serif;
+}
+@media (max-width: 1000px) {
+    .nav {
+        background-color: rgb(28, 28, 34);
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+        border-bottom: 0;
+        border-radius: 0px;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        font-size: 50px;
+        justify-self: center;
+        position: fixed;
+        top: 85%;
+   }
 }
