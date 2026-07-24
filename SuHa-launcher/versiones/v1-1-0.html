@@ -7,21 +7,35 @@
         <link rel="icon" type="image/png" href="../imagenes/logo.png">
 </head>
 <body>
-<div id="contenido">
-    <h1 id="titulo">Notas de version v1.1.0</h1>
-    <div id="notas">
+    <div class="head">
+        <h1 id="titulo">Notas de version v1.1.0</h1>
+        <p>Nuevas opciones, cambios graficos y funciones</p>
         <h2>Hola soy Logan y les presento las nuevas notas de versión v1.1.0</h2>
-        <h1>-------------------------------------------------------</h1>
+    </div>
+<div id="contenido">
+    <div id="notas">
         <h1>Mejora en la presencia de Discord</h1>
-        <h3>**La presencia de Discord se fue mejorando gradualmente y se agregaron nuevas características.**</h3>
-        <p> - Ahora se puede cerrar el launcher al momento de jugar y no asesinará el proceso de la presencia en Discord del launcher, aparte de estar más optimizado.</p>
-        <p> - Se agregaron nuevas mecánicas que permiten mostrar cuando un usuario está dentro de un mundo y en cuál dimensión, y muchas más características.</p>
-        <h1>-------------------------------------------------------</h1>
+        <ul>
+        <li>
+            La presencia de Discord se fue mejorando gradualmente y se agregaron nuevas características.
+            <ul>
+                <li>
+                    Ahora se puede cerrar el launcher al momento de jugar y no asesinará el proceso de la presencia en Discord del launcher, aparte de estar más optimizado.
+                </li>
+                <li>
+                    Se agregaron nuevas mecánicas que permiten mostrar cuando un usuario está dentro de un mundo y en cuál dimensión, y muchas más características.
+                </li>
+            </ul>
+        </li>
+        </ul>
         <h1>Corrección de errores</h1>
-        <p>Se corrigió un error que permitía al usuario lanzar el juego varias veces, pues el botón de jugar no se bloqueaba adecuadamente después de lanzar el juego.</p>
-        <h1>-------------------------------------------------------</h1>
-        <h2>Gracias por confiar en nosotros y esperamos que les guste este launcher.</h2>
-        <h3>Con cariño: Logan Okonner</h3>
+        <ul>
+            <li>
+                Se corrigió un error que permitía al usuario lanzar el juego varias veces, pues el botón de jugar no se bloqueaba adecuadamente después de lanzar el juego.
+            </li>
+        </ul>
+        <h5>Gracias por confiar en nosotros y esperamos que les guste este launcher.</h2>
+        <h6>Con cariño: Logan Okonner</h3>
     </div>
 </div>
 <div id="selecciones">
@@ -38,14 +52,14 @@
     background: transparent; /* quita el fondo blanco */
     }
     body {
-        background: linear-gradient(to bottom right, #000000 30%, #1d1d1d);
+        background: linear-gradient(to bottom right, #1d1931 30%, #00181d);
         background-attachment: fixed;
         color: #ffffff;
         font-family: Arial, sans-serif;
         font-style: italic;
         font-size: 20px;
         margin: 0;
-        padding: 20px;
+        padding: 0px;
     }
     body::-webkit-scrollbar {
     width: 6px;
@@ -65,24 +79,40 @@
         max-width: 1000px;
         max-height: auto;
         margin-top: 100px;
-        margin-left: 80px;
-        background-color: #013b2d6b;
+        margin-left: 20%;
+        background-color: #ffffff00;
         padding: 20px;
         border-radius: 20px;
     }
-    #titulo {
-        text-align: left;
-        color: #f700ffbd;
-        margin-bottom: 80px;
-        font-size: 60px;
+    #contenido h5 {
+        border-top: 1px solid white;
+        padding-top: 50px;
     }
-    #notas p {
+    .head h1 {
+        color: #ffffff;
+        font-style: normal;
+        font-size: 60px;
+        padding-top: 50px;
+        margin-top: 0px;
+    }
+    .head {
+        background-image: url(../imagenes/launcherimagen.png);
+        background-color: rgba(5, 5, 5, 0.774);
+        background-blend-mode: darken;
+        text-align: center;
+        border-bottom: 2px solid rgb(3, 175, 255);
+        font-size: 19px;
+        max-height: 300px;
+        position: relative;
+        top: 00px;
+    }
+    #notas li {
         margin-top: 60px;
     }
 /* Botones de navegación */
     #noticias {
         color: white;
-        background-color: rgba(77, 77, 77, 0.555);
+        background-color: rgb(0, 0, 0);
         padding: 10px;
         text-decoration: none;
         border-radius: 10px;
@@ -136,7 +166,7 @@
     }
      @media (max-width: 600px) {
         body {
-            padding: 10px;
+            padding: 0px;
             font-size: 12px;
         }
         #contenido {
@@ -144,10 +174,13 @@
             margin-left: 20px;
             padding: 10px;
         }
-        #titulo {
+        .head {
+            font-size: 10px;
+        }
+        .head h1 {
             font-size: 30px;
         }
-        #notas p {
+        #notas li {
             margin-top: 30px;
         }
     #logopanalla {
@@ -160,13 +193,13 @@
     }
     #noticias {
         color: white;
-        background-color: rgba(77, 77, 77, 0.555);
+        background-color: rgba(5, 5, 5, 0.555);
         padding: 10px;
         text-decoration: none;
         border-radius: 10px;
         position: absolute;
         font-size: 20px;
-        top: 30px;
+        top: 90%;
         left: 20%;
         transform: translateX(-50%);
         transition: all 0.3s ease;
@@ -177,8 +210,8 @@
         text-decoration: none;
         border-radius: 10px;
         box-shadow: 0 0 4px rgb(122, 149, 150);
-        position: absolute;
-        top: 27px;
+        position: fixed;
+        top: 90%;
         left: 20%;
         transform: translateX(-50%);
     }
