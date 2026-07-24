@@ -22,7 +22,7 @@
     display: flex;
     gap: 5%;
     width: 100%;
-    border-bottom: 1px solid rgba(116, 130, 255, 0.959);
+    border-bottom: 2px solid rgba(116, 130, 255, 0.959);
     transition: all ease 1s;
 }
 body {
