@@ -59,6 +59,39 @@
                         </div>
                     </div>
                 </div>
+                <div class="rangos">
+                    <div id="title">
+                        <h1>¿Qué permisos otorga cada rango?</h1>
+                    </div>
+                    <div id="descripciones">
+                        <i class="fa-solid fa-crown" id="icono"></i>
+                        <div id="desc">
+                            <h1>Lider</h1>
+                            <p>Este rol otorga todos los permisos de la faction. Con el puedes hacer lo que sea con ella</p>
+                        </div>
+                    </div>
+                    <div id="descripciones">
+                        <i class="fa-solid fa-shield" id="icono"></i>
+                        <div id="desc">
+                            <h1>Co-lider</h1>
+                            <p>Siendo casi igual de importante que el lider. El Co-lider tiene casi el mismo poder sobre los miembros de la faction que el lider. Siendo lo unico que no puede hacer, modificar la faction</p>
+                        </div>
+                    </div>
+                    <div id="descripciones">
+                        <i class="fa-solid fa-flag" id="icono"></i>
+                        <div id="desc">
+                            <h1>Capitán</h1>
+                            <p>Este rol tiene permisos mas limitados. Se usa mas para dar superioridad a usuarios sobre los miembros, dando a entender que son importantes en su area</p>
+                        </div>
+                    </div>
+                    <div id="descripciones">
+                        <i class="fa-solid fa-user" id="icono"></i>
+                        <div id="desc">
+                            <h1>Miembro</h1>
+                            <p>Este rol es para los usuarios casuales, gente que entra a jugar de vez en cuando. Pero no quita que sean importantes para el desarrollo de la faction, pues una faction sin miembros es solo un grupo de juego</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="recuadro-M">
                 <div class="miembros">
@@ -133,6 +166,35 @@
         body::-webkit-scrollbar {
             width: 0;
         }
+        #icono {
+            position: relative;
+            font-size: 80px;
+            top: 20px;
+            background-color: rgb(187, 1, 48);
+            height: 50%;
+            padding: 10px;
+            border-radius: 20px;
+            color: rgb(31, 0, 15);
+        }
+        #descripciones {
+            display: flex;
+            gap: 40px;
+            padding: 10px;
+            background: rgb(31, 0, 15);
+            border-radius: 20px;
+            border: 1px solid rgb(255, 0, 76);
+            margin-bottom: 20px;
+        }
+        .rangos {
+            background-color: rgb(46, 0, 10);
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid rgb(255, 0, 106);
+            border-radius: 20px;
+        }
+        .content-box-mid {
+            display: flex;
+        }
         .content-data {
             display: flex;
             gap: 20px;
@@ -184,19 +246,25 @@
             margin-bottom: 0px;
             font-size: 24px;
         }
+        .recuadro-M {
+            display: flex;
+            gap: 50px;
+        }
         .miembros {
             top: 5vh;
             border-radius: 30px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             flex-wrap: wrap;
-            background: linear-gradient(to bottom right, rgb(32, 0, 13), rgb(0, 0, 0));
-            box-shadow: 0 0 20px rgb(247, 0, 255);
+            background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(0, 0, 0));
+            box-shadow: 0 0 10px rgb(247, 0, 255);
             border: 2px solid rgb(170, 34, 136);
             padding: 20px;
             gap: 1vw;
-            width: 74%;
+            width: 60%;
             position: relative;
+            margin-top: 0px;
+            top: -150px;
         }
         /*Lider*/
         #leader {
@@ -208,7 +276,7 @@
             text-align: left;
             padding: 10px;
             gap: 20px;
-            border-radius: 20px;
+            border-radius: 5px;
             box-shadow: 10px 10px 10px rgb(0, 0, 0);
             border: 2px solid rgb(105, 0, 70);
             margin: 10px;
@@ -240,7 +308,7 @@
             text-align: left;
             padding: 10px;
             gap: 20px;
-            border-radius: 20px;
+            border-radius: 5px;
             box-shadow: 10px 10px 10px rgb(0, 0, 0);
             border: 2px solid rgb(105, 0, 70);
             margin: 10px;
@@ -263,7 +331,7 @@
         }
         /*Miembros*/
         #miembro {
-            background-color: rgb(33, 0, 36);
+            background-color: rgb(19, 19, 19);
             position: relative;
             width: 400px;
             justify-content: left;
@@ -271,7 +339,7 @@
             text-align: left;
             padding: 10px;
             gap: 20px;
-            border-radius: 20px;
+            border-radius: 5px;
             box-shadow: 10px 10px 10px rgb(0, 0, 0);
             border: 2px solid rgb(105, 0, 70);
             margin: 10px;
