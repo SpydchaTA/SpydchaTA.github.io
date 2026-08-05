@@ -3,6 +3,7 @@
     color: white;
     padding: 5px;
     transition: 0.3s all ease;
+    font-size: 26px;
 }
 .nav a:hover {
     text-decoration: none;
@@ -11,19 +12,53 @@
     box-shadow: 0 0 3px white;
     border-radius: 10px;
 }
+.icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: rgb(28, 28, 34);
+    padding: 8px;
+    position: inherit;
+    transform: translateY(50%);
+    border-radius: 20px;
+    height: 30px;
+    top: 50%;
+    gap: 10px;
+}
+.icons a{
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 50px;
+}
 .nav {
-    border-radius: 0px;
-    padding: 20px;
+    padding: 5px;
     font-size: 30px;
     text-align: center;
     justify-content: left;
     justify-self: center;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
     margin-top: 60px;
     display: flex;
-    gap: 5%;
-    width: 100%;
-    border-bottom: 2px solid rgba(116, 130, 255, 0.959);
+    gap: 10%;
+    width: 90%;
+    border-radius: 30px;    
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box, linear-gradient(to top, #0c0242, #008d8d) border-box;
+    border: 2px solid transparent;
+    background-color: rgba(28, 28, 34, 0);
     transition: all ease 1s;
+}
+.botones,.logotitulo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.logotitulo img {
+    width: 80px;
+    height: 80px;
+}
+.logotitulo {
+    font-size: 20px;
+    justify-self: left;
 }
 body {
     background: rgb(0, 0, 0);
@@ -40,13 +75,26 @@ body {
         justify-content: center;
         gap: 30px;
         border-bottom: 0;
-        border-top-left-radius: 200px;
-        border-top-right-radius: 200px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
         padding-top: 10%;
         padding-bottom: 10%;
-        font-size: 50px;
         justify-self: center;
         position: fixed;
         top: 85%;
+        z-index: 999;
+   }
+   .nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    transition: 0.3s all ease;
+    font-size: 50px;
+}
+   .nav h1{
+    display: none;
+   }
+   .icons {
+    display: none;
    }
 }

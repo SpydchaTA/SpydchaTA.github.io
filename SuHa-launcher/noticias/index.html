@@ -7,9 +7,15 @@
     </head>
     <header>
         <div class="nav">
-            <a href="../"><i class="bi bi-house-door"></i> Menu</a>
-            <a href="../noticias/" style="background-color: rgb(44, 76, 184); border-radius: 10px;"><i class="bi bi-newspaper"></i> Noticias</a>
-            <a href="https://discord.gg/CHQWkU4Z6N"><i class="bi bi-box-arrow-up-right"></i> Soporte</a>
+            <div class="logotitulo">
+                <img src="../imagenes/nuevologo.png" alt="logo" id="logo">
+                <h1>Su-Ha Launcher</h1>
+            </div>
+            <div class="botones">
+                <a href="../"><i class="bi bi-house-door" style="padding: 10px;"></i> Menu</a>
+                <a href="noticias/"><i class="bi bi-newspaper" style="background-color: rgb(44, 76, 184); border-radius: 10px; padding: 10px; color: rgb(146, 246, 253)"></i> Noticias</a>
+                <a href="https://discord.gg/CHQWkU4Z6N"><i class="bi bi-box-arrow-up-right"></i> Soporte</a>
+            </div>
         </div>
     </header>
     <body>
@@ -64,13 +70,12 @@
             width: 0;
         }
         body {
-            background: linear-gradient(to right bottom, rgb(18, 18, 27) 30%, rgb(0, 23, 24));
+            background: linear-gradient(to right bottom, rgb(26, 23, 37)40%, rgb(2, 20, 19));
+            background-size: 100%;
             background-repeat: no-repeat;
-            min-height: 100vh;
+            min-height: 120vh;
+            overflow-x: hidden;
             margin: 20px;
-        }
-        h1 {
-            margin: 30px;
         }
         .todo {
             display: grid;
