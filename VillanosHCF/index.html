@@ -42,7 +42,7 @@
                 <a href="https://discord.gg/R7msZaRUUe"><i class="bi bi-person-plus-fill"> </i>Unirme a VILLANOS</a>
             </div>
             <div class="estado">
-                <p id="estado"><i class="bi bi-circle-fill"></i> Actualmente lleno</p>
+                <p id="estado"><i class="bi bi-circle-fill"></i> Actualmente en EOTW</p>
                 <p>KitMap - SoloLegends</p>
             </div>
         </div>
@@ -90,6 +90,12 @@
     body::-webkit-scrollbar {
         width: 0;
     }
+    .estado i {
+        position: relative;
+        color: rgb(87, 87, 87);
+        border-radius: 50%;
+        font-size: 80%;
+    }
     .content-box-mid {
         display: flex;
         gap: 28%
@@ -109,6 +115,7 @@
         position: relative;
         width: 40%;
         border-radius: 20px;
+        image-rendering: pixelated;
     }
     .puntaje {
         position: relative;
@@ -150,13 +157,6 @@
         padding-right: 5%;
         border-right: 1px solid rgb(175, 175, 175);
         color: rgb(199, 199, 199);
-    }
-    .estado i {
-        position: relative;
-        color: rgb(255, 0, 0);
-        box-shadow: 0 0 10px rgb(255, 17, 0);
-        border-radius: 50%;
-        font-size: 80%;
     }
     #insignia {
         font-size: 500%;
