@@ -15,7 +15,7 @@
                     <img src="../imagenes/logo.png" alt="Logo de Villanos Page">
                     <div class="logo-text">
                         <h2>VILLANOS</h2>
-                        <p>HCF FACTION</p>
+                        <p>KITMAP FACTION</p>
                     </div>
                 </div>
                 <div class="botones">
@@ -39,8 +39,10 @@
                         <div class="n-miembros">
                             <i class="fa-solid fa-users"></i>
                             <div id="desc">
+                                <a href="#miembros">
                                 <h1>Miembros</h1>
                                 <p>9/10</p>
+                                </a>
                             </div>
                         </div>
                         <div class="n-miembros">
@@ -94,7 +96,7 @@
                 </div>
             </div>
             <div class="recuadro-M">
-                <div class="miembros">
+                <div class="miembros" id="miembros">
                     <div>
                         <h1>Miembros Actuales</h1>
                     </div>
@@ -123,9 +125,16 @@
                         </div>
                     </div>
                     <div id="miembro">
-                        <img src="https://mc-heads.net/avatar/EzDylann_/64" alt="Cabeza de Minecraft">
+                        <img src="https://mc-heads.net/avatar/Carluchi_/64" alt="Cabeza de Minecraft">
                         <div class="desc">
-                            <h1>EzDylann_</h1>
+                            <h1>Carluchi_</h1>
+                            <h2><i class="fa-solid fa-user"></i> Miembro</h2>
+                        </div>
+                    </div>
+                    <div id="miembro">
+                        <img src="https://mc-heads.net/avatar/IloveMire/64" alt="Cabeza de Minecraft">
+                        <div class="desc">
+                            <h1>IloveMire</h1>
                             <h2><i class="fa-solid fa-user"></i> Miembro</h2>
                         </div>
                     </div>
@@ -161,13 +170,6 @@
                         <img src="https://mc-heads.net/avatar/2kqze/64" alt="Cabeza de Minecraft">
                         <div class="desc">
                             <h1>2kqze</h1>
-                            <h2><i class="fa-solid fa-user"></i> Miembro</h2>
-                        </div>
-                    </div>
-                    <div id="miembro">
-                        <img src="https://mc-heads.net/avatar/Carluchi_/64" alt="Cabeza de Minecraft">
-                        <div class="desc">
-                            <h1>Carluchi_</h1>
                             <h2><i class="fa-solid fa-user"></i> Miembro</h2>
                         </div>
                     </div>
@@ -221,6 +223,10 @@
             position: relative;
             font-size: 20px;
             top: -20px;
+        }
+        .n-miembros a {
+            color: white;
+            text-decoration: none;
         }
         .n-miembros i {
             position: relative;
@@ -452,6 +458,9 @@
             border-radius: 20px;
             box-shadow: 10px 10px 20px black;
         }
+        html {
+            scroll-behavior: smooth;
+        }
         @media (max-width: 1000px) {
             body {
                 overflow-x: hidden;
@@ -489,6 +498,15 @@
             .rangos {
                 width: 300px;
                 font-size: 15px;
+                display: grid;
+                grid-template-columns: (2, 1fr);
+                justify-content: center;
+                justify-self: center;
+            }
+            .rangos i {
+                width: 30px;
+                font-size: 15px;
+                display: grid;
                 justify-content: center;
                 justify-self: center;
             }
@@ -505,9 +523,23 @@
             .inicio {
                 margin: 0;
             }
-            #miembro,#leader,#coleader {
+            #miembro,#leader,#coleader,#capitan {
                 justify-self: center;
-                width: 300px;
+                width: 80%;
+            }
+            #miembro img,#leader img,#coleader img,#capitan img{
+                justify-self: center;
+                width: 60px;
+                height: 60px;
+                border-radius: 0;
+            }
+            #miembro h2,#leader h2,#coleader h2,#capitan h2{
+                width: 100px;
+                font-size: 14px;
+            }
+            #miembro h1,#leader h1,#coleader h1,#capitan h1{
+                width: 100px;
+                font-size: 20px;
             }
         }
     </style>
