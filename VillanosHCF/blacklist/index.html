@@ -22,8 +22,8 @@
             <a href="../miembros/"><i class="bi bi-people-fill"> </i>Miembros</a>
             <a href="../resourcepack/"><i class="bi bi-bar-chart-fill"> </i>Resource Pack</a>
             <!-- Estilo activo para la sección de Guerra -->
-            <a href="../guerra/" style="text-shadow: 0 0 50px rgb(255, 0, 234); color: rgb(242, 103, 255); border-bottom: 2px solid rgb(255, 0, 140);"><i class="bi bi-flag-fill"> </i>Guerra</a>
-            <a href="../blacklist/"><i class="bi bi-flag-fill"> </i>Blacklisted</a>
+            <a href="../guerra/"><i class="bi bi-flag-fill"> </i>Guerra</a>
+            <a href="../blacklist/" style="text-shadow: 0 0 50px rgb(255, 0, 234); color: rgb(242, 103, 255); border-bottom: 2px solid rgb(255, 0, 140);"><i class="bi bi-flag-fill"> </i>Blacklisted</a>
         </div>
         <div class="Unirse">
             <a href="https://discord.gg/R7msZaRUUe"><i class="bi bi-person-plus-fill"> </i>Unirse</a>
@@ -34,48 +34,35 @@
 
     <!-- Header Principal -->
     <div class="header-guerra">
-        <span class="subtitulo-neon"><i class="bi bi-shield-shaded"></i> FACTIONS EN GUERRA</span>
-        <h1>FACTIONS ENEMIGAS</h1>
+        <span class="subtitulo-neon"><i class="bi bi-shield-shaded"></i> Usuarios prohibidos en Villanos</span>
+        <h1>Blacklist</h1>
     </div>
 
     <!-- Barra de Búsqueda -->
     <div class="controles-guerra">
         <div class="search-box">
             <i class="bi bi-search"></i>
-            <input type="text" id="buscarFaction" placeholder="Buscar faction por nombre o líder...">
+            <input type="text" id="buscarFaction" placeholder="Buscár por nombre de usuario">
         </div>
         <div class="resumen-factions">
-            <span>TOTAL: <strong id="total-count">6</strong></span>
+            <span>TOTAL: <strong id="total-count">1</strong></span>
         </div>
     </div>
 
     <!-- Rejilla de Factions Enemigas -->
     <div class="factions-grid">
 
-        <!-- Faction 1 -->
+        <!-- Usuario 1 -->
         <div class="faction-card status-guerra">
             <div class="faction-header">
                 <div class="faction-icon">
-                    <img src="https://mc-heads.net/head/Physicwww/128" alt="lider">
+                    <img src="https://mc-heads.net/head/DJSANDROBEATS/128" alt="lider">
                 </div>
-                <span class="tag-status tag-guerra"><i class="bi bi-record-fill"></i> Enemigos</span>
+                <span class="tag-status tag-guerra"><i class="bi bi-record-fill"></i> BlackList</span>
             </div>
             <div class="faction-info">
-                <h2>Horizon</h2>
-                <p class="faction-leader"><i class="bi bi-person-badge"></i> Líder: <span>Physicwww</span></p>
-            </div>
-        </div>
-        <!-- Faction 2 -->
-        <div class="faction-card status-guerra">
-            <div class="faction-header">
-                <div class="faction-icon">
-                    <img src="https://mc-heads.net/head/michoelpro/128" alt="lider">
-                </div>
-                <span class="tag-status tag-guerra"><i class="bi bi-record-fill"></i> Enemigos</span>
-            </div>
-            <div class="faction-info">
-                <h2>Peruanos</h2>
-                <p class="faction-leader"><i class="bi bi-person-badge"></i> Líder: <span>michoelpro</span></p>
+                <h2>DJSANDROBEATS</h2>
+                <p class="faction-leader"><i class="bi bi-book-half"></i> Razón: <span>Probocar raideo</span></p>
             </div>
         </div>
 
@@ -122,21 +109,21 @@
         margin-bottom: 20px;
     }
     .subtitulo-neon {
-        color: rgb(242, 103, 255);
+        color: rgb(240, 238, 240);
         font-size: 0.85rem;
         letter-spacing: 2px;
         font-weight: bold;
         text-transform: uppercase;
-        background: rgba(255, 0, 234, 0.1);
+        background: rgba(0, 0, 0, 0.1);
         padding: 5px 15px;
         border-radius: 20px;
-        border: 1px solid rgba(255, 0, 234, 0.3);
+        border: 1px solid rgba(104, 103, 103, 0.3);
     }
     .header-guerra h1 {
         font-size: 3.5rem;
-        color: rgb(255, 0, 140);
+        color: rgb(255, 255, 255);
         margin: 15px 0 5px 0;
-        text-shadow: 0 0 25px rgba(255, 0, 140, 0.6);
+        text-shadow: 0 0 25px rgba(5, 5, 5, 0.6);
         letter-spacing: 1px;
     }
     .header-guerra p {
@@ -162,14 +149,14 @@
         left: 15px;
         top: 50%;
         transform: translateY(-50%);
-        color: rgb(242, 103, 255);
+        color: rgb(255, 255, 255);
         font-size: 1.1rem;
     }
     .search-box input {
         width: 100%;
         padding: 12px 15px 12px 45px;
-        background: rgb(15, 5, 12);
-        border: 1px solid rgb(243, 0, 113);
+        background: rgb(0, 0, 0);
+        border: 1px solid rgb(211, 211, 211);
         border-radius: 12px;
         color: white;
         outline: none;
@@ -181,15 +168,15 @@
         border-color: rgb(255, 0, 234);
     }
     .resumen-factions span {
-        background: rgb(15, 5, 12);
-        border: 1px solid rgba(255, 0, 140, 0.3);
+        background: rgb(0, 0, 0);
+        border: 1px solid rgba(250, 249, 249, 0.3);
         padding: 8px 16px;
         border-radius: 10px;
         font-size: 0.85rem;
-        color: rgb(180, 180, 180);
+        color: rgb(123, 255, 255);
     }
     .resumen-factions strong {
-        color: rgb(242, 103, 255);
+        color: rgb(255, 254, 255);
     }
 
     /* Rejilla (Grid) */
@@ -203,11 +190,11 @@
 
     /* Tarjetas */
     .faction-card {
-        background: linear-gradient(145deg, rgba(15, 0, 12, 0.9), rgba(5, 5, 5, 0.95));
+        background: linear-gradient(145deg, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.3), rgba(5, 5, 5, 0.95));
         border-radius: 18px;
         padding: 20px;
         width: 300px;
-        border: 1px solid rgba(255, 0, 140, 0.25);
+        border: 1px solid rgba(136, 136, 136, 0.25);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
         transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
         display: flex;
@@ -235,8 +222,8 @@
         width: 128px;
         height: 128px;
         border-radius: 12px;
-        background: linear-gradient(135deg, rgba(255, 0, 140, 0.3), rgba(60, 0, 30, 0.5));
-        border: 1px solid rgb(255, 0, 140);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(3, 3, 3, 0.3), rgba(255, 255, 255, 0.5));
+        border: 1px solid rgb(250, 248, 248);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -278,9 +265,9 @@
     /* Variaciones de Estado */
     .status-guerra:hover { border-color: rgb(255, 0, 140); }
     .tag-guerra {
-        background: rgba(255, 0, 85, 0.15);
-        border: 1px solid rgb(255, 0, 85);
-        color: rgb(255, 100, 140);
+        background: rgba(0, 0, 0, 0.15);
+        border: 1px solid rgb(92, 87, 89);
+        color: rgb(240, 239, 239);
     }
 
     .icon-raidable {
