@@ -1,533 +1,312 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <title>Miembros</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="icon" type="image/png" href="../imagenes/logo.png">
-            <link rel="stylesheet" href="../css/style.css">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-        </head>
-        <header>
-            <div class="navbar">
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Villanos | Miembros</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/miembros.css">
+        <link rel="icon" type="image/png" href="../imagenes/logo.png">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
                 <div class="logo">
-                    <img src="../imagenes/logo.png" alt="Logo de Villanos Page">
-                    <div class="logo-text">
-                        <h2>VILLANOS</h2>
-                        <p>KITMAP FACTION</p>
+                    <img src="../imagenes/logo.png" alt="Logo villanos">
+                    <div class="logo-texto">
+                        <h2>Villanos</h2>
+                        <span>KitMap Pots</span>
                     </div>
                 </div>
-                <div class="botones">
-                    <a href="../"><i class="bi bi-house-door-fill"> </i>Inicio</a>
-                    <a href="../miembros/" style="text-shadow: 0 0 20px rgb(255, 0, 179); color: rgb(242, 103, 255); border-bottom: 2px solid rgb(255, 0, 140);"><i class="bi bi-people-fill"> </i>Miembros</a>
-                    <a href="../resourcepack/"><i class="bi bi-bar-chart-fill"> </i>Resource Pack</a>
-                    <a href="../guerra/"><i class="bi bi-flag-fill"> </i>Guerra</a>
-                    <a href="../blacklist/"><i class="bi bi-flag-fill"> </i>Blacklisted</a>
+                <ul class="menu">
+                    <li><a href="../"><i class="bi bi-house-door-fill"></i> Inicio</a></li>
+                    <li><a href="../Miembros/" class="activo"><i class="bi bi-people-fill"></i> Miembros</a></li>
+                    <li><a href="../ResourcePack/"><i class="bi bi-box-seam-fill"></i> Resource Pack</a></li>
+                    <li><a href="../Guerra/"><i class="bi bi-shield-shaded"></i> Guerra</a></li>
+                    <li><a href="../blacklist/"><i class="bi bi-slash-circle"></i> Black List</a></li>
+                </ul>
+                <div class="boton-header">
+                    <a href="https://discord.gg/R7msZaRUUe" target="_blank" class="btn-discord" rel="noopener">
+                        <i class="bi bi-discord"></i>Unirse
+                    </a>
                 </div>
-                <div class="Unirse">
-                    <a href="https://discord.gg/R7msZaRUUe"><i class="bi bi-person-plus-fill"> </i>Unirse</a>
-                </div>
-            </div>
+            </nav>
         </header>
-        <body>
-            <div class="content-box-mid">
-                <div class="inicio">
-                    <h2>MIEMBROS DE</h2>
-                    <h1>VILLANOS</h1>
-                    <p>Aqui podras encontrar a los miembros de la faction de VILLANOS</p>
-                    <div class="content-data">
-                        <div class="n-miembros">
-                            <i class="fa-solid fa-users"></i>
-                            <div id="desc">
-                                <a href="#miembros">
-                                <h1>Miembros</h1>
-                                <p>5/20</p>
-                                </a>
+         <main class="contenedor-principal">
+            <section class="inicio">
+                <div class="presentacion">
+                    <span class="etiqueta">
+                        <i class="bi bi-people-fill"></i> Miembros
+                    </span>
+                    <div class="titulos">
+                        <h2>Miembros de</h2>
+                        <h1>Villanos</h1>
+                    </div>
+                    <p class="descripcion">
+                        Todos los miembros de villanos dentro de la faction
+                    </p>
+                    <div class="botones">
+                        <a href="https://discord.gg/R7msZaRUUe">
+                            <i class="bi bi-discord"></i> Unirme
+                        </a>
+                    </div>
+                    <div class="estadisticas">
+                        <div class="e-cuadro">
+                            <div class="ec-icono">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div class="ec-textos">
+                                <h2>Miembros:</h2>
+                                <p>20/20</p>
                             </div>
                         </div>
-                        <div class="n-miembros">
-                            <i class="fa-solid fa-shield"></i>
-                            <div id="desc">
-                                <h1>Co-lideres</h1>
-                                <p>2</p>
+                        <div class="e-cuadro">
+                            <div class="ec-icono">
+                                <i class="fa-solid fa-shield"></i>
+                            </div>
+                            <div class="ec-textos">
+                                <h2>Colideres:</h2>
+                                <p>7</p>
                             </div>
                         </div>
-                        <div class="n-miembros">
-                            <i class="fa-solid fa-crown"></i>
-                            <div id="desc">
-                                <h1>Lider</h1>
+                        <div class="e-cuadro">
+                            <div class="ec-icono">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                            <div class="ec-textos">
+                                <h2>Lider:</h2>
                                 <p>Spydcha_TA</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="rangos">
-                    <div id="title">
-                        <h1>¿Qué permisos otorga cada rango?</h1>
-                    </div>
-                    <div id="descripciones">
-                        <i class="fa-solid fa-crown" id="icono"></i>
-                        <div id="desc">
-                            <h1>Lider</h1>
-                            <p>Este rol otorga todos los permisos de la faction. Con el puedes hacer lo que sea con ella</p>
+                <div class="roles">
+                    <div class="roles-grid">
+                        <div class="rol">
+                            <div class="rol-icon">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                            <div class="desc">
+                                <h3>Lider</h3>
+                                <p>Tiene todos los permisos de la faction al ser practicamente el jefe</p>
+                            </div>
                         </div>
-                    </div>
-                    <div id="descripciones">
-                        <i class="fa-solid fa-shield" id="icono"></i>
-                        <div id="desc">
-                            <h1>Co-lider</h1>
-                            <p>Siendo casi igual de importante que el lider. El Co-lider tiene casi el mismo poder sobre los miembros de la faction que el lider. Siendo lo unico que no puede hacer, modificar la faction</p>
+                        <div class="rol">
+                            <div class="rol-icon">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                            <div class="desc">
+                                <h3>Lider</h3>
+                                <p>Tiene todos los permisos de la faction al ser practicamente el jefe</p>
+                            </div>
                         </div>
-                    </div>
-                    <div id="descripciones">
-                        <i class="fa-solid fa-flag" id="icono"></i>
-                        <div id="desc">
-                            <h1>Capitán</h1>
-                            <p>Este rol tiene permisos mas limitados. Se usa mas para dar superioridad a usuarios sobre los miembros, dando a entender que son importantes en su area</p>
+                        <div class="rol">
+                            <div class="rol-icon">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                            <div class="desc">
+                                <h3>Lider</h3>
+                                <p>Tiene todos los permisos de la faction al ser practicamente el jefe</p>
+                            </div>
                         </div>
-                    </div>
-                    <div id="descripciones">
-                        <i class="fa-solid fa-user" id="icono"></i>
-                        <div id="desc">
-                            <h1>Miembro</h1>
-                            <p>Este rol es para los usuarios casuales, gente que entra a jugar de vez en cuando. Pero no quita que sean importantes para el desarrollo de la faction, pues una faction sin miembros es solo un grupo de juego</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="recuadro-M">
-                <div class="miembros" id="miembros">
-                    <div>
-                        <h1>Miembros Actuales</h1>
-                        <p>Los miembros actuales se actualizan casi siempre al final del dia</p>
-                    </div>
-                    <div>
-
-                    </div>
-                    <div id="leader">
-                        <img src="https://mc-heads.net/avatar/Spydcha_TA/64" alt="https://mc-heads.net/avatar/Spydcha_TA/64">
-                        <div class="desc">
-                            <h1>Spydcha_TA</h1>
-                            <h2><i class="fa-solid fa-crown"></i> Lider</h2>
-                        </div>
-                    </div>
-                    <div id="coleader">
-                        <img src="https://mc-heads.net/avatar/Carluchi_/64" alt="https://mc-heads.net/avatar/Spydcha_TA/64">
-                        <div class="desc">
-                            <h1>Carluchi_</h1>
-                            <h2><i class="fa-solid fa-shield"></i> Co-lider</h2>
-                        </div>
-                    </div>
-                    <div id="coleader">
-                        <img src="https://mc-heads.net/avatar/archalex_TA/64" alt="https://mc-heads.net/avatar/Spydcha_TA/64">
-                        <div class="desc">
-                            <h1>archalex_TA</h1>
-                            <h2><i class="fa-solid fa-shield"></i> Co-lider</h2>
-                        </div>
-                    </div>
-                    <div id="capitan">
-                        <img src="https://mc-heads.net/avatar/encarga22/64" alt="https://mc-heads.net/avatar/Spydcha_TA/64">
-                        <div class="desc">
-                            <h1>encarga22</h1>
-                            <h2><i class="fa-solid fa-user"></i> Capitan</h2>
-                        </div>
-                    </div>
-                    <div id="miembro">
-                        <img src="https://mc-heads.net/avatar/Andreeh_TA/64" alt="https://mc-heads.net/avatar/Spydcha_TA/64">
-                        <div class="desc">
-                            <h1>Andreeh_TA</h1>
-                            <h2><i class="fa-solid fa-user"></i> Miembro</h2>
-                        </div>
-                    </div>
-                    <div id="miembro">
-                        <img src="https://mc-heads.net/avatar/KezzQT/64" alt="https://mc-heads.net/avatar/Spydcha_TA/64">
-                        <div class="desc">
-                            <h1>KezzQT</h1>
-                            <h2><i class="fa-solid fa-user"></i> Miembro</h2>
-                        </div>
-                    </div>
-                    <div id="miembro">
-                        <img src="https://mc-heads.net/avatar/lStven/64" alt="https://mc-heads.net/avatar/Spydcha_TA/64">
-                        <div class="desc">
-                            <h1>lStven</h1>
-                            <h2><i class="fa-solid fa-user"></i> Miembro</h2>
+                        <div class="rol">
+                            <div class="rol-icon">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                            <div class="desc">
+                                <h3>Lider</h3>
+                                <p>Tiene todos los permisos de la faction al ser practicamente el jefe</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </body>
-    </html>
-    <style>
-        body::-webkit-scrollbar {
-            width: 0;
-        }
-        #icono {
-            position: relative;
-            box-shadow: 10px 10px 40px black;
-            font-size: 80px;
-            top: 20px;
-            background: linear-gradient(rgb(255, 0, 140), rgb(255, 0, 76));
-            border: 1px solid rgb(174, 0, 255);
-            height: 50%;
-            padding: 10px;
-            border-radius: 20px;
-            color: rgb(31, 0, 15);
-        }
-        #descripciones {
-            display: flex;
-            gap: 40px;
-            padding: 10px;
-            background: linear-gradient(rgb(90, 0, 35), rgba(255, 0, 0, 0.363));
-            box-shadow: 0 0 20px black;
-            border-radius: 20px;
-            border: 1px solid rgb(255, 0, 76);
-            margin-bottom: 20px;
-        }
-        .rangos {
-            background-color: rgb(46, 0, 10);
-            margin-top: 20px;
-            padding: 10px;
-            display: grid;
-            border: 2px solid rgb(255, 0, 106);
-            border-radius: 20px;
-            position: relative;
-        }
-        .content-box-mid {
-            display: flex;
-        }
-        .content-data {
-            display: flex;
-            gap: 10px;
-        }
-        .n-miembros p {
-            position: relative;
-            font-size: 20px;
-            top: -20px;
-        }
-        .n-miembros a {
-            color: white;
-            text-decoration: none;
-        }
-        .n-miembros i {
-            position: relative;
-            font-size: 40px;
-            text-align: center;
-            justify-content: center;
-            top: 15px;
-            padding: 10px;
-            border-radius: 20px;
-            height: 60px;
-            color: rgb(250, 0, 154);
-        }
-        .n-miembros {
-            position: relative;
-            padding: 0px;
-            width: 220px;
-            height: 90px;
-            gap: 00px;
-            margin: 30px;
-            font-size: 14px;
-            display: flex;
-            border-radius: 30px;
-            border: 1px solid rgb(255, 0, 170);
-            box-shadow: 0 0 30px rgb(255, 0, 43);
-            background-color: rgba(43, 0, 20, 0.486);
-        }
-        .inicio > h1 {
-            color: rgb(255, 0, 98);
-            margin: 0;
-        }
-        .inicio > p {
-            font-size: 28px;
-            color: gray;
-        }
-        .inicio > h2 {
-            margin: 0;
-            margin-top: 40px;
-        }
-        .inicio {
-            position: relative;
-            font-size: 40px;
-            margin: 90px;
-            margin-bottom: 0;
-        }
-        .recuadro-M h1 {
-            position: relative;
-            margin: 40px 0 0;
-            color: rgb(255, 255, 255);
-            margin-bottom: 0px;
-            font-size: 24px;
-        }
-        .recuadro-M {
-            display: flex;
-            gap: 50px;
-        }
-        .miembros {
-            top: 5vh;
-            border-radius: 30px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            flex-wrap: wrap;
-            background: linear-gradient(to bottom right, rgb(44, 0, 41), rgb(0, 0, 0), rgb(54, 0, 51))padding-box, linear-gradient(to bottom right, rgb(255, 0, 191), rgb(143, 0, 0), rgb(255, 0, 191)) border-box;
-            border: 2px solid transparent;
-            padding: 20px;
-            gap: 1vw;
-            width: 50%;
-            position: relative;
-            margin-top: 0px;
-            top: -300px;
-        }
-        /*libre*/
-        #libre {
-            background: linear-gradient(rgb(107, 107, 107),rgb(0, 0, 0), rgb(107, 107, 107))padding-box, linear-gradient(to bottom right, rgb(255, 255, 255),rgb(0, 0, 0), rgb(255, 254, 254)) border-box;
-            position: relative;
-            width: 400px;
-            justify-content: left;
-            display: flex;
-            text-align: left;
-            padding: 10px;
-            gap: 20px;
-            border-radius: 20px;
-            box-shadow: 10px 10px 10px rgb(0, 0, 0);
-            border: 2px solid transparent;
-            margin: 10px;
-        }
-        #libre h1 {
-            margin-top: 20px;
-        }
-        #libre h2 {
-            background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(27, 27, 27),rgb(0, 0, 0), rgb(44, 42, 42));
-            width: 155px;
-            padding: 4px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgb(68, 68, 68);
-            border-radius: 10px;
-        }
-        #libre img {
-            width: 120px;
-            height: 120px;
-            border-radius: 20px;
-            margin-top: 0px;
-            box-shadow: 0px 0px 5px rgb(0, 0, 0);
-            border: 2px solid rgb(48, 48, 48);
-            background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(31, 31, 31), rgb(0, 0, 0));
-            justify-self: left;
-            image-rendering: pixelated;
-        }
-        /*Lider*/
-        #leader {
-            background: linear-gradient(rgb(80, 0, 44),rgb(0, 0, 0), rgb(80, 0, 44))padding-box, linear-gradient(to bottom right, rgb(255, 113, 196),rgb(0, 0, 0), rgb(255, 140, 217)) border-box;
-            position: relative;
-            width: 400px;
-            justify-content: left;
-            display: flex;
-            text-align: left;
-            padding: 10px;
-            gap: 20px;
-            border-radius: 20px;
-            box-shadow: 10px 10px 10px rgb(0, 0, 0);
-            border: 2px solid transparent;
-            margin: 10px;
-        }
-        #leader h1 {
-            margin-top: 20px;
-        }
-        #leader h2 {
-            background: linear-gradient(to bottom right, rgb(214, 121, 0), rgb(255, 191, 107),rgb(214, 103, 0), rgb(105, 60, 0), rgb(255, 123, 0));
-            width: 100px;
-            padding: 4px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgb(255, 145, 0);
-        }
-        #leader img {
-            width: 120px;
-            height: 120px;
-            border-radius: 20px;
-            margin-top: 0px;
-            box-shadow: 10px 10px 20px black;
-            justify-self: left;
-            image-rendering: pixelated;
-        }
-        /*co-Lider*/
-        #coleader {
-            background: linear-gradient(rgb(80, 0, 44),rgb(0, 0, 0), rgb(80, 0, 44))padding-box, linear-gradient(to bottom right, rgb(255, 113, 196),rgb(0, 0, 0), rgb(255, 140, 217)) border-box;
-            position: relative;
-            width: 400px;
-            justify-content: left;
-            display: flex;
-            text-align: left;
-            padding: 10px;
-            gap: 20px;
-            border-radius: 20px;
-            box-shadow: 10px 10px 10px rgb(0, 0, 0);
-            border: 2px solid transparent;
-            margin: 10px;
-        }
-        #coleader h1 {
-            margin-top: 20px;
-        }
-        #coleader h2 {
-            background: linear-gradient(to bottom right, rgb(255, 0, 0), rgb(44, 0, 0),rgb(214, 0, 54), rgb(54, 0, 0), rgb(255, 0, 0));
-            width: 150px;
-            padding: 4px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgb(255, 0, 0);
-        }
-        #coleader img {
-            width: 120px;
-            height: 120px;
-            border-radius: 20px;
-            box-shadow: 10px 10px 20px black;
-            justify-self: left;
-            image-rendering: pixelated;
-        }
-        /*Capitan*/
-        #capitan {
-            background: linear-gradient(rgb(80, 0, 44),rgb(0, 0, 0), rgb(80, 0, 44))padding-box, linear-gradient(to bottom right, rgb(255, 113, 196),rgb(0, 0, 0), rgb(255, 140, 217)) border-box;
-            position: relative;
-            width: 400px;
-            justify-content: left;
-            display: flex;
-            text-align: left;
-            padding: 10px;
-            gap: 20px;
-            border-radius: 20px;
-            box-shadow: 10px 10px 10px rgb(0, 0, 0);
-            border: 2px solid transparent;
-            margin: 10px;
-        }
-        #capitan h1 {
-            margin-top: 20px;
-        }
-        #capitan h2 {
-            background: linear-gradient(to bottom right, rgb(25, 0, 255), rgb(1, 0, 82),rgb(0, 14, 214), rgb(10, 0, 54), rgb(4, 0, 255));
-            width: 120px;
-            padding: 4px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgb(0, 4, 255);
-        }
-        #capitan img {
-            width: 120px;
-            height: 120px;
-            border-radius: 20px;
-            box-shadow: 10px 10px 20px black;
-            justify-self: left;
-            image-rendering: pixelated;
-        }
-        /*Miembros*/
-        #miembro {
-            background: linear-gradient(rgb(80, 0, 44),rgb(0, 0, 0), rgb(80, 0, 44))padding-box, linear-gradient(to bottom right, rgb(255, 113, 196),rgb(0, 0, 0), rgb(255, 140, 217)) border-box;
-            position: relative;
-            width: 400px;
-            justify-content: left;
-            display: flex;
-            text-align: left;
-            padding: 10px;
-            gap: 20px;
-            border-radius: 20px;
-            box-shadow: 10px 10px 10px rgb(0, 0, 0);
-            border: 2px solid transparent;
-            margin: 10px;
-        }
-        #miembro h1 {
-            margin-top: 20px;
-        }
-        #miembro h2 {
-            background: linear-gradient(to bottom right, rgb(0, 255, 34), rgb(0, 44, 17),rgb(43, 214, 0), rgb(11, 54, 0), rgb(30, 255, 0));
-            width: 130px;
-            padding: 4px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgb(9, 255, 0);
-        }
-        #miembro img {
-            width: 120px;
-            height: 120px;
-            border-radius: 20px;
-            box-shadow: 10px 10px 20px black;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-        @media (max-width: 1000px) {
-            body {
-                overflow-x: hidden;
-            }
-            #icono {
-                position: relative;
-                box-shadow: 0px 0px 0px black;
-                font-size: 80px;
-                top: 20px;
-                background: rgba(133, 11, 11, 0);
-                border: 0px solid rgb(174, 0, 255);
-                height: 70%;
-                padding: 10px;
-                border-radius: 20px;
-                color: rgb(128, 0, 121);
-            }
-            #descripciones {
-                display: grid;
-            }
-            .content-data {
-                display: grid;
-                gap: 0px;
-            }
-            #desc h1 {
-                font-size: 20px;
-            }
-            .miembros {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                justify-content: center;
-                justify-self: center;
-                width: 78vw;
-                top: -150px;
-            }
-            .rangos {
-                width: 300px;
-                font-size: 15px;
-                display: grid;
-                grid-template-columns: (2, 1fr);
-                justify-content: center;
-                justify-self: center;
-            }
-            .rangos i {
-                width: 30px;
-                font-size: 15px;
-                display: grid;
-                justify-content: center;
-                justify-self: center;
-            }
-            .content-box-mid {
-                display: grid;
-                margin-bottom: 200px;
-            }
-            .inicio h1, .inicio h2 {
-                font-size: 60px;
-            }
-            .inicio p {
-                font-size: 20px;
-            }
-            .inicio {
-                margin: 0;
-            }
-            #miembro,#leader,#coleader,#capitan {
-                justify-self: center;
-                width: 80%;
-            }
-            #miembro img,#leader img,#coleader img,#capitan img{
-                justify-self: center;
-                width: 60px;
-                height: 60px;
-                border-radius: 0;
-            }
-            #miembro h2,#leader h2,#coleader h2,#capitan h2{
-                width: 100px;
-                font-size: 14px;
-            }
-            #miembro h1,#leader h1,#coleader h1,#capitan h1{
-                width: 100px;
-                font-size: 20px;
-            }
-        }
-    </style>
+            </section>
+            <section class="jugadores">
+                <div class="jugadores-grid">
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/Spydcha_TA/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>Spydcha_TA</h3>
+                            <span class="lider"><i class="fa-solid fa-crown"></i> Lider</span>
+                        </div>
+                    </div>
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/Carluchi_/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>Carluchi_</h3>
+                            <span class="colider"><i class="fa-solid fa-shield"></i> Colider</span>
+                        </div>
+                    </div>
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/FOIIANDOLOS/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>FOIIANDOLOS</h3>
+                            <span class="colider"><i class="fa-solid fa-shield"></i> Colider</span>
+                        </div>
+                    </div>
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/archalex_TA/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>archalex_TA</h3>
+                            <span class="colider"><i class="fa-solid fa-shield"></i> Colider</span>
+                        </div>
+                    </div>
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/MaduroSalvaje/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>MaduroSalvaje</h3>
+                            <span class="colider"><i class="fa-solid fa-shield"></i> Colider</span>
+                        </div>
+                    </div>
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/_FARC/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>_FARC</h3>
+                            <span class="colider"><i class="fa-solid fa-shield"></i> Colider</span>
+                        </div>
+                    </div>
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/encarga22/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>encarga22</h3>
+                            <span class="colider"><i class="fa-solid fa-shield"></i> Colider</span>
+                        </div>
+                    </div>
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/MrPikless/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>MrPikless</h3>
+                            <span class="colider"><i class="fa-solid fa-shield"></i> Colider</span>
+                        </div>
+                    </div>
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/Andreeh_TA/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>Andreeh_TA</h3>
+                            <span class="miembro"><i class="fa-solid fa-user"></i> Miembro</span>
+                        </div>
+                    </div>
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/qwillzt/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>qwillzt</h3>
+                            <span class="miembro"><i class="fa-solid fa-user"></i> Miembro</span>
+                        </div>
+                    </div>
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/lStven/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>lStven</h3>
+                            <span class="miembro"><i class="fa-solid fa-user"></i> Miembro</span>
+                        </div>
+                    </div>
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/Diferente__/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>Diferente__</h3>
+                            <span class="miembro"><i class="fa-solid fa-user"></i> Miembro</span>
+                        </div>
+                    </div>
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/Miguxlzin/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>Miguxlzin</h3>
+                            <span class="miembro"><i class="fa-solid fa-user"></i> Miembro</span>
+                        </div>
+                    </div>
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/iSxypk/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>iSxypk</h3>
+                            <span class="miembro"><i class="fa-solid fa-user"></i> Miembro</span>
+                        </div>
+                    </div>
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/matapatosgg/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>matapatosgg</h3>
+                            <span class="miembro"><i class="fa-solid fa-user"></i> Miembro</span>
+                        </div>
+                    </div>
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/Mknw/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>Mknw</h3>
+                            <span class="miembro"><i class="fa-solid fa-user"></i> Miembro</span>
+                        </div>
+                    </div>
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/VOVOFODE_TA/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>VOVOFODE_TA</h3>
+                            <span class="miembro"><i class="fa-solid fa-user"></i> Miembro</span>
+                        </div>
+                    </div>
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/Um9mil/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>Um9mil</h3>
+                            <span class="miembro"><i class="fa-solid fa-user"></i> Miembro</span>
+                        </div>
+                    </div>
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/Estrecho/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>Estrecho</h3>
+                            <span class="miembro"><i class="fa-solid fa-user"></i> Miembro</span>
+                        </div>
+                    </div>
+                    <div class="jugador">
+                        <div class="jugador-avatar">
+                            <img src="https://mc-heads.net/head/Zkfu/64" title="Cabeza de jugador">
+                        </div>
+                        <div class="jugador-textos">
+                            <h3>Zkfu</h3>
+                            <span class="miembro"><i class="fa-solid fa-user"></i> Miembro</span>
+                        </div>
+                    </div>
+                </div>
+         </section>
+         </main>
+    </body>
+</html>

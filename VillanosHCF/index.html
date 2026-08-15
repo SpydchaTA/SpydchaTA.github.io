@@ -1,310 +1,155 @@
 <!DOCTYPE html>
- <html lang="es">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="css/style.css">
-     <link rel="icon" type="image/png" href="imagenes/logo.png">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-     <title>Villanos Page</title>
- </head>
- <header>
-    <div class="navbar">
-        <div class="logo">
-            <img src="imagenes/logo.png" alt="Logo de Villanos Page">
-            <div class="logo-text">
-                <h2>VILLANOS</h2>
-                <p>KITMAP FACTION</p>
-            </div>
-        </div>
-        <div class="botones">
-            <a href="index.html" style="text-shadow: 0 0 50px rgb(255, 0, 234); color: rgb(242, 103, 255); border-bottom: 2px solid rgb(255, 0, 140);"><i class="bi bi-house-door-fill"> </i>Inicio</a>
-            <a href="miembros/"><i class="bi bi-people-fill"> </i>Miembros</a>
-            <a href="resourcepack/"><i class="bi bi-bar-chart-fill"> </i>Resource Pack</a>
-            <a href="guerra/"><i class="bi bi-flag-fill"> </i>Guerra</a>
-            <a href="blacklist/"><i class="bi bi-flag-fill"> </i>Blacklisted</a>
-        </div>
-        <div class="Unirse">
-            <a href="https://discord.gg/R7msZaRUUe"><i class="bi bi-person-plus-fill"> </i>Unirse</a>
-        </div>
-    </div>
- </header>
- <body>
-    <div class="content-box-mid">
-        <div class="Bienvenida">
-            <div class="titulos">
-                <h2>UNIDOS SOMOS</h2>
-                <h1>VILLANOS</h1>
-            </div>
-            <div class="descripcion">
-                <p>Villanos es una faction del modo KitMap pots que se dedica a la lealtad, la conquista, la estrategia y el raideo </p>
-            </div>
-            <div class="botonesdebienvenida">
-                <a href="https://discord.gg/R7msZaRUUe"><i class="bi bi-person-plus-fill"> </i>Unirme a VILLANOS</a>
-            </div>
-            <div class="estado">
-                <p id="estado"><i class="bi bi-circle-fill"></i> Actualmente lleno/p>
-                <p>KitMap - SoloLegends</p>
-            </div>
-        </div>
-        <div class="estadisticas">
-            <h1>Mejor miembro del mapa pasado</h1>
-            <img src="https://mc-heads.net/avatar/a/64" title="archalex">
-            <h1>Sín Información...</h1>
-            <div class="puntaje">
-                <h2 id="cuadro">Kills: <p>0</p></h2>
-                <h2 id="cuadro">Muertes: <p>0</p></h2>
-            </div>
-        </div>
-    </div>
-    <div class="car">
-        <div class="caract">
-            <div id="insignia">
-                <i class="bi bi-shield"></i>
-            </div>
-            <div class="texto">
-                <h2>Disciplina</h2>
-                <p>La disciplina es la base de nuestra faction, sin ella no podríamos lograr nuestros objetivos.</p>
-            </div>
-        </div>
-        <div class="caract">
-            <div id="insignia">
-                <i class="bi bi-people"></i>
-            </div>
-            <div class="texto">
-                <h2>Team Fights</h2>
-                <p>Las peleas en equipo son una parte fundamental de nuestra estrategia, donde la cooperación y la coordinación son clave para el éxito.</p>
-            </div>
-        </div>
-        <div class="caract">
-            <div id="insignia">
-                <i class="bi bi-activity"></i>
-            </div>
-            <div class="texto">
-                <h2>Actividad</h2>
-                <p>Miembros activos el mayor tiempo posible que nos permiten mantener nuestra posición y alcanzar nuestros objetivos.</p>
-            </div>
-        </div>
-    </div>
- </body>
- <style>
-    body::-webkit-scrollbar {
-        width: 0;
-    }
-    .estado i {
-        position: relative;
-        color: rgb(255, 0, 0);
-        border-radius: 50%;
-        font-size: 80%;
-    }
-    .content-box-mid {
-        display: flex;
-        gap: 28%
-    }
-    .estadisticas {
-        background: rgb(0, 0, 0);
-        padding: 20px;
-        position: relative;
-        margin-top: 20px;
-        width: 30vw;
-        height: 60vh;
-        justify-self: right;
-        border-radius: 20px;
-        border: 1px solid rgb(252, 0, 126)
-    }
-    .estadisticas img {
-        position: relative;
-        width: 40%;
-        border-radius: 20px;
-        image-rendering: pixelated;
-    }
-    .puntaje {
-        position: relative;
-        background: linear-gradient(to bottom right, rgb(75, 0, 56), rgb(95, 0, 40));
-        border: 2px solid rgb(255, 0, 119);
-        border-radius: 30px;
-        margin-top: 20px;
-        width: auto;
-        display: flex;
-        gap: 10%;
-    }
-    #cuadro {
-        background: rgb(20, 0, 15);
-        border: 2px solid rgb(243, 0, 113);
-        padding: 5px;
-        height: 40%;
-        width: 40%;
-        border-radius: 20px;
-        margin-left: 10px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .estado {
-        position: relative;
-        top: 2vh;
-        font-size: 60%;
-        display: flex;
-        gap: 5%;
-        min-width: 60%;
-        margin-top: 4%;
-    }
-    .estado p {
-        margin: 0;
-        color: rgb(53, 53, 53);
-    }
-    .estado #estado {
-        position: relative;
-        padding-right: 5%;
-        border-right: 1px solid rgb(175, 175, 175);
-        color: rgb(199, 199, 199);
-    }
-    #insignia {
-        font-size: 500%;
-        background: linear-gradient(to bottom right, rgba(218, 3, 110, 0.603), rgba(58, 0, 24, 0.418));
-        border: 1px solid rgb(192, 7, 94);
-        padding: 2%;
-        border-radius: 20%;
-    }
-    .car {
-        position: relative;
-        left: 5%;
-        width: 90%;
-        min-height: 20%;
-        gap: 5%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: left;
-        border: 1px solid transparent;
-        background: linear-gradient(to bottom right, rgb(3, 3, 3), rgb(0, 0, 0)) padding-box, linear-gradient(to bottom right, rgb(244, 7, 252), rgba(43, 0, 40, 0.712)) border-box;
-        border-radius: 20px;
-        margin: 10px 0;
-        box-shadow: 0px 0px 10px rgb(114, 0, 99);
-    }
-    .caract {
-        width: 100%;
-        height: 40%;
-        transform: translateY(50%);
-        background-color: rgba(0, 0, 0, 0);
-        display: flex;
-        align-items: center;
-        padding: 1%;
-        position: initial;
-        top: -10%;
-        border-right: 1px solid rgb(66, 66, 66);
-        border-top: 0px;
-        gap: 4%;
-    }
-    .Bienvenida {
-        position: relative;
-        top: 20%;
-        margin: 100px 0 100px;
-        justify-content: center;
-        text-align: left;
-        max-width: 40%;
-        height: 100%;
-        color: white;
-        left: 5%;
-    }
-    .botonesdebienvenida {
-        margin-top: 3%;
-        position: relative;
-        left: 0%;
-        font-size: 200%;
-        margin-top: 10%;
-    }
-    .botonesdebienvenida a {
-        margin-top: 3%;
-        background: linear-gradient(to bottom right, rgb(244, 7, 252), rgb(150, 0, 140));
-        box-shadow: 0 0 20px rgb(83, 0, 76);
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 10px;
-    }
-    .Bienvenida h1 {
-        color: rgb(255, 0, 140);
-    }
-    .Bienvenida h1, .Bienvenida h2 {
-        font-size: 5rem;
-        margin: 0;
-    }
-    .Bienvenida p {
-        font-size: 200%;
-        margin: 3%;
-        text-align: left;
-        margin: 0;
-    }
-    .descripcion {
-        position: relative;
-        font-size: 80%;
-        width: 100%;
-        margin-top: 5%;
-    }
-    @media (max-width: 1000px) {
-        .content-box-mid {
-            display: grid;
-            gap: 1%;
-        }
-        #cuadro {
-            justify-content: center;
-            justify-self: center;
-            width: 200%;
-            height: 60%;
-        }
-        .puntaje {
-            display: grid;
-            justify-content: center;
-            justify-self: center;
-            width: 100%;
-            height: 50%;
-        }
-        .estadisticas {
-            position: relative;
-            width: 70vw;
-            font-size: 12px;
-            justify-self: center;
-            margin-bottom: 40px;
-            background-color: rgb(20, 0, 9);
-            box-shadow: 0 0 10px rgb(224, 4, 151);
-        }
-        body {
-            font-size: 3vw;
-        }
-        .Bienvenida {
-            margin-top: 50px;
-        }
-        .estado {
-            width: 100%;
-        }
-        .Bienvenida {
-            max-width: 90%;
-            left: 5%;
-            top: 10%;
-        }
-        .Bienvenida h1, .Bienvenida h2 {
-            font-size: 3rem;
-        }
-        .Bienvenida p {
-            font-size: 150%;
-        }
-        .botonesdebienvenida {
-            font-size: 150%;
-        }
-        .car {
-            grid-template-columns: 1fr;
-            gap: 2%;
-            top: 60%;
-            padding: 20px;
-            max-width: 80%;
-        }
-        .caract {
-            border-right: 0px solid rgb(66, 66, 66);
-            padding-bottom: 30px;
-            border-bottom: 1px solid rgb(66, 66, 66);
-        }
-        #insignia {
-            font-size: 30px;
-        }
-    }
- </style>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Villanos | KitMap Faction</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="icon" type="image/png" href="imagenes/logo.png">
+    </head>
+    <body>
+         <header class="header">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="imagenes/logo.png" alt="Logo villanos">
+                    <div class="logo-texto">
+                        <h2>Villanos</h2>
+                        <span>KitMap Pots</span>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li><a href="" class="activo"><i class="bi bi-house-door-fill"></i> Inicio</a></li>
+                    <li><a href="Miembros/"><i class="bi bi-people-fill"></i> Miembros</a></li>
+                    <li><a href="ResourcePack/"><i class="bi bi-box-seam-fill"></i> Resource Pack</a></li>
+                    <li><a href="Guerra/"><i class="bi bi-shield-shaded"></i> Guerra</a></li>
+                    <li><a href="blacklist/"><i class="bi bi-slash-circle"></i> Black List</a></li>
+                </ul>
+                <div class="boton-header">
+                    <a href="https://discord.gg/R7msZaRUUe" target="_blank" class="btn-discord" rel="noopener">
+                        <i class="bi bi-discord"></i>Unirse
+                    </a>
+                </div>
+            </nav>
+         </header>
+         <main class="contenedor-principal">
+            <section class="hero">
+                <div class="bienvenida">
+                    <span class="badge-sub">
+                        <i class="bi bi-shield-lock-fill"></i> KITMAP FACTION
+                    </span>
+
+                    <div class="titulos">
+                        <h2>UNIDOS SOMOS</h2>
+                        <h1>VILLANOS</h1>
+                    </div>
+
+                    <p class="descripcion">
+                        Una Faction basada en lealtad y ánimo competitivo
+                    </p>
+                    <div class="botones-hero">
+                        <a href="https://discord.gg/R7msZaRUUe" target="_black" class="btn-principal">
+                            <i class="bi bi-discord"></i> Unirme a VILLANOS
+                        </a>
+                        <a href="#" class="btn-secundario">
+                            <i class="bi bi-download"></i>Textures
+                        </a>
+                    </div>
+
+                    <div class="estado">
+                        <span class="status-indicator">
+                            <i class="bi bi-circle-fill"></i> Actualmente llenos
+                        </span>
+                        <span class="server-tag">
+                            <i class="bi bi-controller"></i> SoloLegends
+                        </span>
+                    </div>
+                </div>
+                <div class="mvp-card">
+                    <div class="mvp-header">
+                        <i class="bi bi-trophy-fill"></i>
+                        <span>Mejor jugador del mapa #38</span>
+                    </div>
+
+                    <div class="player-info">
+                        <div class="avatar-box">
+                            <img src="https://mc-heads.net/avatar/archalex_TA/100" alt="Skin jugador">
+                        </div>
+                        <h3>archalex_TA</h3>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Kills</span>
+                            <span class="stat-value">0</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Muertes</span>
+                            <span class="stat-value">0</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="caracteristicas">
+                <div class="caracteristicas-grid">
+                    <div class="caracteristica">
+                        <div class="caracteristica-icono">
+                            <i class="bi bi-shield-fill"></i>
+                        </div>
+                        <div class="caracteristica-contenido">
+                            <h3>Siempre proteger a las clases:</h3>
+                            <p>Las clases son uno de los roles de apoyo mas importantes. Pues apoyan a los diamantes y ayudan a hacer daño extra a los enemigos.</p>
+                        </div>
+                    </div>
+                    <div class="caracteristica">
+                        <div class="caracteristica-icono">
+                            <i class="bi bi-flag-fill"></i>
+                        </div>
+                        <div class="caracteristica-contenido">
+                            <h3>Escuchar al rango alto</h3>
+                            <p>Escuchar al lider, colider o al que esté al mando nos hace una faction mas organizada y nos ayuda a mejorar poco a poco.</p>
+                        </div>
+                    </div>
+                    <div class="caracteristica">
+                        <div class="caracteristica-icono">
+                            <i class="bi bi-shield-fill"></i>
+                        </div>
+                        <div class="caracteristica-contenido">
+                            <h3>Mostrar lo mejor de tí:</h3>
+                            <p>No te contengas... Siempre muestra lo mejor de ti sin importar la situación. Al final el enemigo tampoco se contendra.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="modos">
+                <h2>Modos que se juegan</h2>
+                <div class="modos-grid">
+                    <div class="modo">
+                        <div class="modo-icon">
+                            <i class="bi bi-fire"></i>
+                        </div>
+                        <div class="modo-desc">
+                            <h3>KitMap</h3>
+                            <p>Pelea de factions en un mundo donde los kits pueden llegar a ser ilimitados, el DTR regenera mas rapido y no hay deathban</p>
+                        </div>
+                        <div class="modo-tag">
+                            <span>Activos</span>
+                        </div>
+                    </div>
+                    <div class="modo">
+                        <div class="modo-icon">
+                            <i class="bi bi-flag"></i>
+                        </div>
+                        <div class="modo-desc">
+                            <h3>HCF</h3>
+                            <p>Pelea de factions <strong>HARDCORE</strong>, los kits son dificiles de conseguir, el DTR tarda casi 1 hora en regenerar y si mueres solo podras salir matando enemigos</p>
+                        </div>
+                        <div class="modo-tag inactivo">
+                            <span>Inactivos</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+         </main>
+    </body>
+</html>

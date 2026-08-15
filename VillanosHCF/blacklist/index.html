@@ -3,335 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" type="image/png" href="../imagenes/logo.png">
+    <title>Villanos | Resource Packs</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <title>Black List - Villanos Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/resourcepack.css">
+    <link rel="icon" type="image/png" href="../imagenes/logo.png">
 </head>
-<header>
-    <div class="navbar">
-        <div class="logo">
-            <img src="../imagenes/logo.png" alt="Logo de Villanos Page">
-            <div class="logo-text">
-                <h2>VILLANOS</h2>
-                <p>KITMAP FACTION</p>
-            </div>
-        </div>
-        <div class="botones">
-            <a href="../"><i class="bi bi-house-door-fill"> </i>Inicio</a>
-            <a href="../miembros/"><i class="bi bi-people-fill"> </i>Miembros</a>
-            <a href="../resourcepack/"><i class="bi bi-bar-chart-fill"> </i>Resource Pack</a>
-            <!-- Estilo activo para la sección de Guerra -->
-            <a href="../guerra/"><i class="bi bi-flag-fill"> </i>Guerra</a>
-            <a href="../blacklist/" style="text-shadow: 0 0 50px rgb(255, 0, 234); color: rgb(242, 103, 255); border-bottom: 2px solid rgb(255, 0, 140);"><i class="bi bi-flag-fill"> </i>Blacklisted</a>
-        </div>
-        <div class="Unirse">
-            <a href="https://discord.gg/R7msZaRUUe"><i class="bi bi-person-plus-fill"> </i>Unirse</a>
-        </div>
-    </div>
-</header>
 <body>
 
-    <!-- Header Principal -->
-    <div class="header-guerra">
-        <span class="subtitulo-neon"><i class="bi bi-shield-shaded"></i> Usuarios prohibidos en Villanos</span>
-        <h1>Blacklist</h1>
-    </div>
-
-    <!-- Barra de Búsqueda -->
-    <div class="controles-guerra">
-        <div class="search-box">
-            <i class="bi bi-search"></i>
-            <input type="text" id="buscarFaction" placeholder="Buscár por nombre de usuario">
-        </div>
-        <div class="resumen-factions">
-            <span>TOTAL: <strong id="total-count">1</strong></span>
-        </div>
-    </div>
-
-    <!-- Rejilla de Factions Enemigas -->
-    <div class="factions-grid">
-
-        <!-- Usuario 1 -->
-        <div class="faction-card status-guerra">
-            <div class="faction-header">
-                <div class="faction-icon">
-                    <img src="https://mc-heads.net/head/DJSANDROBEATS/128" alt="lider">
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../imagenes/logo.png" alt="Logo villanos">
+                <div class="logo-texto">
+                    <h2>Villanos</h2>
+                    <span>KitMap Pots</span>
                 </div>
-                <span class="tag-status tag-guerra"><i class="bi bi-record-fill"></i> BlackList</span>
             </div>
-            <div class="faction-info">
-                <h2>DJSANDROBEATS</h2>
-                <p class="faction-leader"><i class="bi bi-book-half"></i> Razón: <span>Probocar raideo</span></p>
+            <ul class="menu">
+                <li><a href="../"><i class="bi bi-house-door-fill"></i> Inicio</a></li>
+                <li><a href="../Miembros/"><i class="bi bi-people-fill"></i> Miembros</a></li>
+                <li><a href="../ResourcePack/"><i class="bi bi-box-seam-fill"></i> Resource Pack</a></li>
+                <li><a href="../guerra/"><i class="bi bi-shield-shaded"></i> Guerra</a></li>
+                <li><a href="../blacklist/" class="activo"><i class="bi bi-slash-circle"></i> Black List</a></li>
+            </ul>
+            <div class="boton-header">
+                <a href="https://discord.gg/R7msZaRUUe" target="_blank" class="btn-discord" rel="noopener">
+                    <i class="bi bi-discord"></i>Unirse
+                </a>
             </div>
-        </div>
-
-    </div>
-
-    <!-- Script del Buscador de Factions -->
-    <script>
-        document.getElementById('buscarFaction').addEventListener('keyup', function() {
-            let filtro = this.value.toLowerCase();
-            let cards = document.querySelectorAll('.faction-card');
-            let visibles = 0;
-
-            cards.forEach(card => {
-                let nombre = card.querySelector('h2').textContent.toLowerCase();
-                let lider = card.querySelector('.faction-leader span').textContent.toLowerCase();
-
-                if(nombre.includes(filtro) || lider.includes(filtro)) {
-                    card.style.display = "flex";
-                    visibles++;
-                } else {
-                    card.style.display = "none";
-                }
-            });
-
-            document.getElementById('total-count').textContent = visibles;
-        });
-    </script>
-</body>
-
-<style>
-    body::-webkit-scrollbar {
-        width: 0;
-    }
-    body {
-        background-color: #050505;
-        color: white;
-        font-family: Arial, sans-serif;
-    }
-
-    /* Header Estilo HUD */
-    .header-guerra {
-        text-align: center;
-        margin-top: 40px;
-        margin-bottom: 20px;
-    }
-    .subtitulo-neon {
-        color: rgb(240, 238, 240);
-        font-size: 0.85rem;
-        letter-spacing: 2px;
-        font-weight: bold;
-        text-transform: uppercase;
-        background: rgba(0, 0, 0, 0.1);
-        padding: 5px 15px;
-        border-radius: 20px;
-        border: 1px solid rgba(104, 103, 103, 0.3);
-    }
-    .header-guerra h1 {
-        font-size: 3.5rem;
-        color: rgb(255, 255, 255);
-        margin: 15px 0 5px 0;
-        text-shadow: 0 0 25px rgba(5, 5, 5, 0.6);
-        letter-spacing: 1px;
-    }
-    .header-guerra p {
-        font-size: 1.1rem;
-        color: rgb(160, 160, 160);
-        margin: 0;
-    }
-
-    /* Buscador */
-    .controles-guerra {
-        width: 85%;
-        margin: 30px auto 20px auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .search-box {
-        position: relative;
-        width: 320px;
-    }
-    .search-box i {
-        position: absolute;
-        left: 15px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: rgb(255, 255, 255);
-        font-size: 1.1rem;
-    }
-    .search-box input {
-        width: 100%;
-        padding: 12px 15px 12px 45px;
-        background: rgb(0, 0, 0);
-        border: 1px solid rgb(211, 211, 211);
-        border-radius: 12px;
-        color: white;
-        outline: none;
-        font-size: 0.95rem;
-        transition: all 0.3s ease;
-    }
-    .search-box input:focus {
-        box-shadow: 0 0 15px rgba(255, 0, 140, 0.5);
-        border-color: rgb(255, 0, 234);
-    }
-    .resumen-factions span {
-        background: rgb(0, 0, 0);
-        border: 1px solid rgba(250, 249, 249, 0.3);
-        padding: 8px 16px;
-        border-radius: 10px;
-        font-size: 0.85rem;
-        color: rgb(123, 255, 255);
-    }
-    .resumen-factions strong {
-        color: rgb(255, 254, 255);
-    }
-
-    /* Rejilla (Grid) */
-    .factions-grid {
-        width: 85%;
-        margin: 0 auto 60px auto;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 50px;
-    }
-
-    /* Tarjetas */
-    .faction-card {
-        background: linear-gradient(145deg, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.3), rgba(5, 5, 5, 0.95));
-        border-radius: 18px;
-        padding: 20px;
-        width: 300px;
-        border: 1px solid rgba(136, 136, 136, 0.25);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-        transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .faction-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(255, 0, 140, 0.3);
-        border-color: rgb(255, 0, 140);
-    }
-
-    /* Encabezado de Tarjeta */
-    .faction-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 15px;
-    }
-
-    .faction-icon {
-        width: 128px;
-        height: 128px;
-        border-radius: 12px;
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(3, 3, 3, 0.3), rgba(255, 255, 255, 0.5));
-        border: 1px solid rgb(250, 248, 248);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.4rem;
-        color: white;
-    }
-
-    .faction-info h2 {
-        margin: 0 0 6px 0;
-        font-size: 1.6rem;
-        color: white;
-        letter-spacing: 0.5px;
-    }
-    .faction-leader {
-        margin: 0;
-        font-size: 0.85rem;
-        color: rgb(150, 150, 150);
-        display: flex;
-        align-items: center;
-        gap: 6px;
-    }
-    .faction-leader span {
-        color: rgb(220, 220, 220);
-        font-weight: bold;
-    }
-
-    /* Tags de Estado */
-    .tag-status {
-        font-size: 0.7rem;
-        font-weight: bold;
-        padding: 5px 10px;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        letter-spacing: 0.5px;
-    }
-
-    /* Variaciones de Estado */
-    .status-guerra:hover { border-color: rgb(255, 0, 140); }
-    .tag-guerra {
-        background: rgba(0, 0, 0, 0.15);
-        border: 1px solid rgb(92, 87, 89);
-        color: rgb(240, 239, 239);
-    }
-
-    .icon-raidable {
-        background: linear-gradient(135deg, rgba(255, 140, 0, 0.3), rgba(60, 30, 0, 0.5));
-        border-color: rgb(255, 140, 0);
-    }
-    .tag-raidable {
-        background: rgba(255, 140, 0, 0.15);
-        border: 1px solid rgb(255, 140, 0);
-        color: rgb(255, 170, 60);
-    }
-    .status-raidable:hover { border-color: rgb(255, 140, 0); box-shadow: 0 8px 25px rgba(255, 140, 0, 0.25); }
-
-    .icon-rival {
-        background: linear-gradient(135deg, rgba(120, 120, 120, 0.2), rgba(30, 30, 30, 0.5));
-        border-color: rgb(120, 120, 120);
-    }
-    .tag-rival {
-        background: rgba(150, 150, 150, 0.15);
-        border: 1px solid rgb(150, 150, 150);
-        color: rgb(200, 200, 200);
-    }
-
-    .icon-aliado {
-        background: linear-gradient(135deg, rgba(0, 230, 118, 0.2), rgba(0, 50, 20, 0.5));
-        border-color: rgb(0, 230, 118);
-    }
-    .tag-aliado {
-        background: rgba(0, 230, 118, 0.15);
-        border: 1px solid rgb(0, 230, 118);
-        color: rgb(100, 255, 170);
-    }
-    .status-aliado:hover { border-color: rgb(0, 230, 118); box-shadow: 0 8px 25px rgba(0, 230, 118, 0.2); }
-
-    /* Pie de Tarjeta */
-    .card-footer {
-        margin-top: 20px;
-        padding-top: 12px;
-        border-top: 1px solid rgba(255, 255, 255, 0.05);
-        display: flex;
-        justify-content: flex-end;
-    }
-    .rival-level {
-        font-size: 0.75rem;
-        color: rgb(130, 130, 130);
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-    }
-    .raidable-txt { color: rgb(255, 140, 0); font-weight: bold; }
-    .aliado-txt { color: rgb(0, 230, 118); }
-
-    /* Responsive Design */
-    @media (max-width: 900px) {
-        .header-guerra h1 { font-size: 2.5rem; }
-        .controles-guerra {
-            flex-direction: column;
-            gap: 15px;
-            align-items: stretch;
-        }
-        .search-box { width: 100%; }
-        .resumen-factions { text-align: center; }
-        .factions-grid {
-            grid-template-columns: 1fr;
-        }
-    }
-</style>
-</html>
+        </nav>
+    </header>
+    <body>
+        <h1>proximamente...</h1>
+    </body>

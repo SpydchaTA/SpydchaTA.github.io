@@ -1,0 +1,257 @@
+.contenedor-principal {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+body::-webkit-scrollbar {
+    width: 0px;
+}
+.inicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.etiqueta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(255, 0, 119, 0.1);
+    color: #ff0077;
+    border: 1px solid rgba(255, 0, 119, 0.3);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    width: fit-content;
+}
+
+.titulos h2 {
+    font-size: 44px;
+    color: #a0a0a0;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.titulos h1 {
+    font-size: 124px;
+    font-weight: 900;
+    color: rgb(255, 0, 119);
+    line-height: 1;
+    letter-spacing: 3px;
+    text-shadow: 0 0 20px rgba(255, 0, 119, 0.5);
+}
+
+.descripcion {
+    color: #a0a0a0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.botones {
+    background-color: rgb(255, 0, 149);
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(255, 0, 170, 0.452);
+}
+
+.botones:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgb(255, 0, 170);
+}
+
+.botones a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.estadisticas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.e-cuadro {
+    display: flex;
+    align-items: center;
+    background-color: rgba(95, 0, 24, 0.35);
+    padding: 10px 20px;
+    border-radius: 10px;
+    gap: 15px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border: 1px solid rgba(243, 0, 73, 0.6);
+}
+
+.e-cuadro h2 {
+    font-size: 14px;
+    color: #a0a0a0;
+    margin-bottom: 2px;
+}
+
+.e-cuadro p {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.ec-icono {
+    font-size: 26px;
+    color: rgb(255, 0, 140);
+}
+
+.roles {
+    background-color: rgb(39, 3, 23);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgb(156, 0, 78);
+    box-shadow: 0 0 15px rgba(156, 0, 78, 0.2);
+}
+
+.roles-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rol {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(63, 6, 37);
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 0, 119, 0.1);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.rol:hover {
+    transform: translateX(4px);
+    border-color: rgba(255, 0, 119, 0.5);
+}
+
+.rol-icon {
+    font-size: 24px;
+    background-color: rgb(143, 0, 36);
+    color: rgb(255, 120, 120);
+    padding: 12px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.desc h1 {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.desc p {
+    font-size: 14px;
+    color: #a0a0a0;
+    line-height: 1.4;
+}
+
+.jugadores {
+    margin-top: 50px;
+}
+
+.jugadores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+    background-color: rgb(19, 0, 10);
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid rgb(90, 0, 42);
+}
+
+.jugador {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(17, 17, 17, 0.685);
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: 1px solid rgb(97, 0, 37);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.jugador:hover {
+    transform: translateY(-3px);
+    border-color: rgb(255, 0, 119);
+    box-shadow: 0 4px 15px rgba(255, 0, 119, 0.2);
+}
+
+.jugador img {
+    padding: 6px;
+    border-radius: 10px;
+    background-color: rgb(27, 0, 21);
+    border: 1px solid rgba(255, 0, 119, 0.2);
+}
+
+.jugador-textos {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.jugador-textos h3 {
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.lider {
+    background-color: rgb(43, 0, 0);
+    color: rgb(255, 0, 234);
+    width: fit-content;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid rgb(255, 0, 119);
+    letter-spacing: 1px;
+}
+.colider {
+    background-color: rgb(0, 27, 43);
+    color: rgb(0, 217, 255);
+    width: fit-content;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid rgb(0, 238, 255);
+    letter-spacing: 1px;
+}
+.miembro {
+    background-color: rgb(7, 43, 0);
+    color: rgb(9, 255, 0);
+    width: fit-content;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid rgb(30, 255, 0);
+    letter-spacing: 1px;
+}
