@@ -2,191 +2,177 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Miembros | VILLANOS</title>
+    <title>Miembros - Villanos Faction</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../imagenes/logo.png">
     <link rel="stylesheet" href="../css/style.css">
+    <!-- FontAwesome & Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
-<header>
-    <div class="navbar">
-        <div class="logo">
-            <img src="../imagenes/logo.png" alt="Logo de Villanos Page">
-            <div class="logo-text">
-                <h2>VILLANOS</h2>
-                <p>KITMAP FACTION</p>
-            </div>
-        </div>
-        <div class="botones">
-            <a href="../"><i class="bi bi-house-door-fill"></i> Inicio</a>
-            <a href="../miembros/" style="text-shadow: 0 0 20px rgb(255, 0, 179); color: rgb(242, 103, 255); border-bottom: 2px solid rgb(255, 0, 140);"><i class="bi bi-people-fill"></i> Miembros</a>
-            <a href="../resourcepack/"><i class="bi bi-bar-chart-fill"></i> Resource Pack</a>
-            <a href="../guerra/"><i class="bi bi-flag-fill"></i> Guerra</a>
-            <a href="../blacklist/"><i class="bi bi-flag-fill"></i> Blacklisted</a>
-        </div>
-        <div class="Unirse">
-            <a href="https://discord.gg/R7msZaRUUe"><i class="bi bi-person-plus-fill"></i> Unirse</a>
-        </div>
-    </div>
-</header>
 <body>
-    <main class="contenedor-principal">
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../imagenes/logo.png" alt="Logo de Villanos Page">
+                <div class="logo-text">
+                    <h2>VILLANOS</h2>
+                    <p>KITMAP FACTION</p>
+                </div>
+            </div>
+            <div class="botones">
+                <a href="../"><i class="bi bi-house-door-fill"></i> Inicio</a>
+                <a href="../miembros/" class="active"><i class="bi bi-people-fill"></i> Miembros</a>
+                <a href="../resourcepack/"><i class="bi bi-bar-chart-fill"></i> Resource Pack</a>
+                <a href="../guerra/"><i class="bi bi-flag-fill"></i> Guerra</a>
+                <a href="../blacklist/"><i class="bi bi-flag-fill"></i> Blacklisted</a>
+            </div>
+            <div class="Unirse">
+                <a href="https://discord.gg/R7msZaRUUe" target="_blank" rel="noopener"><i class="bi bi-person-plus-fill"></i> Unirse</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <!-- Sección de Resumen e Información de Rangos -->
         <section class="content-box-mid">
             <div class="inicio">
-                <span class="badge-sub">OFFICIAL ROSTER</span>
                 <h2>MIEMBROS DE</h2>
                 <h1>VILLANOS</h1>
-                <p>Jerarquía, roles y alineación oficial para la Season activa en SoloLegends.</p>
-                
+                <p>Aquí podrás encontrar a los miembros de la faction de VILLANOS</p>
+
                 <div class="content-data">
-                    <div class="n-miembros">
-                        <i class="fa-solid fa-users"></i>
+                    <a href="#miembros" class="n-miembros">
+                        <i class="fa-solid fa-users icono-stat"></i>
                         <div class="desc-stat">
-                            <a href="#miembros">
-                                <h1>Miembros</h1>
-                                <p>7 / 20</p>
-                            </a>
+                            <h3>Miembros</h3>
+                            <p>7/20</p>
+                        </div>
+                    </a>
+                    <div class="n-miembros">
+                        <i class="fa-solid fa-shield icono-stat"></i>
+                        <div class="desc-stat">
+                            <h3>Co-líderes</h3>
+                            <p>3</p>
                         </div>
                     </div>
                     <div class="n-miembros">
-                        <i class="fa-solid fa-shield-halved"></i>
+                        <i class="fa-solid fa-crown icono-stat"></i>
                         <div class="desc-stat">
-                            <h1>Co-líderes</h1>
-                            <p>3 Active</p>
-                        </div>
-                    </div>
-                    <div class="n-miembros highlight-stat">
-                        <i class="fa-solid fa-crown"></i>
-                        <div class="desc-stat">
-                            <h1>Líder</h1>
+                            <h3>Líder</h3>
                             <p>Spydcha_TA</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="rangos">
+            <!-- Explicación de Permisos por Rango -->
+            <section class="rangos">
                 <div class="title-rangos">
-                    <h1><i class="fa-solid fa-layer-group"></i> Nivel de Mando</h1>
+                    <h2>¿Qué permisos otorga cada rango?</h2>
                 </div>
                 
-                <div class="tarjeta-rango rank-leader">
-                    <div class="icono-rango"><i class="fa-solid fa-crown"></i></div>
-                    <div class="info-rango">
-                        <h1>Líder</h1>
-                        <p>Máxima autoridad. Gestión global de la faction, alianzas y decisiones en KOTHs/Raids.</p>
-                    </div>
-                </div>
-                
-                <div class="tarjeta-rango rank-coleader">
-                    <div class="icono-rango"><i class="fa-solid fa-shield-halved"></i></div>
-                    <div class="info-rango">
-                        <h1>Co-líder</h1>
-                        <p>Mando en combate PvP, reclutamiento directo y coordinación de claims y defensas.</p>
-                    </div>
-                </div>
-                
-                <div class="tarjeta-rango rank-captain">
-                    <div class="icono-rango"><i class="fa-solid fa-khanda"></i></div>
-                    <div class="info-rango">
-                        <h1>Capitán</h1>
-                        <p>Líderes de squad en la llanura. Organizan el inventario y guían a los miembros en mapas.</p>
+                <div class="rango-item">
+                    <i class="fa-solid fa-crown icono-rango"></i>
+                    <div class="desc-rango">
+                        <h3>Líder</h3>
+                        <p>Este rol otorga todos los permisos de la faction. Con él puedes gestionar absolutamente todo.</p>
                     </div>
                 </div>
 
-                <div class="tarjeta-rango rank-member">
-                    <div class="icono-rango"><i class="fa-solid fa-user-ninja"></i></div>
-                    <div class="info-rango">
-                        <h1>Miembro</h1>
-                        <p>Fuerza de choque activa. Apoyo en eventos, f-top, farm y combate en equipo.</p>
+                <div class="rango-item">
+                    <i class="fa-solid fa-shield icono-rango"></i>
+                    <div class="desc-rango">
+                        <h3>Co-líder</h3>
+                        <p>Tiene casi el mismo poder sobre los miembros que el líder. Lo único que no puede hacer es disolver o alterar la faction por completo.</p>
                     </div>
                 </div>
-            </div>
+
+                <div class="rango-item">
+                    <i class="fa-solid fa-flag icono-rango"></i>
+                    <div class="desc-rango">
+                        <h3>Capitán</h3>
+                        <p>Permisos más limitados. Otorga jerarquía a usuarios clave para liderar en sus áreas respectivas.</p>
+                    </div>
+                </div>
+
+                <div class="rango-item">
+                    <i class="fa-solid fa-user icono-rango"></i>
+                    <div class="desc-rango">
+                        <h3>Miembro</h3>
+                        <p>Rol para los usuarios de la faction. Vitales para el desarrollo y las actividades diarias dentro del juego.</p>
+                    </div>
+                </div>
+            </section>
         </section>
 
+        <!-- Lista de Miembros Actuales -->
         <section class="recuadro-M" id="miembros">
-            <div class="encabezado-roster">
-                <div class="title-with-line">
-                    <h1>ROSTER DE COMBATE</h1>
-                    <div class="glow-line"></div>
-                </div>
-                <p>Jugadores registrados y verificados dentro del server</p>
+            <div class="header-miembros">
+                <h2>Miembros Actuales</h2>
+                <p>La lista de miembros se actualiza habitualmente al final del día.</p>
             </div>
 
             <div class="grid-miembros">
                 <!-- Líder -->
-                <div class="card-miembro leader">
-                    <div class="skin-wrapper">
-                        <img src="https://mc-heads.net/avatar/Spydcha_TA/64" alt="Skin de Spydcha_TA">
-                    </div>
+                <article class="card-miembro leader">
+                    <img src="https://mc-heads.net/avatar/Spydcha_TA/64" alt="Avatar de Spydcha_TA">
                     <div class="desc">
-                        <h1>Spydcha_TA</h1>
-                        <span class="tag-rank leader-tag"><i class="fa-solid fa-crown"></i> LÍDER</span>
+                        <h3>Spydcha_TA</h3>
+                        <span class="badge badge-leader"><i class="fa-solid fa-crown"></i> Líder</span>
                     </div>
-                </div>
+                </article>
 
-                <!-- Co-Líderes -->
-                <div class="card-miembro coleader">
-                    <div class="skin-wrapper">
-                        <img src="https://mc-heads.net/avatar/Carluchi_/64" alt="Skin de Carluchi_">
-                    </div>
+                <!-- Co-líderes -->
+                <article class="card-miembro coleader">
+                    <img src="https://mc-heads.net/avatar/Carluchi_/64" alt="Avatar de Carluchi_">
                     <div class="desc">
-                        <h1>Carluchi_</h1>
-                        <span class="tag-rank coleader-tag"><i class="fa-solid fa-shield-halved"></i> CO-LÍDER</span>
+                        <h3>Carluchi_</h3>
+                        <span class="badge badge-coleader"><i class="fa-solid fa-shield"></i> Co-líder</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="card-miembro coleader">
-                    <div class="skin-wrapper">
-                        <img src="https://mc-heads.net/avatar/archalex_TA/64" alt="Skin de archalex_TA">
-                    </div>
+                <article class="card-miembro coleader">
+                    <img src="https://mc-heads.net/avatar/archalex_TA/64" alt="Avatar de archalex_TA">
                     <div class="desc">
-                        <h1>archalex_TA</h1>
-                        <span class="tag-rank coleader-tag"><i class="fa-solid fa-shield-halved"></i> CO-LÍDER</span>
+                        <h3>archalex_TA</h3>
+                        <span class="badge badge-coleader"><i class="fa-solid fa-shield"></i> Co-líder</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="card-miembro coleader">
-                    <div class="skin-wrapper">
-                        <img src="https://mc-heads.net/avatar/encarga22/64" alt="Skin de encarga22">
-                    </div>
+                <article class="card-miembro coleader">
+                    <img src="https://mc-heads.net/avatar/encarga22/64" alt="Avatar de encarga22">
                     <div class="desc">
-                        <h1>encarga22</h1>
-                        <span class="tag-rank coleader-tag"><i class="fa-solid fa-shield-halved"></i> CO-LÍDER</span>
+                        <h3>encarga22</h3>
+                        <span class="badge badge-coleader"><i class="fa-solid fa-shield"></i> Co-líder</span>
                     </div>
-                </div>
+                </article>
 
                 <!-- Miembros -->
-                <div class="card-miembro miembro">
-                    <div class="skin-wrapper">
-                        <img src="https://mc-heads.net/avatar/Andreeh_TA/64" alt="Skin de Andreeh_TA">
-                    </div>
+                <article class="card-miembro miembro">
+                    <img src="https://mc-heads.net/avatar/Andreeh_TA/64" alt="Avatar de Andreeh_TA">
                     <div class="desc">
-                        <h1>Andreeh_TA</h1>
-                        <span class="tag-rank miembro-tag"><i class="fa-solid fa-user"></i> MIEMBRO</span>
+                        <h3>Andreeh_TA</h3>
+                        <span class="badge badge-miembro"><i class="fa-solid fa-user"></i> Miembro</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="card-miembro miembro">
-                    <div class="skin-wrapper">
-                        <img src="https://mc-heads.net/avatar/KezzQT/64" alt="Skin de KezzQT">
-                    </div>
+                <article class="card-miembro miembro">
+                    <img src="https://mc-heads.net/avatar/KezzQT/64" alt="Avatar de KezzQT">
                     <div class="desc">
-                        <h1>KezzQT</h1>
-                        <span class="tag-rank miembro-tag"><i class="fa-solid fa-user"></i> MIEMBRO</span>
+                        <h3>KezzQT</h3>
+                        <span class="badge badge-miembro"><i class="fa-solid fa-user"></i> Miembro</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="card-miembro miembro">
-                    <div class="skin-wrapper">
-                        <img src="https://mc-heads.net/avatar/lStven/64" alt="Skin de lStven">
-                    </div>
+                <article class="card-miembro miembro">
+                    <img src="https://mc-heads.net/avatar/lStven/64" alt="Avatar de lStven">
                     <div class="desc">
-                        <h1>lStven</h1>
-                        <span class="tag-rank miembro-tag"><i class="fa-solid fa-user"></i> MIEMBRO</span>
+                        <h3>lStven</h3>
+                        <span class="badge badge-miembro"><i class="fa-solid fa-user"></i> Miembro</span>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
     </main>
@@ -197,324 +183,254 @@
         }
 
         body::-webkit-scrollbar {
-            width: 0px;
+            width: 0;
         }
 
-        body::-webkit-scrollbar-thumb {
-            background: #ff0077;
-            border-radius: 4px;
+        .botones a.active {
+            text-shadow: 0 0 20px rgb(255, 0, 179);
+            color: rgb(242, 103, 255);
+            border-bottom: 2px solid rgb(255, 0, 140);
         }
 
-        /* Estructura Respetando Navbar */
-        .contenedor-principal {
-            max-width: 1300px;
-            margin: 0 auto;
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
             padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
+        /* Encabezado e Stats */
         .content-box-mid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 35px;
-            margin-top: 35px;
-            align-items: start;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: space-between;
         }
 
-        /* Sección Izquierda */
-        .badge-sub {
-            background: rgba(255, 0, 110, 0.15);
-            color: #ff3399;
-            border: 1px solid rgba(255, 0, 110, 0.4);
-            padding: 4px 12px;
-            font-size: 11px;
-            font-weight: 800;
-            letter-spacing: 2px;
-            border-radius: 20px;
-            display: inline-block;
-            margin-bottom: 10px;
+        .inicio {
+            flex: 1 1 500px;
         }
 
-        .inicio > h1 {
-            color: #ff0066;
+        .inicio h1 {
+            color: rgb(255, 0, 98);
             margin: 0;
-            font-size: 62px;
-            font-weight: 900;
-            letter-spacing: 2px;
-            text-shadow: 0 0 25px rgba(255, 0, 102, 0.6), 0 0 50px rgba(255, 0, 102, 0.2);
+            font-size: 3rem;
         }
 
-        .inicio > h2 {
-            margin: 0;
-            font-size: 26px;
-            color: #ffffff;
-            letter-spacing: 1px;
+        .inicio h2 {
+            margin: 20px 0 0;
+            font-size: 1.8rem;
         }
 
-        .inicio > p {
-            font-size: 16px;
-            color: #b3b3b3;
-            margin-top: 12px;
-            line-height: 1.5;
+        .inicio p {
+            font-size: 1.2rem;
+            color: gray;
         }
 
-        /* Tarjetas de Estadísticas */
         .content-data {
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
-            margin-top: 30px;
+            margin-top: 25px;
         }
 
         .n-miembros {
-            padding: 16px;
-            width: 190px;
-            background: rgba(20, 5, 15, 0.65);
             display: flex;
             align-items: center;
             gap: 15px;
-            border-radius: 16px;
-            border: 1px solid rgba(255, 0, 128, 0.3);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            width: 220px;
+            padding: 12px 18px;
+            border-radius: 20px;
+            border: 1px solid rgb(255, 0, 170);
+            box-shadow: 0 0 20px rgba(255, 0, 43, 0.4);
+            background-color: rgba(43, 0, 20, 0.6);
+            text-decoration: none;
+            color: white;
+            transition: transform 0.2s ease;
         }
 
         .n-miembros:hover {
-            transform: translateY(-4px);
-            border-color: #ff0077;
-            box-shadow: 0 10px 30px rgba(255, 0, 119, 0.3);
+            transform: translateY(-3px);
         }
 
-        .n-miembros i {
-            font-size: 28px;
-            color: #ff0077;
-            text-shadow: 0 0 10px rgba(255, 0, 119, 0.5);
+        .icono-stat {
+            font-size: 32px;
+            color: rgb(250, 0, 154);
         }
 
-        .desc-stat h1 {
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        .desc-stat h3 {
             margin: 0;
-            color: #888;
+            font-size: 1rem;
         }
 
         .desc-stat p {
-            font-size: 18px;
-            margin: 2px 0 0 0;
-            color: #fff;
-            font-weight: 800;
-        }
-
-        .desc-stat a {
-            text-decoration: none;
-        }
-
-        /* Bloque Jerarquía */
-        .rangos {
-            background: linear-gradient(160deg, rgba(30, 5, 20, 0.85), rgba(10, 2, 8, 0.95));
-            padding: 28px;
-            border: 1px solid rgba(255, 0, 128, 0.35);
-            border-radius: 24px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
-        }
-
-        .title-rangos h1 {
-            font-size: 20px;
-            color: #fff;
-            margin: 0 0 20px 0;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .title-rangos i {
-            color: #ff0077;
-        }
-
-        .tarjeta-rango {
-            display: flex;
-            gap: 16px;
-            padding: 14px;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 14px;
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            margin-bottom: 12px;
-            align-items: center;
-            transition: background 0.3s ease;
-        }
-
-        .tarjeta-rango:hover {
-            background: rgba(255, 0, 128, 0.08);
-            border-color: rgba(255, 0, 128, 0.3);
-        }
-
-        .icono-rango {
-            width: 44px;
-            height: 44px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            flex-shrink: 0;
-        }
-
-        .rank-leader .icono-rango { background: rgba(255, 170, 0, 0.15); color: #ffaa00; border: 1px solid rgba(255, 170, 0, 0.3); }
-        .rank-coleader .icono-rango { background: rgba(255, 0, 64, 0.15); color: #ff0040; border: 1px solid rgba(255, 0, 64, 0.3); }
-        .rank-captain .icono-rango { background: rgba(170, 0, 255, 0.15); color: #aa00ff; border: 1px solid rgba(170, 0, 255, 0.3); }
-        .rank-member .icono-rango { background: rgba(0, 230, 118, 0.15); color: #00e676; border: 1px solid rgba(0, 230, 118, 0.3); }
-
-        .info-rango h1 {
             margin: 0;
-            font-size: 16px;
-            color: #fff;
-            font-weight: 700;
+            font-size: 1.1rem;
+            color: white;
+            font-weight: bold;
         }
 
-        .info-rango p {
-            margin: 3px 0 0 0;
-            font-size: 12px;
-            color: #999;
-            line-height: 1.4;
+        /* Sección Rangos */
+        .rangos {
+            flex: 1 1 400px;
+            background-color: rgb(46, 0, 10);
+            padding: 20px;
+            border: 2px solid rgb(255, 0, 106);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
 
-        /* Sección Roster / Cards de Jugadores */
-        .recuadro-M {
-            margin-top: 50px;
+        .title-rangos h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.4rem;
+            color: white;
         }
 
-        .encabezado-roster {
-            margin-bottom: 25px;
-        }
-
-        .title-with-line {
+        .rango-item {
             display: flex;
             align-items: center;
             gap: 20px;
+            padding: 12px;
+            background: linear-gradient(135deg, rgb(90, 0, 35), rgba(255, 0, 0, 0.25));
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            border: 1px solid rgb(255, 0, 76);
         }
 
-        .title-with-line h1 {
-            color: #fff;
-            font-size: 26px;
-            font-weight: 900;
-            letter-spacing: 1px;
+        .icono-rango {
+            font-size: 36px;
+            background: linear-gradient(rgb(255, 0, 140), rgb(255, 0, 76));
+            border: 1px solid rgb(174, 0, 255);
+            padding: 12px;
+            border-radius: 12px;
+            color: rgb(31, 0, 15);
+            min-width: 40px;
+            text-align: center;
+        }
+
+        .desc-rango h3 {
+            margin: 0 0 4px 0;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .desc-rango p {
             margin: 0;
+            font-size: 0.88rem;
+            color: #ddd;
         }
 
-        .glow-line {
-            flex-grow: 1;
-            height: 2px;
-            background: linear-gradient(90deg, #ff0077, transparent);
+        /* Sección Miembros Lista */
+        .recuadro-M {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background: linear-gradient(to bottom right, rgb(44, 0, 41), rgb(0, 0, 0), rgb(54, 0, 51)) padding-box,
+                        linear-gradient(to bottom right, rgb(255, 0, 191), rgb(143, 0, 0), rgb(255, 0, 191)) border-box;
+            border: 2px solid transparent;
+            border-radius: 25px;
+            padding: 30px;
         }
 
-        .encabezado-roster p {
-            color: #777;
-            margin-top: 5px;
-            font-size: 14px;
+        .header-miembros h2 {
+            margin: 0;
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        .header-miembros p {
+            margin: 5px 0 0;
+            color: #aaa;
         }
 
         .grid-miembros {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 20px;
-            background: rgba(15, 3, 10, 0.75);
-            border: 1px solid rgba(255, 0, 119, 0.25);
-            border-radius: 24px;
-            padding: 25px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.7);
         }
 
+        /* Estilo base de Tarjeta de Miembro */
         .card-miembro {
-            background: rgba(255, 255, 255, 0.025);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 16px;
-            padding: 14px 18px;
             display: flex;
             align-items: center;
-            gap: 16px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            gap: 15px;
+            padding: 12px;
+            border-radius: 18px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+            border: 2px solid transparent;
+            background: linear-gradient(rgb(80, 0, 44), rgb(0, 0, 0)) padding-box,
+                        linear-gradient(to bottom right, rgb(255, 113, 196), rgb(0, 0, 0), rgb(255, 140, 217)) border-box;
         }
 
-        .card-miembro:hover {
-            transform: translateY(-4px);
-            background: rgba(255, 0, 119, 0.06);
-            border-color: rgba(255, 0, 119, 0.4);
-            box-shadow: 0 8px 25px rgba(255, 0, 119, 0.15);
-        }
-
-        .skin-wrapper {
-            width: 56px;
-            height: 56px;
-            background: rgba(0, 0, 0, 0.5);
+        .card-miembro img {
+            width: 70px;
+            height: 70px;
             border-radius: 12px;
-            padding: 4px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-
-        .skin-wrapper img {
-            width: 100%;
-            height: 100%;
-            border-radius: 8px;
+            box-shadow: 0 0 10px black;
             image-rendering: pixelated;
-            transition: transform 0.3s ease;
         }
 
-        .card-miembro:hover .skin-wrapper img {
-            transform: scale(1.15) rotate(3deg);
+        .card-miembro .desc h3 {
+            margin: 0 0 8px 0;
+            color: white;
+            font-size: 1.2rem;
         }
 
-        .card-miembro .desc h1 {
-            font-size: 17px;
-            font-weight: 700;
-            color: #fff;
-            margin: 0 0 6px 0;
-        }
-
-        .tag-rank {
-            font-size: 11px;
-            font-weight: 800;
-            letter-spacing: 1px;
+        /* Badges / Etiquetas de Rangos */
+        .badge {
+            display: inline-block;
             padding: 4px 10px;
-            border-radius: 8px;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            color: white;
         }
 
-        .leader-tag {
-            background: rgba(255, 170, 0, 0.15);
-            color: #ffbb00;
-            border: 1px solid rgba(255, 170, 0, 0.4);
+        .badge-leader {
+            background: linear-gradient(to bottom right, rgb(214, 121, 0), rgb(255, 123, 0));
+            box-shadow: 0 0 8px rgb(255, 145, 0);
         }
 
-        .coleader-tag {
-            background: rgba(255, 0, 64, 0.15);
-            color: #ff3366;
-            border: 1px solid rgba(255, 0, 64, 0.4);
+        .badge-coleader {
+            background: linear-gradient(to bottom right, rgb(255, 0, 0), rgb(150, 0, 0));
+            box-shadow: 0 0 8px rgb(255, 0, 0);
         }
 
-        .miembro-tag {
-            background: rgba(0, 230, 118, 0.12);
-            color: #00e676;
-            border: 1px solid rgba(0, 230, 118, 0.3);
+        .badge-capitan {
+            background: linear-gradient(to bottom right, rgb(25, 0, 255), rgb(0, 14, 214));
+            box-shadow: 0 0 8px rgb(0, 4, 255);
         }
 
-        /* Adaptación Móvil */
-        @media (max-width: 950px) {
+        .badge-miembro {
+            background: linear-gradient(to bottom right, rgb(0, 200, 34), rgb(11, 80, 0));
+            box-shadow: 0 0 8px rgb(9, 255, 0);
+        }
+
+        /* Adaptabilidad / Responsive */
+        @media (max-width: 768px) {
             .content-box-mid {
-                grid-template-columns: 1fr;
-            }
-
-            .inicio > h1 {
-                font-size: 45px;
+                flex-direction: column;
             }
 
             .grid-miembros {
                 grid-template-columns: 1fr;
+            }
+
+            .inicio h1 {
+                font-size: 2.2rem;
+            }
+
+            .rango-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .icono-rango {
+                min-width: auto;
             }
         }
     </style>

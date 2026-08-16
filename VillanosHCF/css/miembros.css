@@ -244,6 +244,17 @@ body::-webkit-scrollbar {
     border: 1px solid rgb(0, 238, 255);
     letter-spacing: 1px;
 }
+.capitan {
+    background-color: rgb(43, 42, 0);
+    color: rgb(229, 255, 0);
+    width: fit-content;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid rgb(255, 238, 0);
+    letter-spacing: 1px;
+}
 .miembro {
     background-color: rgb(7, 43, 0);
     color: rgb(9, 255, 0);
