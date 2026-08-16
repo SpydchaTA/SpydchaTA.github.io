@@ -271,3 +271,59 @@ body::-webkit-scrollbar {
     border-radius: 20px;
     margin-top: 40px;
 }
+
+/* Adaptación Responsive para Móviles */
+@media (max-width: 900px) {
+    .contenedor-principal {
+        padding: 20px 15px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .titulos h1 {
+        font-size: 42px;
+    }
+
+    .titulos h2 {
+        font-size: 20px;
+    }
+
+    .botones-hero {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-principal, .btn-secundario {
+        justify-content: center;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .estado {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .caracteristicas-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .caracteristica {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .modos-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
