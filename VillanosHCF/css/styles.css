@@ -17,7 +17,7 @@ body {
     z-index: 1000;
 }
 .navbar {
-    max-width: 1300px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 12px 25px;
     display: flex;

@@ -1,0 +1,63 @@
+/* Contenedor principal de la sección media */
+.media {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    min-height: calc(100vh - 80px);
+}
+
+/* Grid adaptable para tarjetas */
+.display-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* Estilo de la tarjeta */
+.display-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(to bottom right, rgb(49, 0, 0), rgb(73, 0, 45)); /* Fondo oscuro moderno */
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.display-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Manejo adaptable de imágenes */
+.imagen-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    box-shadow: 5px 5px 10px black;
+}
+
+.imagen-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.display-card:hover .imagen-container img {
+    transform: scale(1.05);
+}
+
+/* Texto de la tarjeta */
+.display-card h3 {
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin: 0;
+}
