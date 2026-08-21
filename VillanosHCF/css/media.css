@@ -5,6 +5,9 @@
     padding: 2rem 1rem;
     min-height: calc(100vh - 80px);
 }
+body::-webkit-scrollbar {
+    width: 0;
+}
 
 /* Grid adaptable para tarjetas */
 .display-grid {

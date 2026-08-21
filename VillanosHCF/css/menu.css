@@ -108,7 +108,7 @@ body::-webkit-scrollbar {
     font-weight: 600;
 }
 .status-indicator i {
-    color: #ff0000;
+    color: #001aff;
     font-size: 8px;
 }
 .server-tag i {
