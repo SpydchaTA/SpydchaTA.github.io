@@ -108,11 +108,11 @@ body::-webkit-scrollbar {
     font-weight: 600;
 }
 .status-indicator i {
-    color: #0013bd;
+    color: #3cff00;
     font-size: 8px;
 }
 .server-tag i {
-    color: #002fff;
+    color: #ff00c8;
 }
 .mvp-card {
     background: rgba(61, 0, 51, 0.3);
