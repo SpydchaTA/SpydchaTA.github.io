@@ -40,6 +40,12 @@ body {
 .boton:hover {
     transform: scale(1.05);
 }
+.duda {
+    color: rgb(57, 232, 255);
+    text-decoration: underline;
+    font-size: 1.2vw;
+    margin-top: 20px;
+}
 .imagen {
     perspective: 1900px;
     width: 100%;
@@ -82,7 +88,7 @@ body {
     width: 40%;
 }
 .caracteristicas P {
-    font-size: 1vw;
+    font-size: 1vw; 
     color: rgb(255, 255, 255);
 }
 .caracteristicas {
@@ -152,4 +158,16 @@ span {
     height: auto;
     border-radius: 20px;
     margin-bottom: 10px;
+}
+
+/*-------------------Eventos----------------------*/
+/*-------------------Dudas----------------------*/
+.dudas-principal {
+    display: flex;
+    gap: 20px;
+    background: linear-gradient(to right, #08060c10, #006a7cb0);
+    margin-top: 20px;
+    margin: 90px;
+    border-radius: 20px;
+    font-size: 1.1vw;
 }
