@@ -1,85 +1,73 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="google-site-verification" content="eXXKyiiCdZIowhsiGapTko6-Vu7EUqHffFmbCMJHEHw" />
-        <link rel="icon" type="image/png" href="imagenes/nuevologo.png">
-        <link rel="stylesheet" href="styles.css">
-        <title>Suha Launcher</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-        <meta property="og:title" content="Suha Launcher">
-        <meta property="og:description" content="SuHa-Launcher es un launcher de Minecraft enfocado en la personalización.">
-        <meta property="og:image" content="https://spydchata.github.io/remakesuha/imagenes/hola.png">
-        <meta property="og:type" content="website">
-    </head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="icon" type="image/png" href="imagenes/nuevologo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>SuHa Launcher</title>
+</head>
+<body>
     <header>
         <div class="nav">
-            <div class="logotitulo">
-                <img src="imagenes/nuevologo.png" alt="logo" id="logo">
-                <h1>Su-Ha Launcher</h1>
+            <div class="logo">
+                <img src="imagenes/nuevologo.png" alt="Logo de SuHa Launcher">
+                <div class="logo-text">
+                    <h2>SuHa Launcher</h2>
+                </div>
             </div>
-            <div class="botones">
-                <a href=""><i class="bi bi-house-door" style="background-color: rgb(44, 76, 184); border-radius: 10px; padding: 10px; color: rgb(146, 246, 253)"></i> Menu</a>
-                <a href="noticias/"><i class="bi bi-newspaper" style="padding: 10px;"></i> Noticias</a>
-                <a href="https://discord.gg/CHQWkU4Z6N" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Soporte</a>
+            <div class="nav-links">
+                <a href="" class="active">Inicio</a>
+                <a href="eventos/">Eventos</a>
+                <a href="">Proximamente</a>
             </div>
-            <div class="icons">
-                <a href="https://discord.gg/CHQWkU4Z6N" title="Discord" target="_blank" rel="noopener"><i class="bi bi-discord"></i></a>
-                <a href="https://x.com/SuHaSporeStdos" title="Twitter" target="_blank" rel="noopener"><i class="bi bi-twitter-x"></i></a>
+            <div class="nav-button">
+                <a href="index.html">Descargar</a>
             </div>
         </div>
     </header>
-    <body>
-        <h1>Su-Ha launcher</h1>
-        <div class="desc">
-            <a href="versiones/v2-3-1.html" class="ver"><i class="bi bi-star-fill"></i> Mira lo ultimo de la v2.3.1 </a>
-            <h2 style="font-size: 80px;">Inicia tu mundo a <span style="color: rgb(0, 195, 255);">tu manera</span></h2>
-            <p>
-                ¿Quienes somos? SuHa-Launcher es un launcher
-                de Minecraft que se enfoca en la personalización 
-                y la facilidad de uso. Con SuHa-Launcher, puedes instalar y jugar Minecraft. Además, SuHa-Launcher 
-                tiene una interfaz intuitiva y fácil de usar, lo que lo hace
-                ideal para jugadores de todos los niveles de experiencias.
-            </p>
-            <div id="descarga">
-            <i class="bi bi-windows" style="color: black;"></i> <a id="a1-s" href="https://github.com/Eliseo04L/Su-Ha-Launcher/releases/download/v1.0.1/Su-Ha-Launcher-Setup-1.0.0.exe">ultima versión para windows 64bits</a>
-        </div>
-        </div>
-        <div class="textos" style="display: block;">
-           <div class="textomarquee">
-                <div class="rastrotexto">
-                    <span>SUHA-LAUNCHER_</span>
-                    <span>SUHA-LAUNCHER_</span>
-                    <span>SUHA-LAUNCHER_</span>
-                    <span>SUHA-LAUNCHER_</span>
-                    <span>SUHA-LAUNCHER_</span>
-                    <span>SUHA-LAUNCHER_</span> 
-                </div>
-           </div> 
-        </div>
-        <div class="carac">
-            <h1>Jugar no tiene que ser difícil.</h1>
-            <div class="car">
-                <div id="modloaders">
-                    <h2><i class="bi bi-hdd-stack-fill"></i> Carga de Modloaders</h2>
-                    <p>Su-ha Launcher permite cargar modloaders de manera facil y rapida. <span style="color: rgb(0, 195, 255);">NO MÁS PAGINAS EXTERNAS</span>
-                </div>
-                <div id="cuentas">
-                    <h2><i class="bi bi-person"> </i>Soporte Offline</h2>
-                    <p>Su-Ha launcher ofrece soporte para cuentas online y offline <span style="color: rgb(0, 195, 255);">(premium y no premium)</span> para que cualquiera pueda jugar.</p>
-                </div>
-                <div id="versiones">
-                    <h2><i class="bi bi-upload"></i> Versiones recientes</h2>
-                    <p>Su-Ha launcher siempre tiene versiones nuevas cada vez. No creas que no podras jugar la versión más reciente del juego.</p>
+    <main>
+        <div class="principal">
+            <div class="contenido">
+                <h1>Bienvenido a SuHa Launcher</h1>
+                <p>El launcher de Minecraft hecho para nuestra comunidad. Puedes entrar a eventos hechos por Spore Studios y creados solo para ustedes.</p>
+                <p><i class="bi bi-twitch"> </i>Para divertirse, no hay que ser grandes streamers <i class="bi bi-twitch"></i></p>
+                <div class="boton">
+                    <a href="descargas.html" class="btn" id="a1-s"><i class="bi bi-windows"></i> Descargar versión más reciente</a>
                 </div>
             </div>
-        <div class="imagenes">
-            <img src="imagenes/modloaders.png" alt="modloaders" id="imagen1" .class="imagen">
-            <img src="imagenes/users.png" alt="modloaders" id="imagen2" .class="imagen">
-            <img src="imagenes/launcher2.png" alt="modloaders" id="imagen3" .class="imagen">
+            <div class="imagen">
+                <img src="imagenes/image.png" alt="Imagen de SuHa Launcher">
+            </div>
         </div>
+        <div class="caracteristicas">
+            <h2>Características</h2>
+            <ul>
+                <li>Interfaz intuitiva
+                    <p>SuHa Launcher cuenta con una interfaz fácil de usar, diseñada para que los jugadores puedan navegar y gestionar sus juegos sin complicaciones.</p>
+                </li>
+                <li>Soporte para múltiples versiones de Minecraft
+                    <p>En SuHa Launcher puedes gestionar fácilmente diferentes versiones de Minecraft, ya sean Vanilla o modificadas. <span>Aparte de los eventos</span></p>
+                </li>
+                <li>Eventos del launcher
+                    <p>SuHa Launcher ofrece eventos especiales dentro de Minecraft a los que puedes acceder facilmente usando el Launcher.</p>
+                </li>
+            </ul>
         </div>
-        <img src="imagenes/launcher2.png" alt="Imagen de previsualizacion del launcher" id="imagen">
-        <script>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
             async function obtenerUltimaVersion() {
     try {
         const response = await fetch(
@@ -98,7 +86,7 @@
 
             boton.href = exe.browser_download_url;
             boton.textContent =
-                `Instalar ${data.tag_name} para Windows 64 bits`;
+                `Instalar ultima versión ${data.tag_name} `;
         }
     } catch (error) {
         console.error("Error obteniendo la release:", error);
@@ -106,317 +94,4 @@
 }
 
 obtenerUltimaVersion();
-        </script>
-    </body>
-    <style>
-        body::-webkit-scrollbar {
-            width: 0;
-        }
-        body {
-            background: linear-gradient(to right bottom, rgb(26, 23, 37)40%, rgb(2, 20, 19));
-            background-size: 100%;
-            background-repeat: no-repeat;
-            min-height: 120vh;
-            overflow-x: hidden;
-            margin: 20px;
-        }
-        body > h1 {
-            text-align: center;
-            margin-bottom: 100px;
-        }
-        .imagenes {
-            position: relative;
-            width: 1000px;
-            justify-self: center;
-            margin-top: 60px;
-            padding: 40px;
-            background: linear-gradient(to right bottom, rgb(32, 32, 70), rgb(0, 15, 22));
-            border-radius: 40px;
-            border: 2px solid rgb(7, 253, 233);
-        }
-        .imagenes img {
-            box-shadow: 0 0 20px black;
-            border-radius: 50px;
-        }
-        #imagen1 {
-            width: 100%;
-            position: relative;
-            top: 0;
-            left: 0;
-            animation: ciclo1 15s linear infinite;
-        }
-        #imagen2 {
-            width: 100%;
-            position: relative;
-            top: 0;
-            left: 0;
-            animation: ciclo2 15s linear infinite;
-        }
-        #imagen3 {
-            width: 100%;
-            position: relative;
-            top: 0;
-            left: 0;
-            animation: ciclo3 15s linear infinite;
-        }
-        @keyframes ciclo1 {
-            0%, 33.33% {
-                display: block;
-            }
-            33.33%, 100%{
-                display: none;
-            }
-        }
-        @keyframes ciclo2 {
-            0%, 33.33% {
-                display: none;
-            }
-            33.34%, 66.66%{
-                display: block;
-            }
-            66.66%, 100% {
-                display: none;
-            }
-        }
-        @keyframes ciclo3 {
-            0%, 66.66% {
-                display: none;
-            }
-            66.67%, 100% {
-                display: block;
-            }
-        }
-        @keyframes ml {
-            0%, 33.33% {
-                background-color: rgb(12, 0, 53);
-                max-width: 30%;
-                padding: 20px;
-                border-radius: 40px;
-                border: 3px solid rgb(38, 0, 255)
-            }
-            33.34%, 100%{
-                background-color: rgb(36, 36, 36);
-                max-width: 30%;
-                padding: 20px;
-                border-radius: 40px;
-                border: 3px solid rgba(9, 2, 49, 0);
-                transition: all ease 0.3s;
-            }
-        }
-        @keyframes cuentas {
-            0%, 33.33% {
-                background-color: rgb(36, 36, 36);
-                max-width: 30%;
-                padding: 20px;
-                border-radius: 40px;
-                border: 3px solid rgba(9, 2, 49, 0);
-                transition: all ease 0.3s;
-            }
-            33.34%, 66.66%{
-                background-color: rgb(12, 0, 53);
-                max-width: 30%;
-                padding: 20px;
-                border-radius: 40px;
-                border: 3px solid rgb(38, 0, 255)
-            }
-            66.67%, 100% {
-                background-color: rgb(36, 36, 36);
-                max-width: 30%;
-                padding: 20px;
-                border-radius: 40px;
-                border: 3px solid rgba(9, 2, 49, 0);
-                transition: all ease 0.3s;
-            }
-        }
-        @keyframes versiones {
-            0%, 66.66% {
-                background-color: rgb(36, 36, 36);
-                max-width: 30%;
-                padding: 20px;
-                border-radius: 40px;
-                border: 3px solid rgba(9, 2, 49, 0);
-                transition: all ease 0.3s;
-            }
-            66.67%, 100% {
-                background-color: rgb(12, 0, 53);
-                max-width: 30%;
-                padding: 20px;
-                border-radius: 40px;
-                border: 3px solid rgb(38, 0, 255)
-            }
-        }
-        .desc {
-            background-color: rgba(37, 40, 80, 0);
-            box-shadow: 0 0 0px black;
-            max-width: 50%;
-            margin-top: 20px;
-            padding: 30px;
-            border-radius: 30px;
-            margin-bottom: 90px;
-            padding-bottom: 190px;
-        }
-        .ver {
-            background-color: rgba(36, 33, 33, 0.616);
-            color: rgb(255, 255, 255);
-            padding: 10px;
-            border-radius: 10px;
-            border: 1px solid rgb(57, 58, 134);
-            font-style: italic;
-            text-decoration: none;
-            font-size: 20px;
-        }
-        #imagen {
-            height: auto;
-            width: 40%;
-            position: absolute;
-            left: 60%;
-            top: 35%;
-            border-radius: 40px;
-            box-shadow: 0 0 40px black;
-        }
-        #descarga {
-            background: linear-gradient(to right, rgb(0, 22, 216), rgb(2, 193, 226));
-            padding: 15px;
-            border-radius: 20px;
-            position: absolute;
-            transition: all 0.3s ease;
-        }
-        #descarga:hover {
-            transform: scale(1.05);
-            background: linear-gradient(to right, rgb(3, 0, 197), rgb(0, 255, 221));
-        }
-        #a1-s {
-            text-decoration: none;
-            color: black;
-        }
-        .textos:nth-child(even) {
-            right: 0%;
-            transform: rotate(0deg);
-            z-index: -1;
-        }
-        .textos {
-            position: absolute;
-            top: 10%;
-            width: 100vw;
-        }
-        .textomarquee {
-            overflow: clip;
-        }
-        .rastrotexto {
-            animation: marquee 80s linear infinite;
-            color: rgba(71, 71, 71, 0);
-            text-shadow: 0 0 1px rgba(121, 121, 121, 0.226);
-            display: flex;
-            font-family: var(--gx-font-family-header);
-            font-size: 128px;
-            font-style: normal;
-            font-weight: 700;
-            gap: 0;
-            line-height: normal;
-            text-transform: uppercase;
-            width: max-content;
-        }
-        .car {
-            display: flex;
-            gap: 40px;
-            font-size: 20px;
-        }
-        .carac {
-            margin: 30px;
-        }
-        #versiones {
-            animation: versiones linear 15s infinite;
-        }
-        #modloaders {
-            animation: ml linear 15s infinite;
-        }
-        #cuentas {
-            animation: cuentas linear 15s infinite;
-        }
-        #versiones,#modloaders,#cuentas {
-            background-color: rgb(36, 36, 36);
-            max-width: 30%;
-            padding: 20px;
-            border-radius: 40px;
-            border: 3px solid rgba(9, 2, 49, 0);
-            transition: all ease 0.3s;
-        }
-        #versiones:hover,#modloaders:hover,#cuentas:hover {
-            background-color: rgb(48, 48, 48);
-            max-width: 30%;
-            padding: 20px;
-            border-radius: 40px;
-            border: 3px solid rgb(38, 0, 255)
-        }
-        @keyframes marquee {
-        0% {
-            transform: translateX(0%);
-        }
-        100% {
-            transform: translateX(-50%);
-        }
-        }
-        @media (max-width: 1000px) {
-        .desc {
-            background-color: rgba(37, 40, 80, 0);
-            max-width: 100%;
-            margin-top: 20px;
-            padding: 30px;
-            border-radius: 30px;
-            box-shadow: 0 0 0px rgb(0, 0, 0);
-            font-size: 45px;
-            text-align: center;
-        }
-        .ver {
-            background-color: rgba(167, 167, 167, 0.616);
-            color: rgb(255, 255, 255);
-            padding: 5px;
-            border-radius: 20px;
-            border: 1px solid rgb(66, 66, 66);
-            font-style: italic;
-            text-decoration: none;
-            font-size: 40px;
-        }
-        #descarga {
-            visibility: hidden;
-        }
-        #imagen {
-            left: 50%;
-            height: auto;
-            width: 800px;
-            box-shadow: 0 0 40px rgb(0, 0, 0);
-            transform: translateX(-50%);
-            position: absolute;
-            top: 1000px;
-            display: none;
-        }
-        .car {
-            display: grid;
-            gap: 60px
-        }
-        .caract {
-            justify-content: center;
-        }
-        .imagenes {
-            position: relative;
-            top: -750px;
-            width: 550px;
-            padding: 20px;
-            left: 21%;
-        }
-        #versiones,#modloaders,#cuentas {
-            background-color: rgb(36, 36, 36);
-            max-width: 100%;
-            padding: 20px;
-            text-align: center;
-            border-radius: 40px;
-        }
-        #versiones:hover,#modloaders:hover,#cuentas:hover {
-            background-color: rgb(36, 36, 36);
-            max-width: 100%;
-            padding: 20px;
-            text-align: center;
-            border-radius: 40px;
-        }
-        }
-    </style>
+</script>
