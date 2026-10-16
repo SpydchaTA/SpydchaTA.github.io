@@ -11,11 +11,13 @@ body {
 /*--------------------inicio----------------------*/
 /*contenido*/
 .principal {
-    background: linear-gradient(to right, #08060c10, #006a7cb0);
-    margin: 40px;
+    background: radial-gradient(ellipse at center, #1b6b64be 0%, #00c7c700 70%);
+    margin: 0px;
+    padding: 40px;
     display: flex;
     font-size: 1.6vw;
-    width: 97.8vw;
+    text-shadow: 10px 10px 10px rgb(0, 0, 0);
+    width: 95.7vw;
     gap: 10%;
 }
 .btn {
@@ -28,6 +30,7 @@ body {
     background: linear-gradient(to right, #3c1b8a, #03788d);
     color: white;
     padding: 10px 20px;
+    text-shadow: 0px 0px 0px rgb(0, 0, 0);
     border: none;
     font-size: 1.2vw;
     width: 16vw;
@@ -35,7 +38,7 @@ body {
     cursor: pointer;
     text-decoration: none;
     align-items: center;
-    box-shadow: 0px 0px 10px rgb(73, 19, 134)
+    box-shadow: 10px 10px 10px rgb(0, 19, 19)
 }
 .boton:hover {
     transform: scale(1.05);
@@ -50,10 +53,13 @@ body {
     perspective: 1900px;
     width: 100%;
     z-index: 1;
+    left: 2.1vw;
+    position: relative;
+    padding: 8%;
     margin-top: 60px;
 }
 .imagen img {
-    width: 80%;
+    width: 100%;
     position: relative;
     height: auto;
     border-radius: 20px;
@@ -63,7 +69,7 @@ body {
     transition: 0.3s all ease;
 }
 .imagen img:hover {
-    width: 80%;
+    width: 100%;
     position: relative;
     height: auto;
     border-radius: 20px;
@@ -138,7 +144,7 @@ span {
     margin: 90px;
 }
 .evento-card {
-    background: linear-gradient(to right, #001352, #004e58);
+    background: linear-gradient(to right, #424242, #080808);
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0px 10px 20px rgb(0, 0, 0);
@@ -146,10 +152,9 @@ span {
     transition: 0.3s all ease;
 }
 .evento-card:hover {
-    background: linear-gradient(to right, #001352, #004e58);
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0px 10px 20px rgb(10, 49, 65);
+    box-shadow: 0px 10px 20px rgb(177, 175, 175);
     width: 30%;
     transform: scale(1.05);
 }
