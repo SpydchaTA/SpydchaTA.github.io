@@ -2,6 +2,10 @@ body::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body {
     margin: 0;
     background: linear-gradient(to right, #120d1d, #00161a);
@@ -115,7 +119,7 @@ span {
     position: relative;
     bottom: 0;
     margin: 0px;
-    width: 97.8vw;
+    width: 100vw;
     height: 20vh;
 }
 .social-icons {
