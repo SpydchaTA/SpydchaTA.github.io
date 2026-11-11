@@ -31,11 +31,17 @@
     <main>
         <div class="principal">
             <div class="contenido">
-                <h1>Bienvenido a Su-Ha Launcher</h1>
+                <h1>Tu mundo.</h1>
+                <h1>Tu proxima <span class="title">aventura</span></h1>
                 <p>El launcher de Minecraft hecho para nuestra comunidad. Puedes entrar a eventos hechos por Spore Studios y creados solo para ustedes.</p>
-                <p><i class="bi bi-twitch"> </i>Para divertirse, no hay que ser grandes streamers <i class="bi bi-twitch"></i></p>
-                <div class="boton">
-                    <a href="descargas.html" class="btn" id="a1-s"><i class="bi bi-windows"></i> Descargar versión más reciente</a>
+                <p><i class="bi bi-twitch"> </i>Para divertirse, no hay que ser conocidos <i class="bi bi-twitch"></i></p>
+                <div class="botones">
+                    <div class="boton">
+                        <a href="descargas.html" class="btn" id="a1-s"><i class="bi bi-windows"></i> Descargar versión más reciente</a>
+                    </div>
+                    <div class="boton2">
+                        <a href="descargas.html" class="btn" id="a2-s"><i class="bi bi-windows"></i> Descargar versión más reciente</a>
+                    </div>
                 </div>
                 <a href="dudas/" class="duda"> ¿Cómo instalar?</a>
             </div>
@@ -91,7 +97,30 @@
     } catch (error) {
         console.error("Error obteniendo la release:", error);
     }
+        try {
+        const response = await fetch(
+            "https://api.github.com/repos/SpydchaTA/spore-client-releases/releases/latest"
+        );
+
+        const data = await response.json();
+
+        const exe = data.assets.find(asset =>
+            asset.name.endsWith(".exe") &&
+            !asset.name.endsWith(".exe.blockmap")
+        );
+
+        if (exe) {
+            const boton = document.getElementById("a2-s");
+
+            boton.href = exe.browser_download_url;
+            boton.textContent =
+                `Instalar cliente`;
+        }
+    } catch (error) {
+        console.error("Error obteniendo la release:", error);
+    }
 }
+
 
 obtenerUltimaVersion();
 </script>
