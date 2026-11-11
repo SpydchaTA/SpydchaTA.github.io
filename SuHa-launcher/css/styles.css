@@ -207,3 +207,158 @@ span {
     border-radius: 20px;
     font-size: 1.1vw;
 }
+
+@media (max-width: 1024px) {
+    .principal {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 18px;
+        gap: 5%;
+    }
+    .contenido p {
+        font-size: 16px;
+    }
+    .boton, .boton2 {
+        width: auto;
+        min-width: 180px;
+        font-size: 15px;
+    }
+    .duda {
+        font-size: 15px;
+    }
+    .caracteristicas ul {
+        gap: 20px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .caracteristicas li {
+        font-size: 18px;
+    }
+    .caracteristicas p {
+        font-size: 15px;
+    }
+    span {
+        font-size: 14px;
+    }
+    .eventos-lista {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px 20px;
+    }
+    .evento-card, .evento-card:hover {
+        width: 45%; 
+    }
+    .dudas-principal {
+        margin: 40px 20px;
+        font-size: 16px;
+    }
+    .duda-main > h1 {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .principal {
+        flex-direction: column; 
+        padding: 30px 20px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .contenido p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .boton, .boton2 {
+        width: 100%; /* Botones anchos fáciles de tocar con el pulgar */
+        max-width: 300px;
+        font-size: 16px;
+        padding: 14px 20px;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    .duda {
+        font-size: 15px;
+        display: block;
+    }
+
+    /* Imagen 3D adaptada */
+    .imagen {
+        left: 0;
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    .imagen img, .imagen img:hover {
+        transform: none; /* Quita la rotación 3D para que no se corte en pantallas chicas */
+        box-shadow: 0px 10px 20px rgb(0, 0, 0);
+    }
+
+    /* Características */
+    .caracteristicas {
+        margin-top: 50px;
+    }
+
+    .caracteristicas ul {
+        flex-direction: column; /* Una tarjeta debajo de otra */
+        width: 100%;
+        padding: 0 20px;
+        gap: 25px;
+        box-sizing: border-box;
+    }
+
+    .caracteristicas li {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 20px;
+    }
+
+    .caracteristicas p {
+        font-size: 15px;
+    }
+
+    span {
+        font-size: 14px;
+    }
+
+    /* Eventos */
+    .eventos-lista {
+        flex-direction: column;
+        margin: 40px 20px;
+        gap: 25px;
+    }
+
+    .evento-card, .evento-card:hover {
+        width: 100%;
+        box-sizing: border-box;
+        transform: none; /* Evita desbordes al tocar en móvil */
+    }
+
+    /* Dudas */
+    .duda-main > h1 {
+        font-size: 24px;
+        margin-top: 50px;
+        padding: 0 15px;
+    }
+
+    .dudas-principal {
+        flex-direction: column;
+        margin: 30px 20px;
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    /* Footer */
+    .footer-content {
+        width: 100%;
+        height: auto; /* Evita que el texto se salga si crece */
+        padding: 30px 15px;
+        box-sizing: border-box;
+    }
+}

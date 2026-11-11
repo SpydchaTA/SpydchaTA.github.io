@@ -70,3 +70,68 @@
     color: rgb(215, 57, 255) !important;
 }
 /* Navegacion :P */
+/* =========================================
+   DISEÑO RESPONSIVO - NAVEGACIÓN
+   ========================================= */
+
+/* Para pantallas medianas (Tablets - hasta 1024px) */
+@media (max-width: 1024px) {
+    .nav {
+        width: 100%;
+        height: auto;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        gap: 10%;
+        font-size: 14px;
+    }
+    .nav-links {
+        font-size: 15px;
+        gap: 15px;
+        width: auto;
+    }
+    .nav-button {
+        width: auto;
+        min-width: 100px;
+        font-size: 14px;
+        height: auto;
+        transform: none;
+    }
+}
+
+/* Para celulares (hasta 768px) */
+@media (max-width: 768px) {
+    .nav {
+        position: relative; /* En móviles es mejor que no sea fixed para que no tape el contenido principal, o fixed si prefieres que flote (cámbialo a fixed si la quieres flotante) */
+        flex-direction: column; /* Apila el logo, los links y el botón verticalmente */
+        height: auto;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        gap: 15px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .nav-links {
+        flex-direction: row; /* Mantiene los enlaces en línea horizontal o puedes cambiarlos a column */
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        font-size: 16px;
+        transform: none;
+    }
+
+    .nav-button {
+        width: 100%; /* Botón de navegación adaptado al ancho del celular */
+        max-width: 250px;
+        height: auto;
+        padding: 12px 20px;
+        font-size: 16px;
+        transform: none;
+        box-sizing: border-box;
+    }
+}
