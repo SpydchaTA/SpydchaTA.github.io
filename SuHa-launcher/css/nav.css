@@ -1,14 +1,15 @@
 /* Navegacion :P */
 .nav {
-    background-color: rgba(14, 33, 82, 0.349); 
+    background-color: rgb(22, 36, 68); 
     color: white;
-    position: relative;
+    position: fixed;
     width: 100vw;
     padding: 20px;
     display: flex;
-    height: 6vh;
-    gap: 30%;
-    font-size: 1.2vw;
+    height: 2vh;
+    gap: 24%;
+    font-size: 0.8vw;
+    justify-content: center;
 }
 .logo {
     display: flex;
@@ -16,10 +17,10 @@
 }
 .nav-links {
     display: flex;
-    gap: 33%;
-    transform: translateX(-50%);
+    gap: 20%;
+    transform: translateX(0%);
     text-align: center;
-    font-size: 1.2vw;
+    font-size: 1.0vw;
     align-items: center;
     width: 15vw;
 }
@@ -43,9 +44,10 @@
     color: white;
     padding: 10px 20px;
     border: none;
-    font-size: 1.2vw;
+    font-size: 0.8vw;
     height: 50%;
-    width: 5vw;
+    width: 10vw;
+    transform: translateX(-10%);
     position: relative;
     border-radius: 20px;
     cursor: pointer;
@@ -58,11 +60,13 @@
 .nav-button a {
     color: white;
     text-decoration: none;
+    transition: 0.3s all ease;
 }
-.nav-button:hover {
+.nav-button a:hover {
     transform: scale(1.05);
 }
 .active {
     text-decoration: underline !important;
+    color: rgb(215, 57, 255) !important;
 }
 /* Navegacion :P */
