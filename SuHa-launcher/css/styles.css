@@ -199,13 +199,76 @@ span {
 .dudas-principal {
     display: flex;
     gap: 20px;
-    background: linear-gradient(to right, #08060c10, #006a7cb0);
+    background: linear-gradient(to bottom right, #08060c10, #006a7cb0);
     margin-top: 9%;
     margin-left: 90px;
     margin-right: 90px;
     margin-bottom: 90px;
     border-radius: 20px;
     font-size: 1.1vw;
+}
+/*-------------------Dudas----------------------*/
+/*-------------------Blog----------------------*/
+.versiones-lista {
+    font-size: 1.3vw;
+    padding: 20px;
+    border-radius: 40px;
+    margin-bottom: 10%;
+}
+.versiones-card {
+    background: linear-gradient(to bottom right, #021730,#29dfff44, #00697c44);
+    padding: 20px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 80%;
+    transition: 0.3s all ease;
+}
+.contenido-version {
+    display: flex;
+    gap: 50%;
+}
+.versiones a{
+    text-decoration: none;
+    color: white;
+}
+.versiones-card:hover {
+    background: linear-gradient(to bottom right, #29dfff54,#021730, #29dfff54);
+    padding: 20px;
+    border-radius: 20px;
+    transform: scale(1.05);
+}
+.versiones {
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(124, 124, 124);
+    padding: 20px;
+}
+.imagen-versiones img {
+    border: 3px solid rgb(255, 255, 255);
+    width: 9vw;
+    height: 9vw;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    background: linear-gradient(rgba(44, 83, 99, 0.384), rgb(2, 2, 41));
+}
+/*-------------------Blog----------------------*/
+@media (max-width: 1024px) {
+    .contenido-version p {
+        font-size: 16px;
+    }
+    .textos-versiones h3 {
+        font-size: 20px;
+    }
+    .imagen-versiones img {
+        width: 50vw;
+        height: 50vw;
+    }
+    .contenido-version {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width: 1024px) {

@@ -27,6 +27,11 @@
 .nav-links a {
     text-decoration: none;
     color: white;
+    transition: 0.3s all ease;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
 }
 .logo img {
     width: 50px;

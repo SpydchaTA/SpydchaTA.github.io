@@ -1,0 +1,64 @@
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    background: linear-gradient(to right, #120d1d, #00161a);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.principal {
+    background: radial-gradient(ellipse at center, #1b6b64be 0%, #00c7c700 70%);
+    margin: 0px;
+    padding: 40px;
+    font-size: 1.1vw;
+    text-shadow: 10px 0px 20px rgb(0, 0, 0);
+    width: 95.7vw;
+    gap: 10%;
+}
+.cambios {
+    font-size: 1.2vw;
+    margin: 20px;
+    justify-content: center;
+}
+.contenido-version {
+    border-bottom: 4px solid rgb(8, 5, 5);
+}
+.boton-volver {
+    background: linear-gradient(to right, #3c1b8a, #03788d);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 20px;
+    position: relative;
+    width: 5vw;
+    border-radius: 20px;
+}
+.boton-volver:hover {
+    transform: scale(1.05);
+}
+.boton-volver a {
+    color: white;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .principal {
+        font-size: 3vw;
+        width: 80vw;
+    }
+    .cambios {
+        font-size: 2.5vw;
+        margin: 0px;
+    }
+    .boton-volver {
+        font-size: 2.3vw;
+        width: 10vw;
+    }
+}
