@@ -8,14 +8,13 @@ html, body {
 }
 body {
     margin: 0;
-    background: linear-gradient(to right, #120d1d, #00161a);
+    background: linear-gradient(to right, #041c30, #00161a);
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /*--------------------inicio----------------------*/
 /*contenido*/
 .principal {
-    background: radial-gradient(ellipse at center, #1b6b64be 0%, #00c7c700 70%);
     margin: 0px;
     padding: 40px;
     display: flex;
@@ -30,13 +29,15 @@ body {
 
 }
 .contenido p {
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     color: rgb(255, 255, 255);
+    font-weight: 600;
 }
 .boton {
     transition: 0.3s all ease;
-    background: linear-gradient(to right, #3c1b8a, #03788d);
+    background: linear-gradient(to right, #0716a5, #1a7980);
     color: white;
+    margin-top: 150px;
     padding: 10px 20px;
     text-shadow: 0px 0px 0px rgb(0, 0, 0);
     border: none;
@@ -101,6 +102,8 @@ body {
 /*caracteristicas*/
 .caracteristicas ul{
     display: flex;
+    border-radius: 20px;
+    padding: 20px;
     width: 96%;
     gap: 10vw;
 }
@@ -108,19 +111,22 @@ body {
     list-style: none;
     font-size: 1.4vw;
     color: rgb(0, 174, 255);
-    background: linear-gradient(to bottom right, #130025, #004e58);
+    width: 30%;
+    background: linear-gradient(to bottom right, #0f0f0f, #161616);
     padding: 20px;
     box-shadow: 0px 10px 20px rgb(0, 0, 0);
     border-radius: 30px;
-    width: 40%;
+    border-left: 4px solid rgb(0, 174, 255);
+    border-right: 4px solid rgb(0, 174, 255);
 }
 .caracteristicas P {
     font-size: 1.2vw; 
     color: rgb(255, 255, 255);
 }
 .caracteristicas {
-    margin-top: 100px;
+    margin-top: -90px;
     gap: 15%;
+    margin-left: 20px;
     justify-content: center;
 }
 span {
@@ -128,7 +134,11 @@ span {
     font-size: 1vw;
 }
 .title {
-    color: rgb(130, 253, 222);
+    background: linear-gradient(to bottom right, #00388b, #01ffffe7, #0066ff);
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
     font-size: 100%;
 }
 /*footer*/
@@ -168,19 +178,53 @@ span {
     margin: 90px;
 }
 .evento-card {
-    background: rgb(26, 26, 26);
+    background: rgb(19, 19, 19);
+    border-left: 4px solid rgb(0, 174, 255);
+    border-right: 4px solid rgb(0, 174, 255);
     padding: 0px;
     border-radius: 20px;
-    box-shadow: 0px 10px 20px rgb(0, 0, 0);
-    width: 25%;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
     transition: 0.3s all ease;
-    border: 3px solid rgb(26, 26, 26);
 }
 .evento-card:hover {
     border-radius: 20px;
     box-shadow: 0px 10px 20px rgb(177, 175, 175);
-    width: 25%;
     transform: scale(1.05);
+}
+.evento-contenido {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.evento-contenido h3 {
+    color: rgb(0, 174, 255);
+    font-size: 1.5vw;
+}
+.evento-contenido p {
+    font-size: 1vw;
+}
+.evento-contenido h5 {
+    color: rgb(255, 255, 255);
+    background: rgb(112, 112, 0);
+    width: fit-content;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    border-radius: 20px;
+    font-size: 1vw;
+}
+.evento-imagen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
 }
 .evento-imagen img{
     width: 100%;
@@ -199,7 +243,10 @@ span {
 .dudas-principal {
     display: flex;
     gap: 20px;
-    background: linear-gradient(to bottom right, #08060c10, #006a7cb0);
+    background-color: rgba(0, 9, 15, 0.308);
+    border-left: 4px solid rgb(66, 120, 124);
+    border-right: 4px solid rgb(66, 120, 124);
+    padding: 20px;
     margin-top: 9%;
     margin-left: 90px;
     margin-right: 90px;
@@ -215,13 +262,29 @@ span {
     border-radius: 40px;
     margin-bottom: 10%;
 }
+.textos-versiones h5 {
+    color: rgb(0, 174, 255);
+    font-size: 1.2vw;
+    background: rgba(36, 122, 138, 0.24);
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 14%;
+    border-radius: 20px;
+}
 .versiones-card {
-    background: linear-gradient(to bottom right, #021730,#29dfff44, #00697c44);
+    background: linear-gradient(to bottom right, #021730);
     padding: 20px;
-    border: 3px solid rgb(255, 255, 255);
+    border: 3px solid rgb(48, 109, 101);
     border-radius: 20px;
     width: 80%;
     transition: 0.3s all ease;
+}
+.textos-versiones h3 {
+    color: transparent;
+    background: linear-gradient(to bottom right, #007e7e, #00bfff, #007070);
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    width: 56%;
+    background-clip: text;
 }
 .contenido-version {
     display: flex;
@@ -232,10 +295,10 @@ span {
     color: white;
 }
 .versiones-card:hover {
-    background: linear-gradient(to bottom right, #29dfff54,#021730, #29dfff54);
+    background: linear-gradient(to bottom right, #021730);
     padding: 20px;
     border-radius: 20px;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 .versiones {
     margin-top: 20px;
@@ -243,7 +306,7 @@ span {
     padding: 20px;
 }
 .imagen-versiones img {
-    border: 3px solid rgb(255, 255, 255);
+    border: 3px solid rgb(25, 130, 161);
     width: 9vw;
     height: 9vw;
     border-radius: 20px;
@@ -268,6 +331,15 @@ span {
         gap: 10px;
         flex-direction: column;
         align-items: center;
+    }
+    .textos-versiones h5 {
+        color: rgb(0, 174, 255);
+        font-size: 4vw;
+        background: rgba(36, 122, 138, 0.24);
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 20%;
+        border-radius: 20px;
     }
 }
 
@@ -309,8 +381,32 @@ span {
         justify-content: center;
         margin: 40px 20px;
     }
+    .evento-contenido h3 {
+        font-size: 5vw !important;
+    }
+    .evento-contenido p {
+        font-size: 4vw !important;
+    }
+    .evento-contenido h5 {
+        font-size: 3vw !important;
+    }
+    .evento-contenido {
+        justify-content: center;
+        text-align: center;
+    }
     .evento-card, .evento-card:hover {
         width: 45%; 
+        display: flex;
+        flex-direction: column;
+    }
+    .evento-imagen {
+        width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
     }
     .dudas-principal {
         margin: 40px 20px;

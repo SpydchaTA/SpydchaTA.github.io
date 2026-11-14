@@ -9,14 +9,14 @@ html, body {
 body {
     margin: 0;
     background: linear-gradient(to right, #120d1d, #00161a);
-    color: white;
+    color: rgb(212, 212, 212);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .principal {
-    background: radial-gradient(ellipse at center, #1b6b64be 0%, #00c7c700 70%);
     margin: 0px;
     padding: 40px;
     font-size: 1.1vw;
+    font-weight: 500;
     text-shadow: 10px 0px 20px rgb(0, 0, 0);
     width: 95.7vw;
     gap: 10%;
@@ -25,6 +25,9 @@ body {
     font-size: 1.2vw;
     margin: 20px;
     justify-content: center;
+}
+.cambios h3 {
+    color: rgb(92, 255, 233);
 }
 .contenido-version {
     border-bottom: 4px solid rgb(8, 5, 5);
